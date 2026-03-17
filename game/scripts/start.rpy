@@ -6,8 +6,6 @@ default saw_phone = False
 
 label start:
 
-   
-
     scene black with fade
     
     centered "Today is the first snowfall of this year."
@@ -16,21 +14,17 @@ label start:
     
     scene bg snowpath with fade
     
-
     play music "snowpath.mp3" 
     play music2 "snowamb.mp3" 
 
     "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
-
+    "The air is crisp and still, carrying the faint scent of pine and snow. You can see your breath in the cold air as you walk, each step crunching softly on the snow-covered ground."
     "You keep your eyes on the ground, as if facing the light would blind you. Even if the light is weak, you feel weaker."
-
     "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
     "This is your second year visiting the wind phone-- a disconnected phone booth that you call in hopes that it will carry your words onto the wind."
     
-    
     scene bg windphone
     
-
     "The snow crunches beneath your feet, and the cold nips at your skin as you approach the familiar weathered booth."
     
     "Your gloved hand reaches for the handle."
@@ -47,6 +41,7 @@ label booth_examination:
     scene bg boothinterior 
     
     menu:
+
         "It seems that previous visitors have left some items behind."
 
         "Photos" if not saw_photos:
@@ -79,7 +74,7 @@ label start_phone_call:
     "I’m back at the house. Mom’s okay. She’s finally started moving your things into the spare room. All those heavy black boxes you used to lug through airports... they’re just sitting in a stack now. I have to walk past them to get to the bathroom."
     "It’s... it’s a lot of black plastic. I haven’t opened them. I told her I’d sell the rigs, but I just end up staring at the latches."
     "You gaze at the photographs and swallow thickly."
-    "The object is so mundane yet it stirs something inside you, something you don't want to face."
+    "The object is so mundane yet it stirs something inside you, it feels uncomfortale."
     u "Someone left some photographs here. I feel like the composition is a little amateur but you would probably have a better critique." 
     "You think of how your father always critiqued your work."
     "\"You have symmetry but you have no subject. The path and trees lead the eyes directly to the left center but theres nothing there.\""
@@ -110,27 +105,88 @@ label start_phone_call:
     "His eyes flicker to yours and he chuckles slightly."
     cori "I recently picked it up. They're quiet amateur aren't they? I didn't expect anyone to see them, people rarely come here nowadays."
     "You pause for a moment, wondering how to respond."
-    u "Photography is subjective anyway, I'm sure whoever you took them for will appreciate them."
+    u "Photography is subjective anyway, I'm sure whoever you took them for will appreciate them." #edit
     "He grins."
-    cori "I hope you're right, she didn't couldn't see but she loved exploration-- my sister. We used to walk this path all the time"
+    cori "I hope you're right, she didn't couldn't see but she loved exploration-- my sister. We used to walk this path all the time." #"she could see"
     cori "Back then I had to lead her, but we've walked this path so many times she could probably do it all by herself now."
-    "His somber tone when he reminisces about his sister is familiar, and you can feel the weight of his memories in the air."
+    "His somber tone when he reminisces about his sister is familiar, and you can feel the weight of his memories in the air." #edi t
     u "You must miss her a lot. It sounds like she was lucky to have such a great guide."
     "He looks at the trees, smiling softly."
     cori "I think it was the other way around, at that time at least."
     cori "I'd take my camera on every walk, she'd get annoyed with me taking so much time taking photos, but she was always so interested in what they looked like, so I'd describe them for her."
     "You shift your weight, your boots crunching loudly in the silence. It’s an awkward bit of vulnerability from a stranger."
     u "I know how that is. My dad was the same way. "
-    u " "
+    u "When I was a kid I felt like he loved the camera more than me."
     "You gently fidget with the edge of your sleeve between your fingertips."
-    u "I could pass on some tricks with the camera he taught me."
+    cori "Was he good at least? With the camera."
+    "You remeber watching his films and looking at his photos."
+    "He wasn't just good, he was exceptional-- with storytelling, composition, and technical skill."
+    "You loved his work, of course. But you also found it incredibly annoying."
+    u "He was the kind of good that made you feel hopeless, like nothing you ever made would amount to his work."
+    u "He was so passionate, he let it consume him." 
+    cori "They do say that no artist tolerates reality."
+    cori "I actually think its the contrary, I think art is a way to cope with reality, to make it more bearable." #is this contrary??? might need to change
+    u "Is that why you take photos? To make it more bearable?" 
     "The man grins."
-    cori "Well I couldn't pass up that offer."
-    cori "Will you be here next week?"
-    "You nod."
-    cori "I'm Cori, by the way, I'm better at growing things than capturing them, but I'm a fast learner."
-    u "I admire your confidence, I'm PLAYERNAME"
-    "Your eyes linger to the booth."
+    cori "Hmmm."
+    cori "I guess so, in a way."
+    "His answer is vague, but you don't press the issue further."
+    cori "What about you?"
+    u "Me?"
+    u "I don't take photos anymore really, I just like looking at them. The camera is so finicky, I don't have the patience for it."
+    cori "Is that so? Whens the last time you took a photo?"
+    "You pause and think."
+    "It was a few years ago, you were photographing for a project, a collection of photos during the blue hour."
+    "A brief time before sunrise, when the sky is a deep shade of blues, violets, and purples." #expand
+    u "It's been awhile"
+    cori "How bout giving it another go now?"
+    "He gestures to the camera hanging from his neck."
+    "You hesistate. You really didn't have any interest of touching a camera again."
+    cori "It can just be really simple, don't overthink it, just take a photo of something you find interesting."
+    "You look at the camera, then back at him."
+    u "I guess it couldn't hurt."
+    "You take the camera from him and hold it in your hands, feeling the weight of it."
+    "The cold metal feels foreign in your hands, but you find yourself drawn to it."
+    "You look through the viewfinder, adjusting the settings and trying to find something interesting to take a photo of."
+
+    jump take_photo
+
+    default photo_trees = False
+    default photo_cori = False
+    default photo_flower = False
+
+    label take_photo:
+        menu:
+            "Look at the trees" if not photo_trees:
+                $ photo_trees = True
+                "Most of the trees are barren, but a few stubborn leaves cling to the branches, their colors faded but still visible against the snow."
+                "From where you're standing, the sun is just peeking through the branches, creating a soft glow that illuminates the snow and casts long shadows on the ground."
+                "You take a photo of the snow-covered trees, the branches creating intricate patterns against the white backdrop."
+
+                cori "The trees are my favorite part of this path, they look so different in every season. I love how the snow clings to the branches, it makes them look like they're made of glass."
+                jump take_photo
+
+            "Look at the man" if not photo_cori:
+                $ photo_cori = True
+                "You look at the man. The morning light casts a soft flow on his face."
+                cori "You want to take a photo of me? I can't promise it'll look good, but go ahead."
+                "You line up the man's figure in the viewfinder, adjusting the settings to capture the soft morning light on his face. You take a photo."
+                "It seems the lens flare has blocked out his face."
+                jump take_photo
+
+            "Look at the flower" if not photo_flower:
+                $ photo_flower = True
+                "You look at the flower in his pocket, once again drawn to its vibrant pink color."
+                "The man notices."
+                "He takes the flower out of his pocket and holds it towards you."
+                "You gently take the flower from him, his fingers are soft against yours, like a daft of air."
+                "You take a photo of the flower, the vibrant pink color contrasting against the snow."
+
+                jump take_photo
+
+            "That's enough photos for now":
+                pass   
+    
     u "I shouldn't keep you here any longer, I'm sure someone is waiting for your call."
     cori "Alright then, PLAYERNAME, I'll see you again, soon."
     "The two of you bid your farewells"
