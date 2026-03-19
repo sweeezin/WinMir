@@ -12,10 +12,13 @@ init python:
 
     renpy.music.register_channel("music2", "music", loop=True)
 
-
+default coriname = "???"
+default player_name = "March"
 define narrator = Character(None, callback=type_sound)
 define cori = Character("???", callback=type_sound)
 define u = Character("You", callback=type_sound)
+
+
 
 default preferences.text_cps = 100
 image bg snowpath = "images/bg/snowpath.png"
