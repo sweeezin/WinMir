@@ -15,14 +15,15 @@ label start:
     scene black with fade
     
     centered "Today is the first snowfall of this year."
+
+    $ snow_on = True
     
     #centered "It's my second time spending it without you."
     
-    scene bg snowpath with fade
-    
-    #play music "audio/snowpath2.mp3" 
+    play music "audio/lofi1.mp3" fadein 2.0
     play music2 "audio/snowamb.mp3" 
-    play sound "audio/snow_footsteps.mp3" 
+    play audio "audio/snow_footsteps.mp3" loop volume 0.8
+    scene bg snowpath with fade 
 
     "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
     "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
@@ -40,8 +41,10 @@ label start:
     "You approach the familiar weathered booth."
     "Your gloved hand reaches for the metalhandle."
 
-    stop sound
-    stop music2
+    stop audio
+    stop music2 fadeout 3.0
+    stop music fadeout 5.0
+
     play sound "audio/door-open.mp3"
 
     scene bg boothinterior
