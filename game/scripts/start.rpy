@@ -6,6 +6,9 @@ default saw_phone = False
 
 label start:
 
+    $ player_name = renpy.input("What is your name?", length=32)
+    $ player_name = player_name.strip()  # Remove leading/trailing whitespace
+    
     scene black with fade
     
     centered "Today is the first snowfall of this year."
@@ -20,11 +23,11 @@ label start:
     "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
     "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
     "The air is crisp and still, carrying the faint scent of pine and snow. You can see your breath in the cold air as you walk, each step crunching softly on the snow-covered ground."
-    "You keep your eyes on the ground, as if facing the light would blind you. Even if the light is weak, you feel weaker."
+    "You keep your eyes on the ground, as if facing the light would blind you." #Even if the light is weak, you feel weaker."
     "This is your second year visiting the wind phone-- a disconnected phone booth out in the woods."
     "Some say the phone carries on your messages on the wind, to loved ones who have passed on."
     "But truthfully, it didn't matter if the phone worked or not."
-    "The one way conversations and quiet walks through the snow were what you needed, not the answers."
+    "The one way conversations and quiet walks through the snow were what you needed."
     
     scene bg windphone
     
@@ -48,7 +51,7 @@ label booth_examination:
     
     menu:
 
-        "It seems that previous visitors have left some items behind."
+        #"It seems that previous visitors have left some items behind."
 
         "Photos" if not saw_photos:
             $ saw_photos = True
@@ -65,7 +68,7 @@ label booth_examination:
             "It feels heavy and cold. It hasn't seen a dial tone in years."
             jump booth_examination
 
-        "Pick up the receiver":
+        "Pick up the receiver" if saw_photos and saw_flowers and saw_phone:
             jump start_phone_call
 
 label start_phone_call:
@@ -118,7 +121,7 @@ label start_phone_call:
     "He grins."
     cori "I hope you're right, she didn't couldn't see but she loved exploration-- my sister. We used to walk this path all the time." #"she could see"
     cori "Back then I had to lead her, but we've walked this path so many times she could probably do it all by herself now."
-    "His somber tone when he reminisces about his sister is familiar, and you can feel the weight of his memories in the air." #edi t
+    "His somber tone when he reminisces about his sister is familiar." #edi t
     u "You must miss her a lot. It sounds like she was lucky to have such a great guide."
     "He looks at the trees, smiling softly."
     cori "I think it was the other way around, at that time at least."
@@ -126,13 +129,15 @@ label start_phone_call:
     "You shift your weight, your boots crunching loudly in the silence. It’s an awkward bit of vulnerability from a stranger."
     u "I know how that is. My dad was the same way. "
     u "When I was a kid I felt like he loved the camera more than me."
-    "You gently fidget with the edge of your sleeve between your fingertips."
+    "You scoff."
     cori "Was he good at least? With the camera."
+    "You gently fidget with the edge of your sleeve between your fingertips."
     "You remeber watching his films and looking at his photos."
     "He wasn't just good, he was exceptional-- with storytelling, composition, and technical skill."
     "You loved his work, of course. But you also found it incredibly annoying."
-    u "He was the kind of good that made you feel hopeless, like nothing you ever made would amount to his work."
-    u "He was so passionate, he let it consume him." 
+    u "He was the kind of good that made you like nothing you ever made would amount to his work."
+    u "I think it comes with a cost though."
+    u "He was the type of artist to let their work consume them." 
     cori "They do say that no artist tolerates reality."
     cori "I actually think its the contrary, I think art is a way to cope with reality, to make it more bearable." #is this contrary??? might need to change
     u "Is that why you take photos? To make it more bearable?" 
@@ -147,7 +152,8 @@ label start_phone_call:
     "You pause and think."
     "It was a few years ago, you were photographing for a project, a collection of photos during the blue hour."
     "A brief time before sunrise, when the sky is a deep shade of blues, violets, and purples." #expand
-    u "It's been awhile"
+    "Come to think of it, what was that project for? You can't even remember."
+    u "It's been awhile."
     cori "How bout giving it another go now?"
     "He gestures to the camera hanging from his neck."
     "You hesistate. You really didn't have any interest of touching a camera again."
@@ -174,7 +180,7 @@ label start_phone_call:
                 "There is a pine tree nearby, its needles a vibrant green that stands out against the white snow. The contrast between the green and white creates a striking visual effect"
                 play sound "audio/shutter.mp3"
 
-                "You take a photo of the snow-covered trees, the branches creating intricate patterns against the white backdrop."
+                "You take a photo of the snow-covered pine trees, the branches creating intricate patterns against the white backdrop."
                 show cori with dissolve
                 cori "The trees are my favorite part of this path, they look so different in every season. I love how the snow clings to the branches, it makes them look like they're made of glass."
                 jump take_photo
@@ -184,10 +190,13 @@ label start_phone_call:
                 show cori with dissolve
                 "You look at the man. The morning light casts a soft flow on his face."
                 cori "You want to take a photo of me? I can't promise it'll look good, but go ahead."
+                "He stands in fron of the phone booth and smiles."
                 "You line up the man's figure in the viewfinder, adjusting the settings to capture the soft morning light on his face."
                 play sound "audio/shutter.mp3"
                 "You take a photo."
                 "It seems the lens flare has blocked out his face."
+
+
                 jump take_photo
 
             "Look at the flower" if not photo_flower:
@@ -203,11 +212,33 @@ label start_phone_call:
                 jump take_photo
 
             "That's enough photos for now" if photo_trees and photo_cori and photo_flower:
-                pass   
-    cori ""
+                pass
+
+    cori "How interesting."
+    cori "I thought I told you not to overthink it."
+    cori "Or maybe you just have a strong instinct for it?"
+    u "What do you mean?"
+    cori "Not only do you have a good eye for composition, but it seems like with every shot you're trying to tell a story."
+    cori "The pine tree, its an evergreen tree, the kind that stays green year round, even in the harshest winters."
+    cori "The photo of me next to the phone booth, an out of place shelter in a desolate location."
+    cori "And lastly, the flower, its a cyclamen, a flower that only blooms in the winter, when everything else is dormant."
+    cori "It seems like to me you're trying to tell a story of resilience and hope."
+    "You pause for a moment, taking in his words."
+    "Was that really what you were trying to do?"
+    cori "What do you think?"
+    u "I think... your camera has a mind of its own."
+    "He laughs."
+    cori "You're too humble."
+    "You loop the camera strap around your wrist and hand it back to him."
+    u "Thanks uhhh, I don't even know your name."
+    $ coriname = "Cori"
+    cori "I'm Cori."
+    u "Cori, thanks for letting me use your camera. I'm [player_name]."
+    cori "It was my pleasure, [player_name]. I hope you continue to take photos, you have a real talent for it."
+
     u "I shouldn't keep you here any longer, I'm sure someone is waiting for your call."
-    cori "Alright then, PLAYERNAME, I'll see you again, soon."
-    "The two of you bid your farewells"
+    cori "Alright then, I'll see you again, soon."
+
 
     scene bg snowpath
     
