@@ -14,20 +14,26 @@ label start:
     
     scene bg snowpath with fade
     
-    play music "snowpath.mp3" 
-    play music2 "snowamb.mp3" 
-
+    #play music "audio/snowpath2.mp3" 
+    play music2 "audio/snowamb.mp3" 
+    play sound "audio/snow_footsteps.mp3"  
     "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
+    "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
     "The air is crisp and still, carrying the faint scent of pine and snow. You can see your breath in the cold air as you walk, each step crunching softly on the snow-covered ground."
     "You keep your eyes on the ground, as if facing the light would blind you. Even if the light is weak, you feel weaker."
-    "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
-    "This is your second year visiting the wind phone-- a disconnected phone booth that you call in hopes that it will carry your words onto the wind."
+    "This is your second year visiting the wind phone-- a disconnected phone booth out in the woods."
+    "Some say the phone carries on your messages on the wind, to loved ones who have passed on."
+    "But truthfully, it didn't matter if the phone worked or not."
+    "The one way conversations and quiet walks through the snow were what you needed, not the answers."
     
     scene bg windphone
     
     "The snow crunches beneath your feet, and the cold nips at your skin as you approach the familiar weathered booth."
-    
     "Your gloved hand reaches for the handle."
+
+    stop sound
+    stop music2
+    play sound "audio/door-open.mp3"
 
     scene bg boothinterior
 
@@ -59,7 +65,7 @@ label booth_examination:
             "It feels heavy and cold. It hasn't seen a dial tone in years."
             jump booth_examination
 
-        "Pick up the receiver" if saw_photos and saw_flowers and saw_phone:
+        "Pick up the receiver":
             jump start_phone_call
 
 label start_phone_call:
@@ -86,8 +92,11 @@ label start_phone_call:
     "You place down the phone gently, as if you’re afraid of waking someone up."
     
     scene bg windphone   
+    play music2 "audio/snowamb.mp3"
+    play sound "audio/door-open.mp3"
     "You inhale and you step outside, the cold mountain air fills your lungs."
     "As you exit the booth you hear a mechanical click."
+    play sound "audio/shutter.mp3"
     show cori with dissolve
     "There's a man taking photos outside. He doesn't look dressed for this weather but seems unbothered by it." 
     "Your eyes are drawn to a pink hue from his pocket. You see a flower, the same flower from inside the phone booth."
@@ -156,37 +165,46 @@ label start_phone_call:
     default photo_flower = False
 
     label take_photo:
+        hide cori with dissolve
         menu:
             "Look at the trees" if not photo_trees:
                 $ photo_trees = True
                 "Most of the trees are barren, but a few stubborn leaves cling to the branches, their colors faded but still visible against the snow."
                 "From where you're standing, the sun is just peeking through the branches, creating a soft glow that illuminates the snow and casts long shadows on the ground."
-                "You take a photo of the snow-covered trees, the branches creating intricate patterns against the white backdrop."
+                "There is a pine tree nearby, its needles a vibrant green that stands out against the white snow. The contrast between the green and white creates a striking visual effect"
+                play sound "audio/shutter.mp3"
 
+                "You take a photo of the snow-covered trees, the branches creating intricate patterns against the white backdrop."
+                show cori with dissolve
                 cori "The trees are my favorite part of this path, they look so different in every season. I love how the snow clings to the branches, it makes them look like they're made of glass."
                 jump take_photo
 
             "Look at the man" if not photo_cori:
                 $ photo_cori = True
+                show cori with dissolve
                 "You look at the man. The morning light casts a soft flow on his face."
                 cori "You want to take a photo of me? I can't promise it'll look good, but go ahead."
-                "You line up the man's figure in the viewfinder, adjusting the settings to capture the soft morning light on his face. You take a photo."
+                "You line up the man's figure in the viewfinder, adjusting the settings to capture the soft morning light on his face."
+                play sound "audio/shutter.mp3"
+                "You take a photo."
                 "It seems the lens flare has blocked out his face."
                 jump take_photo
 
             "Look at the flower" if not photo_flower:
                 $ photo_flower = True
+                show cori with dissolve
                 "You look at the flower in his pocket, once again drawn to its vibrant pink color."
                 "The man notices."
                 "He takes the flower out of his pocket and holds it towards you."
                 "You gently take the flower from him, his fingers are soft against yours, like a daft of air."
+                play sound "audio/shutter.mp3"
                 "You take a photo of the flower, the vibrant pink color contrasting against the snow."
-
+                cori "You can have the flower, I have plenty more at home."
                 jump take_photo
 
-            "That's enough photos for now":
+            "That's enough photos for now" if photo_trees and photo_cori and photo_flower:
                 pass   
-    
+    cori ""
     u "I shouldn't keep you here any longer, I'm sure someone is waiting for your call."
     cori "Alright then, PLAYERNAME, I'll see you again, soon."
     "The two of you bid your farewells"
