@@ -7,8 +7,11 @@ default saw_phone = False
 label start:
 
     $ player_name = renpy.input("What is your name?", length=32)
-    $ player_name = player_name.strip()  # Remove leading/trailing whitespace
-    
+    $ player_name = player_name.strip()  
+
+    if player_name == "":
+        $ player_name = "March"
+
     scene black with fade
     
     centered "Today is the first snowfall of this year."
@@ -19,21 +22,23 @@ label start:
     
     #play music "audio/snowpath2.mp3" 
     play music2 "audio/snowamb.mp3" 
-    play sound "audio/snow_footsteps.mp3"  
+    play sound "audio/snow_footsteps.mp3" 
+
     "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
     "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
-    "The air is crisp and still, carrying the faint scent of pine and snow. "
+    "The air is crisp and still, carrying the faint scent of pine and snow."
     "You can see your breath in the cold air as you walk, each step crunching on the ground."
     "You keep your eyes on the ground, as if facing the light would blind you." #Even if the light is weak, you feel weaker."
-    "This is your second year visiting the wind phone-- a disconnected phone booth out in the woods."
+    "This is your second year visiting the wind phone; a disconnected phone booth out in the woods."
     "Some say the phone carries on your messages on the wind, to loved ones who have passed on."
     "But truthfully, it didn't matter if the phone worked or not."
     "The one way conversations and quiet walks through the snow were what you needed."
     
     scene bg windphone
     
-    "The cold nips at your skin as you approach the familiar weathered booth."
-    "Your gloved hand reaches for the handle."
+    "The cold nips at your skin."
+    "You approach the familiar weathered booth."
+    "Your gloved hand reaches for the metalhandle."
 
     stop sound
     stop music2
@@ -41,7 +46,7 @@ label start:
 
     scene bg boothinterior
 
-    "The glass walls block out the wind, its a bit warmer inside."
+    "The glass walls shelter you from the wind, its a bit warmer inside."
     "It seems that previous visitors have left some items behind."
 
     jump booth_examination
@@ -81,7 +86,7 @@ label start_phone_call:
     u "Hi, Dad."
     "You brush away a stray snow flake off your coat, watching it melt into the fabric."
     u "It’s been snowing the entire night. You always said the first snow was the hardest to light. Too much bounce, or whatever it was..."
-    "I’m back at the house. Mom’s okay. She’s finally started moving your things into the spare room. All those heavy black boxes you used to lug through airports... they’re just sitting in a stack now. I have to walk past them to get to the bathroom."
+    "I’m back at the house. Mom’s okay. She’s finally started moving your things into the spare room. All those heavy black boxes you used to lug through airports... they’re just sitting in a stack now.  I have to walk past them to get to the bathroom."
     "It’s a lot of black plastic. I haven’t opened them. I told her I’d sell the rigs, but I just end up staring at the latches."
     "You gaze at the photographs and swallow thickly."
     "The object is so mundane yet it stirs something inside you, it feels uncomfortale." #edit
