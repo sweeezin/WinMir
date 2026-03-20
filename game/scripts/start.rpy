@@ -433,8 +433,53 @@ label start_phone_call:
     u "Thought it would be nice, nice he was the one who taught me all about it."
     u "I continued through summer and fall."
     u "But when the snow came, my father had a moment of clarity, only to do something so stupid."
-    u "He committed suicide that winter."
+    u "He committed suicide that winter, and I never saw reason to finish the collection."
     "Theres a thick silence between the two of you."
     u "That's why I wanted to give them back to you."
     "Cori gazes out into the water."
     cori "Returning them to me, it's not just about the photographs is it?"
+    "He pauses."
+    cori "I'll take them today, but I want you to promise me something."
+    "He grasps the photographs from your hands."
+    cori "Tomorrow, before the dawn, I want you to finish that collection."
+    cori "I don't care if you never touch a camera again."
+    cori "I'll be there too, wait for me at the windphone."
+    "You pause and think."
+    "Maybe this will finally be the end."
+
+    scene black with fade
+
+    centered "The camera lens stares into your own, taunting you."
+    centered "This time you taunt it back."
+
+    "You check your phone, it's 6:17am."
+    "Theres no reason to stay in bed anymore."
+    "You put on your coat and boots, swing the camera strap around your neck, and step outside into the cold morning air."
+    scene bg snowpath with fade
+    "The sun hasn't risen yet, its still dark outside, it looks just like the middle of the night."
+    "You walk towards a familiar path."
+    "The cold air fills your lungs, you leave fresh footsteps in the snow as you walk."
+    "There's no one ahead."
+    scene bg windphone with fade
+    "The cold nips at your skin."
+    "You approach the familiar weathered booth."
+    "It's a bit cold, so you seek shelter in the booth."
+    "Your gloved hand reaches for the metalhandle."
+
+    play sound "audio/door-open.mp3"
+
+    scene bg boothinterior
+
+    "The glass walls shelter you from the wind, its a bit warmer inside."
+    "You hold your coat a bit tighter, blowing air into your cupped hands."
+    pause 3.0
+    #PLAY SOUND EFFECT RING
+    "The phone rings."
+    pause 3.0
+    "Tentatively, you pick up the phone and hold it up to your ear."
+
+    cori "Hey, [player_name]."
+    "It is, unmistakeably Cori."
+    cori "Ahm, sorry this is a recorded message so I won't be able to hear you."
+    cori "I'm really sorry. I really thought I had more time."
+    
