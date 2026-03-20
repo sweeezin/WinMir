@@ -42,6 +42,7 @@ label start:
     "Your gloved hand reaches for the metalhandle."
 
     stop audio
+    
     stop music2 fadeout 3.0
     stop music fadeout 5.0
 
@@ -472,14 +473,96 @@ label start_phone_call:
 
     "The glass walls shelter you from the wind, its a bit warmer inside."
     "You hold your coat a bit tighter, blowing air into your cupped hands."
-    pause 3.0
+    "It seems like previous visitors have left some things behind."
+
+    jump phone_booth_2
+
+
+    default saw_photos2 = False
+    default saw_flowers2 = False
+    
+    label phone_booth_2:
+        menu:
+            "Photos" if not saw_photos2:
+                $ saw_photos2 = True
+                "Printed photos of a pine tree, a cyclamen flower, and a phone booth have been left here. They seem familiar."
+                jump phone_booth_2
+
+            "Flowers" if not saw_flowers2:
+                $ saw_flowers2 = True
+                "Some has left a bundle of cyclamens behind, they're fresh."
+                jump phone_booth_2
+
+            "Leave" if saw_photos2 and saw_flowers2:
+                jump start_phone_call_2
+
+
+
+    label start_phone_call_2:
     #PLAY SOUND EFFECT RING
+
+    
     "The phone rings."
+    "It's noise is out of place against the peaceful silence."
     pause 3.0
     "Tentatively, you pick up the phone and hold it up to your ear."
 
     cori "Hey, [player_name]."
-    "It is, unmistakeably Cori."
+    "It's Cori."
     cori "Ahm, sorry this is a recorded message so I won't be able to hear you."
-    cori "I'm really sorry. I really thought I had more time."
-    
+    "You hear him take a breath"
+    cori "Remeber when you asked me, why I take photographs?"
+    cori "I told you it was to make reality more bearable."
+    cori "This is my reality."
+    cori "I'm sure you've already figured that much out."
+    cori "I can't interact with your world anymore."
+    cori "I stayed for as long as I could, I thought I had more time though."
+    cori "I lingered, trying to desperately grab on to bits of my old life."
+    "He scoffs."
+    cori "I mean, how could I not? Have you seen how beautiful it is?"
+    cori "At first, I couldn't understand your perspective at all, how could someone be so scared of looking back at the past?"
+    cori "I realized we were both just viewing it as an excuse to not move forward."
+    "Theres a long pause."
+    cori "Thanks, [player_name]. I wish we would've met earlier."
+    cori "Had more time to talk, to take photos, to explore."
+    cori "I really enojoyed our little interactions, they're special to me."
+    "There's another long pause."
+    cori "But winter doesn't last forever, neither does the blue hour, right?"
+    cori "You should hurry, go get that shot."
+    cori "At the end will be a spring with new beginnings."
+    "The line goes dead."
+
+    scene black with fade
+    centered "You're running."
+    centered "Against the snow, against time."
+    centered "Your camera thumbs against your core."
+    centered "You're wearing booths but they do little against the cold."
+
+    scene summit with fade
+    "The sun hasn't risen yet."
+    "The city can be seen in the distance, its dyed in a vivid blue, its lights twinkling as the sun rises behind it, its covered in a thin mist."
+    u "This is perfect."
+    "You say to yourself."
+    "You fidget with your camera."
+    "You line the shot up."
+    "And click the shutter."
+    pause 3.0
+
+    centered "insert pic of a very beautiful shot"
+    centered "uhhh credits yuh uyh hi robert"
+    centered "epilouge."
+
+    scene bg windphone with fade 
+    "It's early spring now."
+    "The world is awakening from its winter slumber."
+    "The bushes are budding with new life."
+    "In this season you like to look for birds to photograph."
+    "You crouch down and peer through the viewfinder."
+    pause 2.0
+    show corisis with dissolve
+    cs "Eep!"
+    cs "Oh, is that a person?"
+    cs "I didn't mean to bump into"
+
+
+

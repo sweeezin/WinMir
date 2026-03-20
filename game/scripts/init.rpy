@@ -7,6 +7,7 @@ init python:
 define narrator = Character(None, callback=text_sounds)
 define cori = Character("Cori", callback=text_sounds)
 define u = Character("You", callback=text_sounds)
+define cs = Character("Girl", callback=text_sounds)
 
 default preferences.text_cps = 25
 image bg snowpath = "images/bg/snowpath.png"
