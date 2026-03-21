@@ -9,6 +9,7 @@ define cori = Character("Cori", callback=text_sounds)
 define u = Character("You", callback=text_sounds)
 define cs = Character("Girl", callback=text_sounds)
 define d = Character("Dad", callback=text_sounds)
+define m = Character("Mom", callback=text_sounds)
 
 default preferences.text_cps = 20
 image bg snowpath = "images/bg/snowpath.png"

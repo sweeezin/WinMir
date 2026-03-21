@@ -105,16 +105,20 @@ label booth_examination:
 
             $ saw_flowers = True
 
-            "Someone has left a bundle of flowers behind. You don't recognize the species. They are a bit wilted."
+            "Someone has left a bundle of flowers behind. They're petals are a soft pink.You don't recognize the species. They are a bit wilted."
             
             jump booth_examination
 
         "Phone" if not saw_phone:
+
             $ saw_phone = True
+
             "It feels heavy and cold. It hasn't seen a dial tone in years."
+
             jump booth_examination
 
         "Pick up the receiver" if saw_photos and saw_flowers and saw_phone:
+            
             jump start_phone_call
 
 label start_phone_call:
