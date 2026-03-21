@@ -1,76 +1,112 @@
 
 
 default saw_photos = False
+
 default saw_flowers = False
+
 default saw_phone = False
 
 label start:
 
     $ player_name = renpy.input("What is your name?", length=32)
+
     $ player_name = player_name.strip()  
 
     if player_name == "":
+
         $ player_name = "March"
 
     scene black with fade
     
     centered "Today is the first snowfall of this year."
 
+    centered "[player_name], did I ever tell you?"
+
+    centered "Winter in my favorite season."
+
     $ snow_on = True
     
-    #centered "It's my second time spending it without you."
-    
     play music "audio/lofi1.mp3" fadein 2.0
+
     play music2 "audio/snowamb.mp3" 
+
     play audio "audio/snow_footsteps.mp3" loop volume 0.8
+
     scene bg snowpath with fade 
 
     "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
-    "During winter, all the animals hide, leaving behind a quiet white landscape where it seems you are the only one awake."
-    "The air is crisp and still, carrying the faint scent of pine and snow."
+
+    "It's quiet, maybe too quiet for you."
+
+    "During this time of year, most the animals hide, it seems as if you are the only one awake."
+
+    "The morning air is crisp and still, you smell the faint scent of pine and snow."
+
+    "The cold bites at your face. Snowflakes stick to your coat."
+
     "You can see your breath in the cold air as you walk, each step crunching on the ground."
-    "You keep your eyes on the ground, as if facing the light would blind you." #Even if the light is weak, you feel weaker."
-    "This is your second year visiting the wind phone; a disconnected phone booth out in the woods."
-    "Some say the phone carries on your messages on the wind, to loved ones who have passed on."
-    "But truthfully, it didn't matter if the phone worked or not."
-    "The one way conversations and quiet walks through the snow were what you needed."
-    
+
+    "You keep your eyes focused on the ground ahead, as if facing the light would blind you."
+
+    "You drag your feet."
+
     scene bg windphone
+
+    "Your eyes fall on the wind phone, a disconnected phone booth here in the woods."
+
+    "It's an unlikely shelter here in the woods."
+
+    "You've been returning here every winter, since you were a child."
+
+    "Some say the phone carries on your messages on the wind, to loved ones who have passed on."
+
+    "But truthfully, it didn't matter if the phone worked or not."
+
+    "You found solace in the one way conversations."
     
     "The cold nips at your skin."
-    "You approach the familiar weathered booth."
-    "Your gloved hand reaches for the metalhandle."
 
-    stop audio
+    "You approach the familiar weathered booth."
+
+    "Your gloved hand reaches for the metal handle."
+
+    stop audio #the footsteps dont stop LMAFO
     
     stop music2 fadeout 3.0
+
     stop music fadeout 5.0
 
     play sound "audio/door-open.mp3"
 
     scene bg boothinterior
 
-    "The glass walls shelter you from the wind, its a bit warmer inside."
-    "It seems that previous visitors have left some items behind."
+    "It's glass walls shelter you from the wind."
+
+    "It seems some previous visitors have left some items behind."
 
     jump booth_examination
 
 
 label booth_examination:
+
     scene bg boothinterior 
     
     menu:
 
-        #"It seems that previous visitors have left some items behind."
-
         "Photos" if not saw_photos:
+
             $ saw_photos = True
+
             "Printed photos of various subjects have been placed here. Sunsets, beaches, wildlife, and food. It seems whoever took these had a great understanding of photography."
+            
             jump booth_examination
 
         "Flowers" if not saw_flowers:
+
             $ saw_flowers = True
+
             "Someone has left a bundle of flowers behind. You don't recognize the species. They are a bit wilted."
+            
             jump booth_examination
 
         "Phone" if not saw_phone:
@@ -83,68 +119,152 @@ label booth_examination:
 
 label start_phone_call:
 
-    "Tentatively, you pick up the phone and hold it up to your ear."
+    "You pick up the phone and hold it up to your ear."
+
     "..."
-    "You know that no one will pick up, but you still hope for a response."
+
     pause 2.0
-    u "Hi, Dad."
+
+    u "Hi... Dad."
+
     "You brush away a stray snow flake off your coat, watching it melt into the fabric."
-    u "It’s been snowing the entire night. You always said the first snow was the hardest to light. Too much bounce, or whatever it was..."
-    "I’m back at the house. Mom’s okay. She’s finally started moving your things into the spare room. All those heavy black boxes you used to lug through airports... they’re just sitting in a stack now.  I have to walk past them to get to the bathroom."
-    "It’s a lot of black plastic. I haven’t opened them. I told her I’d sell the rigs, but I just end up staring at the latches."
-    "You gaze at the photographs and swallow thickly."
-    "The object is so mundane yet it stirs something inside you, it feels uncomfortale." #edit
-    u "Someone left some photographs here. I feel like the composition is a little amateur but you would probably have a better critique." 
-    "You think of how your father always critiqued your work."
+
+    u "It’s been snowing the entire night. You always said the first snow was the hardest to light."
+
+    u "Too much bounce, or whatever it was..."
+
+    u "I moved back with Mom. She’s doing okay. She’s finally started moving your things into the spare room." 
+
+    u "Those heavy black boxes you used to lug through airports, they’re just sitting in a stack now."
+
+    u "I have to walk past them to get to the bathroom."
+
+    u "Even when you're dead you take up so much space."
+
+    "You scoff."
+
+    u "It’s a lot of black plastic. I haven’t opened them. I told her I’d sell what we could, but I just end up staring at the latches."
+
+    u "You gaze at the photographs and swallow thickly."
+
+    u "It makes your skin itch." 
+
+    u "Someone left some photographs here. I feel like the composition is a little amateur but you would probably have a better critique."
+
+    "Your father always critiqued your work."
+
     "\"You have symmetry but you have no subject. The path and trees lead the eyes directly to the left center but theres nothing there.\""
+
     "\"Next time shoot with more exposure to increase contrast between the trees and horizon.\""
+
     "Back when you were younger you often got offended. It hurt your ego. You'd regret showing him at all."
+
     "But as you fell more and more in love with photography, you realized his knowledge was inexpendable."
+
     "It felt as if you couldn't improve anymore if he wasn't here. You'd never be able to reach his level of exception."
+
     u "Anyway, it's really cold out here, I’ll talk to you again soon, ok?"
-    "Byebye."
-    "You place down the phone gently, as if you’re afraid of waking someone up."
+
+    u "Bye."
+
+    "You place down the phone gently."
     
     scene bg windphone   
+
     play music2 "audio/snowamb.mp3"
+
     play sound "audio/door-open.mp3"
+
     "You inhale as you step outside, the cold mountain air fills your lungs."
+
     "As you exit the booth you hear a mechanical click."
+
     play sound "audio/shutter.mp3"
+
     show cori with dissolve
-    "There's a man taking photos outside. He doesn't look dressed for this weather but seems unbothered by it." 
-    "Your eyes are drawn to a pink hue from his pocket. You see a flower, the same flower from inside the phone booth."
+
+    "Someone's standing there, a few steps away."
+
+    "Unlike you, he doesn't look dressed for the cold."
+
+    "No scarf, no gloves, no hat." 
+
+    "There's a flash of pink from his pocket."
+
+    "It's a flower. The same one from inside the phone booth."
+
     pause 2.0
-    "He notices you and traces your gaze."
+
+    "He lowers his camera when he notices you looking."
+
+    "Slowly, he traces your gaze."
+
     pause 2.0
+
     cori "Cyclamens."
-    "He smiles."
+
+    "You blink."
+
     u "Huh?"
+
+    cori "The flower."
+
     cori "I grow them in my garden, unlike other flowers, they bloom in the winter."
+
     "He puts his camera down, letting it hang from his neck, and steps towards you."
-    cori "They're my favorite cause the leaves are heart-shaped"
+
+    cori "They're my favorite cause the leaves are heart-shaped."
+
     "His voice is soft against the morning ambience."
+
+    "You glance at his camera."
+
     u "I assume those photographs in the booth are also yours?"
+
     "His eyes flicker to yours and he chuckles slightly."
-    cori "I recently picked it up. They're quiet amateur aren't they? I didn't expect anyone to see them, people rarely come here nowadays."
+
+    cori "I recently picked it up. They're quiet amateur aren't they? I didn't expect anyone to see them, people rarely come here it seems."
+
     "You pause for a moment, wondering how to respond."
-    u "Photography is subjective anyway, I'm sure whoever you took them for will appreciate them." #edit
+
+    u "They're not bad." 
+
     "He grins."
-    cori "I hope you're right, she was blind but she loved exploration-- my sister. We would walk this path all the time." #"she could see"
+
+    cori "That's generous."
+
+    u "Photographs don't need to be good to be appreciated."
+
+    cori "You're probably right."
+
+    cori "They were for my sister."
+
+    cori "She couldn't see but she loved exploration." 
+
+    cori "We use to walk this path all the time." 
+
     cori "Back then I had to lead her, but we've walked this path so many times she could probably do it all by herself now."
-    "His somber tone when he reminisces about his sister is familiar." #edi t
-    u "You must miss her a lot. It sounds like she was lucky to have such a great guide."
-    #cori "Hmm."
+
+    "His tone is casual."
+
+    "Listening to the stranger reminisce, it feels familiar."
+
+    u "You must miss her a lot. It sounds like she was lucky to have you as a guide."
+
     cori "I think it was the other way around, at that time at least."
-    cori "I'd take my camera on every walk, she'd get annoyed with me taking so much time taking photos, but she was always so interested in what they looked like."
+
+    cori "She got annoyed with me taking so much time taking photos, but she was always so interested in what they looked like."
+
     cori "I'm no poet or anything but I'd try my best to describe them."
+
     "You shift your weight, your boots crunching loudly in the silence. It’s an awkward bit of vulnerability from a stranger."
-    u "I know how that is. My dad was the same way. "
+
+    u "I know how that is. My dad was the same way."
     u "When I was a kid I felt like he loved the camera more than me."
     "You scoff."
     cori "Was he good at least? With the camera."
     "You gently fidget with the edge of your sleeve between your fingertips."
-    "You remeber watching his films and looking at his photos."
+    "You remember watching his films and looking at his photos."
     "He wasn't just good, he was exceptional-- with storytelling, composition, and technical skill."
     "You loved his work, of course. But you also found it incredibly annoying."
     u "He was the kind of good that made you like nothing you ever made would amount to his work."
@@ -326,7 +446,7 @@ label start_phone_call:
     cori "I agree with you, that no one would ever be able to capture a moment perfectly."
     cori "You'll never be able to experience a moment twice, no matter how many angles, or frames you take of it."
     cori "But, the point of photography isn't to capture a moment perfectly, but to capture it imperfectly."
-    cori "To say, you were here, you experienced this, and this is how you want to remeber it."
+    cori "To say, you were here, you experienced this, and this is how you want to remember it."
     cori "Even if a photo is flawed and only captures a slice of a moment, it still holds value, because it represents your perspective, your memory, and your experience of that moment."
     u "..."
     u "I see where you're coming from."
@@ -380,7 +500,7 @@ label start_phone_call:
     "Your house had plenty of space for them. Binders, folders, albums."
     "You drag yourself out of the bed, stumbling through the hallways filled with black boxes and cases."
     "Most of these were your father's, but you knew your work were buried somewhere in there too."
-    "You dig through the boxes of tapes, photos, and pills, looking for a place to store the photographs."
+    "You dig through the boxes of tapes, photos, looking for a place to store the photographs."
     "Your hand lays on a black binder."
     "It's familiar."
     "You pull it out, and lay it open on the dimly lit hallway."
@@ -392,8 +512,12 @@ label start_phone_call:
     "The fourth one is missing."
     "The three photographs are unmistakably of the blue hour, on that very mountain."
     "One of spring, one of summer, one of fall."
+    "The one of winter is missing."
     "Your eyes flicker to that old camera your father gifted you."
-    "It's lens stares into your own, taunting you."
+    "It's lens stares into you, taunting you."
+
+    centered "People confuse feeling something after a long time with feeling it for the first time."
+    centered ""
 
     centered "Another week has passed, that flower has wilted."
     centered "You're walking home, the sun is setting, the snow hasn't melted yet."
@@ -409,7 +533,7 @@ label start_phone_call:
     u "I've been looking for you."
     "He tilts his head slightly."
     u "I... I wanted to give those photographs back to you."
-    u "I remebered something important."
+    u "I remembered something important."
     u "I'm sorry but, I can't keep them."
     "Cori's expression turns neutral."
     cori "It looks like my convincing didn't work then, huh?"
@@ -511,7 +635,7 @@ label start_phone_call:
     "It's Cori."
     cori "Ahm, sorry this is a recorded message so I won't be able to hear you."
     "You hear him take a breath"
-    cori "Remeber when you asked me, why I take photographs?"
+    cori "remember when you asked me, why I take photographs?"
     cori "I told you it was to make reality more bearable."
     cori "This is my reality."
     cori "I'm sure you've already figured that much out."
