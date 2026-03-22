@@ -30,7 +30,7 @@ label start:
 
     play music2 "audio/snowamb.mp3" 
 
-    play audio "audio/snow_footsteps.mp3" loop volume 0.8
+    play audio "audio/snow_footsteps.mp3" volume 0.8
 
     scene bg snowpath with fade 
 
@@ -386,6 +386,9 @@ label start_phone_call:
     "You look down at the cyclamen in your hand, its petals a defiant pink against the grey morning scene."
     "It won't last forever, but you know the next winter its kin will bloom again, with the same resilient shade of pink."
 
+    ##########################################################
+    #DAY 2
+    ##########################################################
 
     scene black with fade
     centered "A week passes, the flower turns dull."
@@ -499,32 +502,127 @@ label start_phone_call:
     "He steps closer to it anyway, running a hand along the cold metal."
     cori "You ever done it before?"
     cori "Train-hopping."
-    "The train seemed slower further away, but as you get closer it seems like its going pretty fast."
+    "Up close, it’s moving faster than it looked."
+    "The wheels grind louder. The gaps between cars don’t seem so forgiving."
+
     u "No, I haven't."
     "Cori cracks a mischievous grin."
-    cori "Wanna see where this train is going?"
+    cori "Want to?"
     u "You're not serious."
     cori "I am so serious."
     "The train seems to be picking up speed."
     u "It's going too fast for us to get on."
+    cori "I can make it work..."
+    u "That’s not convincing."
+    "He peers into your eyes."
     cori "I can make it work."
-    u "I'm not worried about that."
-    "He glances at you."
-    cori "I can make it work."
+    "You stare back at him."
     cori "Close your eyes."
     u "What? Are you gonna perform a magic trick?"
     cori "Do you trust me?"
+    
     u "I..."
+    "You hesitate."
+
     "You close your eyes."
     "First, you feel him loop his camera around your neck."
     cori "Hold on to this for me."
-    "You feel a force scoop you up."
-    "You're being held by warm arms."
-    "Is this guy--? Did he just--? Get on a moving train while carrying another person?"
+    pause 1.0
+    "Then suddenly--"
+    "Your feet leave the ground."
+    "An arm around your back. Another under your knees."
+    "You don’t have time to react."
+    "The sound of metal gets louder. Closer."
+
+    pause 0.5
+    "Your weight drops again."
+
     "When you open your eyes, you're already on the train."
     cori "Abracadabra!"
+    pause 0.5
+    u "…You could’ve warned me."
 
-    cori "Come on."
+    cori "Would you have said yes?"
+
+    "You don’t answer."
+
+    "You cling to the railing and look out."
+
+    "The ground is already sliding past outside."
+
+    "The train rocks beneath your feet."
+
+    "Not violently. Just enough to remind you you’re not standing still."
+
+    "Wind cuts through the open gaps."
+
+    "Your heartbeat quickens with the speed."
+
+    "The ground slides past in long streaks of white and green."
+
+    "Trees. Fences. The occasional pole."
+
+    "Nothing stays long enough to look at properly."
+
+    "A hand presses lightly against the side of your head."
+
+    "He tilts your gaze upward."
+
+    cori "Don’t look right at it."
+
+    cori "Pick something farther out."
+
+    "He lets go."
+
+    "Leans beside you, looking out past everything."
+
+    cori "Less dizzy that way."
+
+    pause 1.5
+
+    "You follow his line of sight."
+
+    "The horizon holds still longer than everything else."
+
+    "Or at least it feels like it does."
+
+    cori "Looks like we’re heading south."
+
+    "You hum, not really checking."
+
+    pause 1.5
+
+    "You try to picture it—"
+
+    "where the tracks go."
+
+    "Past the trees. Past whatever comes after."
+
+    "Snow thinning out. Colors coming back."
+
+    "You don’t know if that’s true."
+
+    u "It's a strange feeling."
+
+    u "Standing still but watching everything whiz by."
+
+    "Cori hums in agreement."
+    
+    u "It makes me think if humans are meant to travel so fast at all."
+
+    cori "If you ask someone from the 1800s they'll tell you women weren't meant to travel on trains."
+    cori "Their uteruses would fly out or something."
+    
+    "You blink."
+    "The absurdity of his comment makes you laugh."
+    "The movement makes you notice the camera around you neck."
+    "You didn't mean to be holding it on for so long."
+
+
+
+
+
+    
 
     cori "I guess we should head back. I bet you're tired."
     "The restless night has caught up with you, you feel yourself getting more fatigued."
