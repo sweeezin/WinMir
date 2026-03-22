@@ -8,6 +8,8 @@ default saw_phone = False
 
 label start:
 
+    show coripose1
+
     $ player_name = renpy.input("What is your name?", length=32)
 
     $ player_name = player_name.strip()  
@@ -118,7 +120,7 @@ label booth_examination:
             jump booth_examination
 
         "Pick up the receiver" if saw_photos and saw_flowers and saw_phone:
-            
+
             jump start_phone_call
 
 label start_phone_call:
