@@ -397,5 +397,5 @@ label day2:
     "You watch it for a moment before pouring it out."
 
     "It disappears too quickly."
-    jump label day3
+    jump day3
 

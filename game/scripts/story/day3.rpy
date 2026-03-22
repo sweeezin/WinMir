@@ -163,7 +163,7 @@ label day3:
     centered "insert pic of a very beautiful shot"
     centered "uhhh credits yuh uyh hi robert"
 
-        centered "epilouge."
+    centered "epilouge."
 
     scene bg windphone with fade 
     "It's early spring now."
