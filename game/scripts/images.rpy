@@ -5,17 +5,50 @@ image bg windphone = "images/bg/windphone.png"
 image bg boothinterior = "images/bg/boothinterior.png"
 
 #Cori
-layeredimage cori pose1:
+layeredimage coripose1:
 
-    always "cori_pose1_base.png"
+    always "images/cori/pose1/cori_pose1_base.png"
     
     group light:
+        attribute light:
+            "images/cori/pose1/cori_light.png" 
+    
+    group blush:
+        attribute blush:
+            "images/cori/pose1/cori_blush.png"
+    
+    group flowers:
+        attribute flowers:
+            "images/cori/pose1/cori_flowers.png"
+
+    group camera:
+        attribute camera default:
+            "images/cori/pose1/cori_camera.png"
 
     group eyes:
+        attribute direct default:
+            "images/cori/pose1/cori_eyes_direct.png"
+        attribute side:
+            "images/cori/pose1/cori_eyes_side.png"
 
-    group eyebrows:
+    group eyebrows: 
+        attribute worried:
+            "images/cori/pose1/cori_eyebrows_worried.png"
+        attribute neutral default:
+            "images/cori/pose1/cori_eyebrows_neutral.png"
+        attribute concerned:
+            "images/cori/pose1/cori_eyebrows_concerned.png"
 
     group mouth:
+        attribute neutral default:
+            "images/cori/pose1/cori_mouth_neutral.png"
+        attribute closedsmile:
+            "images/cori/pose1/cori_mouth_closedsmile.png"
+        attribute frown:
+            "images/cori/pose1/cori_mouth_frown.png"
+        attribute teethsmile:
+            "images/cori/pose1/cori_mouth_teethsmile.png"
+        attribute open:
+            "images/cori/pose1/cori_mouth_open.png"
 
-    group blush:
 
