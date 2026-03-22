@@ -105,7 +105,7 @@ label booth_examination:
 
             $ saw_flowers = True
 
-            "Someone has left a bundle of flowers behind. They're petals are a soft pink.You don't recognize the species. They are a bit wilted."
+            "Someone has left a bundle of flowers behind. Their petals are a soft pink. You don't recognize the species. They are a bit wilted."
             
             jump booth_examination
 
@@ -211,7 +211,7 @@ label start_phone_call:
 
     u "Huh?"
 
-    cori "The flower."
+    cori "The flowers."
 
     cori "I grow them in my garden, unlike other flowers, they bloom in the winter."
 
@@ -475,13 +475,57 @@ label start_phone_call:
     "The two of you sit on the bench in comfortable silence, watching the sunrise and taking in the view."
     cori "I think the snow reflecting the blue light makes the blue hour in winter even more special."
     cori "That's why winter is my favorite season."
+    "It sounds familiar."
     u "I prefer spring."
-    u "I like the feeling of new beginnings, and the way the world seems to come back to life after winter."
+    u "Everything seems to come back to life after winter."
     cori "Thats poetic and optimistic of you, I like it."
     "The sun continues to rise, the sky gradually brightening with a spectrum of colors."
     pause 2.0
     "Eventually, the sun is fully up, and the city is bathed in warm golden light."
     "Cori stands up and stretches."
+    cori "Hey, why don't we take a different path down this time?"
+    u "Different how?"
+
+    "He doesn’t answer right away."
+
+    "Just nods past you, toward the lower part of the trail."
+    "You hesitate, then follow."
+    "The path thins out the further you go."
+
+    "Snow gives way to gravel, then to rusted rails half-buried in ice."
+    "A freight train lugs idly on the tracks ahead."
+
+    cori "Its not moving fast yet."
+    "He steps closer to it anyway, running a hand along the cold metal."
+    cori "You ever done it before?"
+    cori "Train-hopping."
+    "The train seemed slower further away, but as you get closer it seems like its going pretty fast."
+    u "No, I haven't."
+    "Cori cracks a mischievous grin."
+    cori "Wanna see where this train is going?"
+    u "You're not serious."
+    cori "I am so serious."
+    "The train seems to be picking up speed."
+    u "It's going too fast for us to get on."
+    cori "I can make it work."
+    u "I'm not worried about that."
+    "He glances at you."
+    cori "I can make it work."
+    cori "Close your eyes."
+    u "What? Are you gonna perform a magic trick?"
+    cori "Do you trust me?"
+    u "I..."
+    "You close your eyes."
+    "First, you feel him loop his camera around your neck."
+    cori "Hold on to this for me."
+    "You feel a force scoop you up."
+    "You're being held by warm arms."
+    "Is this guy? Did he just-- how does someone get on a moving train while carrying another person?"
+    "When you open your eyes, you're already on the train."
+    cori "Abracadabra!"
+
+    cori "Come on."
+
     cori "I guess we should head back. I bet you're tired."
     "The restless night has caught up with you, you feel yourself getting more fatigued."
     cori "Oh one more thing..."
@@ -516,12 +560,106 @@ label start_phone_call:
     "The fourth one is missing."
     "The three photographs are unmistakably of the blue hour, on that very mountain."
     "One of spring, one of summer, one of fall."
-    "The one of winter is missing."
+    "Winter is missing."
     "Your eyes flicker to that old camera your father gifted you."
     "It's lens stares into you, taunting you."
 
     centered "People confuse feeling something after a long time with feeling it for the first time."
-    centered ""
+    centered "Your eyes droop with fatigue."
+    "The water you've drawn in the basin has cooled."
+    "You soak the cloth in the water."
+    "His back is slouched forward, skin thinner than you remember."
+    d "It's cold."
+    u "I know, it'll be over in a second."
+    "You continue to wipe his back."
+    d "Did you finish your homework?"
+    "Your hand stills for a second."
+    u "Yeah. I finished it."
+    "He nods faintly, like he’s checking something off."
+    pause 2.0
+    d "You always leave it to the last minute."
+    "That’s not true."
+
+    "It never was."
+
+    "You don’t correct him."
+    pause 1.0
+
+    "You reach for the towel and start drying his back."
+
+    "Careful. Routine."
+
+    "He shifts under your hands."
+
+    d "…You cut your hair."
+
+    "You didn’t."
+
+    u "Yeah."
+
+    "He hums, satisfied with the answer."
+
+    pause 1.0
+
+    d "It suits you."
+
+    "You’ve never had this haircut."
+
+    pause 1.0
+
+    "You guide his arm through his sleeve."
+
+    "He resists for a second, then relaxes."
+
+    d "Your hands are cold."
+
+    u "Sorry."
+
+    d "It’s fine."
+
+    pause 1.0
+
+    "He looks down at his own hands like they belong to someone else."
+
+    d "When did these get so old?"
+
+    "You don’t answer."
+
+    pause 1.0
+
+    d "…Must’ve been working too much."
+
+    "He laughs quietly to himself."
+
+    "It doesn’t sound like a joke."
+
+    pause 2.0
+
+    "You pull his shirt back over his shoulders."
+
+    "Guide his arms through the sleeves."
+
+    "He doesn’t help."
+
+    "He used to."
+
+    "Smooth out the fabric like it matters."
+
+    d "Thank you."
+
+    "You nod."
+
+    u "Yeah."
+    "You just carry the basin to the sink."
+
+    "The water sloshes with each step."
+
+    "You watch it for a moment before pouring it out."
+
+    "It disappears too quickly."
+
+
+
 
     centered "Another week has passed, that flower has wilted."
     centered "You're walking home, the sun is setting, the snow hasn't melted yet."
@@ -529,6 +667,11 @@ label start_phone_call:
     "You've been looking for Cori."
     "Your intuition leads you to the beach."
     "There he is, lingering by the water."
+    "Rather, he's lingering in the water."
+    "His shoes are left on the shore, his pants are rolled up the his calf"
+    "He's walking where the waves crash onto the sand."
+    "His footsteps are light, almost transparent."
+    
     u "Cori!"
     "You call out to him."
     "He turns around, a surprised expression on his face."
@@ -540,6 +683,7 @@ label start_phone_call:
     u "I remembered something important."
     u "I'm sorry but, I can't keep them."
     "Cori's expression turns neutral."
+
     cori "It looks like my convincing didn't work then, huh?"
     "The two of you sit on a bench by the water."
     "Theres a long silence before you decide to speak."
@@ -687,7 +831,7 @@ label start_phone_call:
     "In this season you like to look for birds to photograph."
     "You crouch down and peer through the viewfinder."
     pause 2.0
-    show corisis with dissolve
+
     cs "Eep!"
     cs "Oh, is that a person?"
     cs "I didn't mean to bump into"
