@@ -3,6 +3,11 @@
 image bg snowpath = "images/bg/snowpath.png"
 image bg windphone = "images/bg/windphone.png"
 image bg boothinterior = "images/bg/boothinterior.png"
+image bg snowpath_night = "images/bg/snowpath_night.png"
+image bg windphone_night = "images/bg/windphone_night.png"
+image bg peak = "images/bg/peak.png"
+image bg peak_night = "images/bg/peak_night.png"
+image bg peak_day = "images/bg/peak_day.png"
 
 #Cori
 layeredimage coripose1:

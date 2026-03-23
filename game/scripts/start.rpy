@@ -24,7 +24,7 @@ label start:
 
     $ snow_on = True
     
-    play music "audio/lofi1.mp3" fadein 2.0 volume 0.8
+    play music "audio/lofi1.mp3" fadein 2.0 volume 0.7
 
     play music2 "audio/snowamb.mp3" 
 
@@ -187,25 +187,21 @@ label start_phone_call:
 
     "You inhale as you step outside, the cold mountain air fills your lungs."
 
-    "As you exit the booth you hear a mechanical click."
-
-    play sound "audio/shutter.mp3"
-
     show coripose1 light flowers side neutral with dissolve
 
-    "Someone's standing there, a few steps away."
+    "Someone's standing there, a few strides away."
 
     "Unlike you, he doesn't look dressed for the cold."
 
     "No scarf, no gloves, no hat." 
 
-    "There's a flash of pink from his pocket."
+    "Your eyes are drawn to a pink hue from his pocket."
 
     "It's a flower. The same one from inside the phone booth."
 
     pause 2.0
 
-    "He lowers his camera when he notices you looking."
+    "He turns towards you when he notices you looking."
 
     show coripose1 direct raised
 
@@ -214,9 +210,11 @@ label start_phone_call:
     pause 2.0
 
     show coripose1 open
-    cori "Cyclamens."
+
+    cori "They're called cyclamens."
 
     show coripose1 neutral
+
     "You blink."
 
     u "Huh?"
@@ -225,11 +223,13 @@ label start_phone_call:
 
     cori "The flowers."
 
-    cori "I grow them in my garden, unlike other flowers, they bloom in the winter."
+    cori "I grow them in my garden"
+    
+    cori "Unlike other flowers, they bloom in the winter."
 
     show coripose1 neutral
 
-    "He puts his camera down, letting it hang from his neck, and steps towards you."
+    "He steps towards you, closing the distance between you."
 
     show coripose1 open
 
@@ -249,7 +249,7 @@ label start_phone_call:
 
     show coripose1 worried open
 
-    cori "They're quiet amateur aren't they? I didn't expect anyone to see them, people rarely come here it seems."
+    cori "They're quite amateur aren't they? I didn't expect anyone to see them, people rarely come here it seems."
 
     show coripose1 closedsmile
 
@@ -267,15 +267,21 @@ label start_phone_call:
 
     show coripose1 neutral
 
-    u "Photographs don't need to be good to be appreciated."
+    u "Photos don't need to be good to be appreciated."
+
+    u "I mean…"
+
+    "You glance back at the booth."
+
+    u "People keep stuff like that for a reason, right?"
 
     show coripose1 side open
 
     pause 1.0
 
-    cori "You're probably right."
+    cori "Yea... You're probably right."
 
-    cori "I put them there for my sister."
+    cori "They're for my sister."
 
     cori "She couldn't see but she loved exploration." 
 
@@ -323,9 +329,11 @@ label start_phone_call:
 
     "You loved his work, of course. But you also found it incredibly frustrating."
 
-    u "He was the kind of good that made you like nothing you ever made would amount to his work."
+    "He made it look so effortless."
 
-    u "I think it comes with a cost though."
+    u "He was alright."
+
+    u "He did it for work."
 
     u "Sometimes it felt like it was all he ever did, like he was never in the same reality." 
 
@@ -339,6 +347,8 @@ label start_phone_call:
     
     show coripose1 neutral
 
+    "You glance at him, surprised by his response."
+
     u "Is that why you take photos? To make accept reality as it is?" 
 
     show coripose1 side
@@ -349,7 +359,7 @@ label start_phone_call:
 
     show coripose1 open
 
-    cori "I guess you could say that."
+    cori "Something like that."
 
     show coripose1 closedsmile
 
@@ -359,15 +369,17 @@ label start_phone_call:
 
     show coripose1 direct raised open
 
-    cori "What about you?"
+    cori "What about you? Do you take photos?"
 
     show coripose1 neutral
 
     u "Me?"
 
-    u "I don't take photos anymore really, I just like looking at them. The camera is so finicky, I don't have the patience for it."
+    u "No not really anymore, I just like looking at them. The camera is so finicky, I don't have the patience for it."
 
     show coripose1 open
+
+    "He looks at you with curiosity."
 
     cori "Is that so? Whens the last time you took a photo?"
 
@@ -383,7 +395,9 @@ label start_phone_call:
 
     u "It's been awhile."
     
-    show coripose1 open direct
+    show coripose1 direct teethsmile
+
+    "He cracks a smile"
 
     cori "How bout giving it another go now?"
 
@@ -439,7 +453,7 @@ label start_phone_call:
 
                 "You take a photo of the snow-covered pine tree."
 
-                show coripose1 light open with dissolve
+                show coripose1 light open flowers with dissolve
 
                 cori "The trees are my favorite part of this path, they look so different in every season. I love how the snow clings to the branches, it makes them look like they're made of glass."
 
@@ -449,7 +463,7 @@ label start_phone_call:
 
                 $ photo_cori = True
 
-                show coripose1 light closedsmile with dissolve
+                show coripose1 light closedsmile flowers with dissolve
 
                 "You look at the man. The morning light casts a soft flow on his face."
 
@@ -538,7 +552,7 @@ label start_phone_call:
 
     show coripose1 side 
 
-    cori "They are all symbols of resilience in bleak settings."
+    cori "They are all representations of resilience in bleak settings."
 
     show coripose1 closesmile
 
@@ -564,7 +578,7 @@ label start_phone_call:
 
     cori "So humble."
 
-    show coriposed1 neutral camera
+    show coripose1 neutral camera
 
     "You loop the camera strap off your neck and around your wrist and hand it back to him."
 
@@ -601,108 +615,269 @@ label start_phone_call:
     "You look down at the cyclamen in your hand, its petals a defiant pink against the grey morning scene."
     "It won't last forever, but you know the next winter its kin will bloom again, with the same resilient shade of pink."
 
-    return
-
     ##########################################################
     #DAY 2
     ##########################################################
 
     scene black with fade
+
     centered "A week passes, the flower turns dull."
+
     centered "..."
+
     centered "Another sleepless night."
 
     "What time is it now?"
+
     "You check your phone, 6:17 am."
+
     "Theres no use staying in bed anymore, you might as well go for a walk"
+
     "You put on your coat and boots, and step outside into the cold morning air."
 
-    scene bg snowpath with fade
+    scene bg snowpath_night with fade
+
     "The sun hasn't risen yet, its still dark outside, it almost looks like the middle of the night."
+
     "You find yourself walking towards a familiar path."
+
     "The cold air fills your lungs, you leave fresh footsteps in the snow as you walk."
-    "Theres a figure ahead."
-    show cori with dissolve
+
+    "The paths are empty except for one figure."
+
+    show coripose1 side norm neutral with dissolve
+
     "Only an eccentric photographer would be out here at this hour, you recognize him immediately."
-    cori "Oh hey, I didn't expect to see you again so soon."
+    
+    show coripose1 open direct raised
+
+    "He also notices you as your footsteps grow closer."
+
+    cori "Oh hey."
+
+    cori "It's good to see you again."
+
+    cori "Quite the early bird, aren't you?"
+
+    show coripose1 neutral
+
     "You notice hes carrying his camera again."
+
+    u "It's the opposite."
+
     u "I couldn't sleep, so I thought I'd go for a walk."
+
+    show coripose1 teethsmile
+
+    "You walk alongside him."
+
     cori "Are you also planning to see the sunrise?"
+
     u "I don't know, I just wanted to get out of the house for a bit."
-    "The two of you walk together."
-    cori "The sunrise is beautiful, but I think the time just before it is my favorite part."
-    u "You mean the blue hour?"
-    cori "Is that what it's called?"
-    #cori "You're so knowledgeable!"
-    u "It only happens for a brief time."
-    u "30 minutes give or take, but its truly a shame that the best part of the day is so short."
-    u "The blue happens because the sun is below the horizon, so the light has to pass through more of the atmosphere, scattering the shorter blue wavelengths."
-    cori "Wow, you really know your stuff."
-    "The two of you continue walking in silence for a bit."
-    cori "Sooo..."
-    cori "Did you end up takin up photography again?"
-    "You pause for a moment, thinking about the camera in your hands a week ago."
-    u "No, I haven't"
-    "Cori frowns slightly."
-    cori "You really seemed to enjoy it last time, I thought you might want to do it again."
-    cori "You really have a talent for it, I'd love to see what you could do, if you gave it a chance."
-    cori "If I'm not overstepping, can I ask if theres a reason?"
-    "You pause and think for a moment."
-    u "I guess... I just don't see a point to it."
-    cori "Is having fun not a point?"
-    u "It's not that."
-    u "It's just, I started photography because I wanted to capture memories."
-    u "Human memory is flawed at best, you could never remember the details of a moment perfectly, no matter how important it was to you."
-    u "I thought if I took a photo, I could preserve the memory of that moment, and look back on it whenever I wanted."
-    u "But even with a photo, I still forget things."
-    u "The smells, the sensations... A photo is just a flat image."
-    "You prefer it that way though."
-    "It's easier to not linger and reminisce on memories you could no longer return to."
-    "Even if the past was once important, the future holds more promises."
-    cori "Then, can I ask you another question? This one you don't have to answer, just think about it."
-    u "Alright."
-    cori "Why do you visit the wind phone?"
-    cori "I mean, we both know there's no one at the end of the line, so why do you keep coming back here?"
-    "Why do you keep coming back here?"
-    cori "You pick up the reciever anyway. Is there no point? Or is the point the attempt to connect, even if you know it won't work?"
-    "He pauses to take a breath."
-    cori "I think... photography is the same."
-    cori "I agree with you, that no one would ever be able to capture a moment perfectly."
-    cori "You'll never be able to experience a moment twice, no matter how many angles, or frames you take of it."
-    cori "But, the point of photography isn't to capture a moment perfectly, but to capture it imperfectly."
-    cori "To say, you were here, you experienced this, and this is how you want to remember it."
-    cori "Even if a photo is flawed and only captures a slice of a moment, it still holds value, because it represents your perspective, your memory, and your experience of that moment."
-    u "..."
-    u "I see where you're coming from."
-    u "I guess I just have a hard time accepting that."
-    u "I think I just prefer it that way."
-    u "The past can be a burden."
-    "The two of you continue walking until the summit of the path."
-    "The sun is just starting to rise, the sky is a gradient of pinks, purples, and blues."
-    "The city can be seen in the distance, its dyed in a vivid blue, its lights twinkling as the sun rises behind it, its covered in a thin mist."
-    cori "This is perfect."
-    cori "Even from this distance, you can see the city is still waking up."
-    cori "The streets are so empty, it almost looks like a ghost town."
-    cori "You know, in japanese folklore, they say that the blue hour is when the boundary between the living and the dead is thinnest."
-    cori "Would you be scared if you met a ghost right now?"
-    u "I think the view would keep me from being scared."
-    "Cori laughs."
-    cori "I guess you're right."
-    "Cori takes a photo of the city, the vivid blue hue makes it look otherworldly."
-    "You find a nearby bench, dust off the snow, and sit down, taking in the view."
-    "You watch as Cori takes a few more photos, he really seems to enjoy it."
-    pause 3.0
-    "The two of you sit on the bench in comfortable silence, watching the sunrise and taking in the view."
-    cori "I think the snow reflecting the blue light makes the blue hour in winter even more special."
-    cori "That's why winter is my favorite season."
-    "It sounds familiar."
-    u "I prefer spring."
-    u "Everything seems to come back to life after winter."
-    cori "Thats poetic and optimistic of you, I like it."
-    "The sun continues to rise, the sky gradually brightening with a spectrum of colors."
+
+    cori "I get that."
+
     pause 2.0
+
+    show coripose1 neutral side
+
+    "The two of you walk together."
+
+    "It's a comfortable silence."
+
+    pause 1.0
+
+    show coripose1 open
+
+    cori "The sunrise is beautiful, but I think the time just before it is my favorite part."
+
+    show coripose1 neutral
+
+    u "You mean the blue hour?"
+
+    show coripose1 direct teethsmile
+
+    cori "Is that what it's called?"
+
+    show coripose1 neutral 
+
+    u "It only happens for a brief time."
+
+    u "30 minutes give or take, but its truly a shame that the best part of the day is so short."
+
+    u "The blue happens because the sun is below the horizon, so the light has to pass through more of the atmosphere, scattering the shorter blue wavelengths."
+    
+    show coripose1 teethsmile
+
+    cori "Wow, you really know your stuff."
+    
+    show coripose1 neutral 
+
+    "The two of you continue walking in silence for a bit."
+    
+    show coripose1 open side raised
+
+    cori "So..."
+    
+    cori "Did you end up taking up photography again?"
+    
+    show coripose1 
+
+    "You pause for a moment, thinking about the camera in your hands a week ago."
+    
+    u "No, I haven't"
+
+    show coripose1 worried
+    
+    "Cori frowns slightly."
+
+    show coripose1 open
+    
+    cori "You really seemed to enjoy it last time, I thought you might want to do it again."
+
+    cori "You really have a talent for it, I'd love to see what you could do, if you gave it a chance."
+    
+    pause 2.0
+
+    cori "If I'm not overstepping, can I ask if theres a reason?"
+
+    show coripose1 neutral
+
+    "You pause and think for a moment."
+
+    u "I guess... I just don't see a point to it."
+    
+    show coripose1 open worried
+
+    cori "Is having fun not a point?"
+    show coripose1 neutral
+
+    u "It's not that."
+
+    u "It's just, I started photography because I wanted to capture memories."
+
+    u "Human memory is flawed at best."
+
+    u "You could never remember the details of a moment perfectly, no matter how important it was to you."
+
+    u "I thought if I took a photo, I could preserve the memory of that moment, and look back on it whenever I wanted."
+
+    u "But even with a photo, moments are still so forgetable."
+
+    u "Photos are far too one dimensional."
+
+    "You prefer it that way though."
+
+    "It's easier to not linger and reminisce on memories you could no longer return to."
+
+    "Even if the past was once important, the future holds more promises."
+
+    pause 1.0
+
+    show coripose1 open raised side
+
+    cori "Then, can I ask you another question? This one you don't have to answer, just think about it."
+    
+    show coripose1 neutral
+
+    u "Alright."
+
+    show coripose1 open direct
+
+    cori "Why do you visit the wind phone?"
+    
+    cori "I mean, we both know there's no one at the end of the line, so why do you keep coming back here?"
+
+    "Why do you keep coming back here?"
+
+    cori "You pick up the reciever anyway. Is there no point? Or is the point the attempt to connect, even if you know it won't work?"
+
+    "He pauses to take a breath."
+
+    pause 1.0
+
+    cori "I think... to some degree, photography is the same."
+
+    cori "I agree with you, that no one would ever be able to capture a moment perfectly."
+
+    cori "You'll never be able to experience a moment twice, no matter how many angles, or frames you take of it."
+
+    cori "But, the point of photography isn't to capture a moment perfectly, don't you think?"
+
+    #cori "To say, you were here, you experienced this, and this is how you want to remember it."
+    
+    cori "Even if a photo is flawed and only captures one percent of a moment, its better to have nothing at all, right?"
+    
+    show coripose1 neutral
+
+    pause 1.0
+    
+    u "..."
+    
+    u "I see where you're coming from."
+    
+    u "I guess I just have a hard time accepting that."
+
+    scene bg peak with fade
+
+    "The two of you continue walking until the summit of the path."
+
+    "The sun is just starting to rise, the sky is a gradient of pinks, purples, and blues."
+
+    "The city can be seen in the distance, its dyed in a vivid blue, its lights twinkling as the sun rises behind it, its covered in a thin mist."
+    
+    cori "This is perfect."
+    
+    cori "Even from this distance, you can see the city is still waking up."
+    
+    cori "The streets are so empty, it almost looks like a ghost town."
+    
+    pause 2.0 
+
+    cori "You know, in japanese folklore, they say that the blue hour is when the boundary between the living and the dead is thinnest."
+    
+    cori "Would you be scared if you met a ghost right now?"
+
+    "You stare out into the city, it really does look like a ghost town, but you don't feel scared at all."
+    
+    u "I think the view would keep me from being scared."
+    
+    "Cori laughs."
+    
+    cori "That makes sense."
+
+    "Cori takes a photo of the city, the vivid blue hue makes it look otherworldly."
+
+    "You find a nearby bench, dust off the snow, and sit down, taking in the view."
+
+    "You watch as Cori takes a few more photos, he really seems to enjoy it."
+
+    pause 3.0
+
+    "The two of you sit on the bench in comfortable silence, watching the sunrise and taking in the view."
+
+    cori "I think the snow reflecting the blue light makes the blue hour in winter even more special."
+
+    cori "That's why winter is my favorite season."
+
+    "It sounds familiar."
+
+    u "I prefer spring."
+
+    u "Everything seems to come back to life after winter."
+
+    cori "Thats poetic and optimistic of you, I like it."
+    scene bg peak_day with fade
+
+    "The sun continues to rise, the sky gradually brightening with a spectrum of colors."
+
+    pause 2.0
+
+
     "Eventually, the sun is fully up, and the city is bathed in warm golden light."
+
     "Cori stands up and stretches."
+
     cori "Hey, why don't we take a different path down this time?"
     u "Different how?"
 
