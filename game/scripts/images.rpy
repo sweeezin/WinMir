@@ -34,9 +34,9 @@ layeredimage coripose1:
     group eyebrows: 
         attribute worried:
             "images/cori/pose1/cori_eyebrows_worried.png"
-        attribute neutral default:
+        attribute raised default:
             "images/cori/pose1/cori_eyebrows_neutral.png"
-        attribute concerned:
+        attribute norm:
             "images/cori/pose1/cori_eyebrows_concerned.png"
 
     group mouth:

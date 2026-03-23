@@ -16,9 +16,9 @@
 # LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-image snow_s = im.Scale("snow.png", 7, 7)     # small
-image snow_m = im.Scale("snow.png", 14, 14)     # medium
-image snow_l = im.Scale("snow.png", 18, 18)     # slightly bigger
+image snow_s = im.Scale("gui/snow.png", 7, 7)     # small
+image snow_m = im.Scale("gui/snow.png", 14, 14)     # medium
+image snow_l = im.Scale("gui/snow.png", 18, 18)     # slightly bigger
 
 image snow = SnowBlossom(
     ["snow_s", "snow_m", "snow_l"], count=30, yspeed=(40, 100), fast=True)
