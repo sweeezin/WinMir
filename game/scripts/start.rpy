@@ -816,7 +816,7 @@ label start_phone_call:
     
     u "I see where you're coming from."
     
-    u "I guess I just have a hard time accepting that."
+    u "I guess, I just have a hard time accepting that."
 
     scene bg peak with fade
 
@@ -826,6 +826,10 @@ label start_phone_call:
 
     "The city can be seen in the distance, its dyed in a vivid blue, its lights twinkling as the sun rises behind it, its covered in a thin mist."
     
+    show coripose1 teethsmile side with dissolve 
+
+    "Cori gazes out at the view."
+
     cori "This is perfect."
     
     cori "Even from this distance, you can see the city is still waking up."
@@ -836,17 +840,25 @@ label start_phone_call:
 
     cori "You know, in japanese folklore, they say that the blue hour is when the boundary between the living and the dead is thinnest."
     
-    cori "Would you be scared if you met a ghost right now?"
+    "He gives a smirk."
+
+    show coripose1 direct
+
+    cori "Would you be scared if you saw a ghost right now?"
+
+    show coripose1 smile
 
     "You stare out into the city, it really does look like a ghost town, but you don't feel scared at all."
     
     u "I think the view would keep me from being scared."
     
     "Cori laughs."
-    
-    cori "That makes sense."
 
-    "Cori takes a photo of the city, the vivid blue hue makes it look otherworldly."
+    show coripose1 teethsmile
+    
+    cori "Makes sense."
+
+    "Cori takes a photo of the city."
 
     "You find a nearby bench, dust off the snow, and sit down, taking in the view."
 
@@ -854,7 +866,7 @@ label start_phone_call:
 
     pause 3.0
 
-    "The two of you sit on the bench in comfortable silence, watching the sunrise and taking in the view."
+    "The two of you sit on the bench in silence, watching the sunrise and taking in the view."
 
     cori "I think the snow reflecting the blue light makes the blue hour in winter even more special."
 
@@ -1002,6 +1014,8 @@ label start_phone_call:
     
     u "It makes me think if humans are meant to travel so fast at all."
 
+    pause 2.0
+
     cori "If you ask someone from the 1800s they'll tell you women weren't meant to travel on trains."
     cori "Their uteruses would fly out or something."
     
@@ -1009,7 +1023,10 @@ label start_phone_call:
     "The absurdity of his comment makes you laugh."
     "The movement makes you notice the camera around you neck."
     "You didn't mean to be holding it on for so long."
-    cori "Oh yea,"
+    "You take it off then nudge Cori."
+    u "I should give this back to you."
+    "He turns to you."
+    cori "Oh yea, that reminds me."
     "He reaches into his pocket."
     "He pulls out a few photographs."
     cori "These are yours."
@@ -1037,9 +1054,16 @@ label start_phone_call:
 
     cori "Figured you might want them eventually."
     "You look down at the photos."
+    "You didn't ask for them."
 
     "They feel heavier than they should."
-    u ""
+    u "Thanks."
+
+    "The train hums beneath you."
+
+    "The horizon stretches out, steady in the distance."
+
+    "You tuck the photos into your coat."
 
 
 

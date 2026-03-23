@@ -49,7 +49,7 @@ layeredimage coripose1:
             "images/cori/pose1/cori_mouth_neutral.png"
         attribute closedsmile:
             "images/cori/pose1/cori_mouth_closedsmile.png"
-        attribute frown:
+        attribute smile:
             "images/cori/pose1/cori_mouth_frown.png"
         attribute teethsmile:
             "images/cori/pose1/cori_mouth_teethsmile.png"
