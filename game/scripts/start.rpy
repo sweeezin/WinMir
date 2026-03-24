@@ -18,9 +18,15 @@ label start:
 
     scene black with fade
     
-    centered "I remeber the first snowfall of every year."
+    centered "The first snowfall of every year is different."
 
-    centered "Except one."
+    centered "Some years, its light and fluffly, other years its heavy and wet."
+
+    centered "You'd think they blur together."
+
+    centered "But I remeber them all."
+    
+    centered "Except for one."
 
     $ snow_on = True
     
@@ -187,6 +193,10 @@ label start_phone_call:
 
     "You inhale as you step outside, the cold mountain air fills your lungs."
 
+    "You hear a mechanical click."
+
+    play sound "audio/shutter.mp3"
+
     show coripose1 light flowers side neutral with dissolve
 
     "Someone's standing there, a few strides away."
@@ -195,13 +205,35 @@ label start_phone_call:
 
     "No scarf, no gloves, no hat." 
 
+    "He seems to be taking photos."
+
+    pause 1.0
+
+    play sound "audio/shutter.mp3"
+
+    cori "... Too much stray light..."
+
+    "He mutters to himself. His expression is focused."
+
+    pause 1.0
+
+    u "If you use a lens hood it should help with that."
+
+    "The words leave your mouth before you could stop yourself."
+
+    "The stranger turns to you, surprised by your presence."
+
+    cori "Oh uhh, thanks, that's good advice actually."
+
+    u "Yea... the snow tends to reflect a lot of light, so it can be hard to get the right exposure without a lens hood."
+
+    cori "Wow, I've never thought of that."
+
     "Your eyes are drawn to a pink hue from his pocket."
 
     "It's a flower. The same one from inside the phone booth."
 
     pause 2.0
-
-    "He turns towards you when he notices you looking."
 
     show coripose1 direct raised
 
@@ -211,13 +243,12 @@ label start_phone_call:
 
     show coripose1 open
 
-    cori "They're called cyclamens."
+    cori "Oh,"
+    cori "they're called cyclamens."
 
     show coripose1 neutral
 
     "You blink."
-
-    u "Huh?"
 
     show coripose1 open
 
@@ -245,11 +276,11 @@ label start_phone_call:
 
     show coripose1 teethsmile
 
-    "His eyes flicker to yours and he chuckles slightly."
+    "His eyes flicker to yours and he grins."
 
     show coripose1 worried open
 
-    cori "They're quite amateur aren't they? I didn't expect anyone to see them, people rarely come here it seems."
+    cori "They're quite amateur aren't they? I didn't expect anyone to see them, people rarely come here, it seems."
 
     show coripose1 closedsmile
 
@@ -268,12 +299,6 @@ label start_phone_call:
     show coripose1 neutral
 
     u "Photos don't need to be good to be appreciated."
-
-    u "I mean…"
-
-    "You glance back at the booth."
-
-    u "People keep stuff like that for a reason, right?"
 
     show coripose1 side open
 
@@ -349,7 +374,9 @@ label start_phone_call:
 
     "You glance at him, surprised by his response."
 
-    u "Is that why you take photos? To make accept reality as it is?" 
+    "You think for a bit."
+
+    u "Is that why you take photos? To accept reality as it is?" 
 
     show coripose1 side
 
@@ -530,6 +557,8 @@ label start_phone_call:
 
     cori "Very interesting..."
 
+    "He's looking through your photos on the camera's screen."
+
     cori "I thought I told you not to overthink it."
 
     cori "Or maybe you just have a strong instinct for it?"
@@ -562,7 +591,7 @@ label start_phone_call:
 
     show coripose1 direct
 
-    "His eyes scan yours."
+    "His eyes peer into yours."
 
     show coripose1 open worried
 
@@ -750,6 +779,7 @@ label start_phone_call:
     show coripose1 open worried
 
     cori "Is having fun not a point?"
+
     show coripose1 neutral
 
     u "It's not that."
@@ -844,7 +874,7 @@ label start_phone_call:
 
     show coripose1 direct
 
-    cori "Would you be scared if you saw a ghost right now?"
+    cori "Would you be scared if you met a ghost right now?"
 
     show coripose1 smile
 
@@ -1065,68 +1095,162 @@ label start_phone_call:
 
     "You tuck the photos into your coat."
 
+    cori "My favorite part is coming up soon, I think you'll like it."
 
+    "You look at him, curious about what he means."
 
+    "Suddenly, the blur of trees thin out."
 
-    
+    "You find yourself looking upon a vast expanse of water."
+
+    cori "It's usually a long hike up here."
+
+    cori "But breaking a few rules gets you here a lot faster."
+
+    pause 1.0
+
+    "Cori gives a smile."
+
+    cori "Do you need me to carry you back down?"
+
+    "You blink."
+
+    u "I can do it myself."
+
+    cori "When you land, don't lock your knees."
+
+    "You learn at the edge, staring at the rapidly moving floor."
+
+    "You wait for it to... feel manageable."
+
+    "You take a breath."
+
+    "Then step off."
+
+    "Your boots hit gravel."
+
+    "You stumble forward, catching yourself after a few uneven steps."
+
+    pause 1.0
+
+    "The train keeps moving behind you."
+
+    pause 1.0
+
+    "Cori lands beside you."
+
+    "Lighter. Quieter."
+
+    pause 2.0
+
+    "You both turn back."
+
+    "Watch it pass, car after car."
+
+    u "It feels slower now."
+
+    cori "You’re not on it anymore."
+
+    "You nod."
+
+    "The last car disappears down the line."
+
+    "The sound fades with it."
 
     cori "I guess we should head back. I bet you're tired."
+
     "The restless night has caught up with you, you feel yourself getting more fatigued."
-    cori "Oh one more thing..."
-    "He reaches inside his pocket, he pulls out three printed photographs."
-    cori "I want you to have these, you took these after all."
-    "He hands them to you."
-    "Its the same photos from the first day you met."
-    "A pine tree, the cyclamen, and the wind phone."
-    cori "I think its important for you to keep these."
-    cori "You're always going on about how you only want to focus on the future."
-    cori "But there's a reason why you keep coming back here."
-    cori "Isn't there?"
+
+    "You nod."
+
+    "The two of you walk alongside the water and tracks."
+
+    "Back to the city."
     
     scene black with fade
+
     centered "You return home and collaspe on your bed."
-    centered "You ended up sleeping through the day, only awakening when the sun goes down."
+
+    centered "You ended up sleeping through the rest of the day, only awakening when the sun goes down."
+
     "The first thing you notice is the three photographs on your nightstand."
+
     "They seemed so out of place."
+
     u "I guess I should stash them away."
+
     "Your house had plenty of space for them. Binders, folders, albums."
+
     "You drag yourself out of the bed, stumbling through the hallways filled with black boxes and cases."
+
     "Most of these were your father's, but you knew your work were buried somewhere in there too."
+
     "You dig through the boxes of tapes, photos, looking for a place to store the photographs."
+
     "Your hand lays on a black binder."
+
     "It's familiar."
+
     "You pull it out, and lay it open on the dimly lit hallway."
+
     "Inside, it is unmistakably filled with photographs of your own."
+
     "Buildings, landscapes, flora and fauna."
+
     "Some had been cut up, glued into neatly arranged collages."
+
     "You flip through the pages until you reach the last one."
+
     "Three photographs fill three quadrants of the page."
+
     "The fourth one is missing."
+
     "The three photographs are unmistakably of the blue hour, on that very mountain."
+
     "One of spring, one of summer, one of fall."
+
     "Winter is missing."
+
     "Your eyes flicker to that old camera your father gifted you."
+
     "It's lens stares into you, taunting you."
 
     centered "People confuse feeling something after a long time with feeling it for the first time."
+
     centered "Your eyes droop with fatigue."
+
     "The water you've drawn in the basin has cooled."
+
     "You soak the cloth in the water."
+
     "His back is slouched forward, skin thinner than you remember."
+
     d "It's cold."
+
     u "I know, it'll be over in a second."
+
     "You continue to wipe his back."
-    d "Did you finish your homework?"
-    "Your hand stills for a second."
-    u "Yeah. I finished it."
-    "He nods faintly, like he’s checking something off."
+
     pause 2.0
+
+    d "Did you finish your homework?"
+
+    "Your hand stills for a second."
+
+    u "Yeah. I finished it."
+
+    "He nods faintly, like he’s checking something off."
+
+    pause 2.0
+
     d "You always leave it to the last minute."
+
     "That’s not true."
 
     "It never was."
 
     "You don’t correct him."
+
     pause 1.0
 
     "You reach for the towel and start drying his back."
@@ -1163,9 +1287,11 @@ label start_phone_call:
 
     pause 1.0
 
-    "He looks down at his own hands like they belong to someone else."
+    "He looks down at his own hands."
 
     d "When did these get so old?"
+
+    "His voice sounds so fragile."
 
     "You don’t answer."
 
@@ -1173,15 +1299,13 @@ label start_phone_call:
 
     d "…Must’ve been working too much."
 
-    "He laughs quietly to himself."
-
-    "It doesn’t sound like a joke."
+    "He mutters quietly to himself."
 
     pause 2.0
 
     "You pull his shirt back over his shoulders."
 
-    "Guide his arms through the sleeves."
+    "You guide his arms through the sleeves."
 
     "He doesn’t help."
 
@@ -1194,6 +1318,7 @@ label start_phone_call:
     "You nod."
 
     u "Yeah."
+
     "You just carry the basin to the sink."
 
     "The water sloshes with each step."
@@ -1202,35 +1327,62 @@ label start_phone_call:
 
     "It disappears too quickly."
 
-
-
+    ################################################
+    #DAY 3
+    ################################################
 
     centered "Another week has passed, that flower has wilted."
+
     centered "You're walking home, the sun is setting, the snow hasn't melted yet."
+
     "You've been looking for someone."
+
     "You've been looking for Cori."
+
     "Your intuition leads you to the beach."
+
     "There he is, lingering by the water."
+
     "Rather, he's lingering in the water."
+
     "His shoes are left on the shore, his pants are rolled up the his calf"
+
     "He's walking where the waves crash onto the sand."
+
     "His footsteps are light, almost transparent."
     
     u "Cori!"
+
     "You call out to him."
+
     "He turns around, a surprised expression on his face."
+
     cori "Woah, hey there, you here to catch the sunset too?"
+
     "His expression relaxes upon seeing you."
+
     u "I've been looking for you."
+
     "He tilts his head slightly."
+
     u "I... I wanted to give those photographs back to you."
+
     u "I remembered something important."
+
     u "I'm sorry but, I can't keep them."
-    "Cori's expression turns neutral."
+
+    "Cori's expression turns neutral, it almost seems like he was expecting this."
 
     cori "It looks like my convincing didn't work then, huh?"
+
     "The two of you sit on a bench by the water."
+
     "Theres a long silence before you decide to speak."
+
+    u "Can I ask you a personal question?"
+    "Cori looks at you."
+    cori "Yea."
+    u "Have you"
     u "I think it was maybe 6 years ago?"
     u "My father developed a disease."
     u "It wasn't a physical one, it was mental, the kind that eats away at a person's mind and memories."
