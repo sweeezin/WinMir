@@ -10,7 +10,8 @@ image bg peak_night = "images/bg/speak_night.png"
 image bg peak_day = "images/bg/peak_day.png"
 image bg traintracks = "images/bg/traintracks.png"
 image bg trainout = "images/bg/trainout.png"
-
+image bg trainsea = "images/bg/trainsea.png"
+image bg traintree = "images/bg/traintree.png"
 #Cori
 layeredimage coripose1:
 

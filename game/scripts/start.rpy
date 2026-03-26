@@ -858,7 +858,7 @@ label start_phone_call:
 
     scene bg peak with fade
 
-    stop music fadeout
+    stop music 
 
     play music "audio/lofi3.mp3" loop fadein 3.0 volume 0.7
 
@@ -1599,16 +1599,16 @@ label start_phone_call:
     u "He'd criticize my work, say I wasn't cut out for this kind of thing."
     u "But it didn't matter to me."
     u "I saw him slowly lose touch with reality."
-    u "And it tore him apart."
-    u "He became unrecognizable from the father and mentor he once was."
+    #u "And it tore him apart."
+    #u "He became unrecognizable from the father and mentor he once was."
     #u "At times, he would beg me to help him end it all."
-    "You feel a pang of guilt."
+    #"You feel a pang of guilt."
     u "The last year before everything happened, I started a collection of photographs."
     u "I started in spring, I photographed the view from the mountain during blue hour."
-    u "Thought it would be nice, nice he was the one who taught me all about it."
+    u "I thought it would be nice, he was the one who taught me all about it."
     u "I continued through summer and fall."
-    u "But when the snow came, my father had a moment of clarity, only to do something so stupid."
-    u "He committed suicide that winter, and I never saw reason to finish the collection."
+    u "But when the winter came, my father had a moment of clarity, only to do something so stupid."
+    u "He took his own life that winter, and I never saw reason to finish the collection."
     "Theres a thick silence between the two of you."
     u "That's why I hate photography so much."
     u "It's pointless, it doesn't keep anything."
@@ -1620,8 +1620,33 @@ label start_phone_call:
     pause 2.0
     "The waves fill the space for you."
     cori "But you still kept them, didn't you?"
-    cori "Then why did you come back to photography? Why did you come back to the summit?"
-    "You don't answer immediately."
+    cori "Even if they weren't really him."
+    cori "So why come back here and throw everything else away?"    
+    u "These are just copies."
+
+    u "Moments that already passed."
+
+    u "They don't mean anything."
+
+    "Cori watches you for a moment."
+
+    pause 1.5
+
+    cori "Then why not throw them away?"
+
+
+    pause 2.0
+
+    u "..."
+
+    "The wind shifts."
+
+    "You look down at the images again."
+    u "I was going to."
+    u "... "
+    "Cori shifts slightly beside you."
+    "The bench doesn't creak."
+
 
 
 
