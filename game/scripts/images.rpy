@@ -3,7 +3,15 @@
 image bg snowpath = "images/bg/snowpath.png"
 image bg windphone = "images/bg/windphone.png"
 image bg boothinterior = "images/bg/boothinterior.png"
-
+image bg snowpath_night = "images/bg/snowpath_night.png"
+image bg windphone_night = "images/bg/windphone_night.png"
+image bg peak = "images/bg/peak.png"
+image bg peak_night = "images/bg/speak_night.png"
+image bg peak_day = "images/bg/peak_day.png"
+image bg traintracks = "images/bg/traintracks.png"
+image bg trainout = "images/bg/trainout.png"
+image bg trainsea = "images/bg/trainsea.png"
+image bg traintree = "images/bg/traintree.png"
 #Cori
 layeredimage coripose1:
 
@@ -44,7 +52,7 @@ layeredimage coripose1:
             "images/cori/pose1/cori_mouth_neutral.png"
         attribute closedsmile:
             "images/cori/pose1/cori_mouth_closedsmile.png"
-        attribute frown:
+        attribute smile:
             "images/cori/pose1/cori_mouth_frown.png"
         attribute teethsmile:
             "images/cori/pose1/cori_mouth_teethsmile.png"
