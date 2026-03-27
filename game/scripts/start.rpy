@@ -1304,11 +1304,33 @@ label start_phone_call:
 
     "You nod."
 
-    "The two of you walk parallel to tracks, heading back towards the city."
+    "The two of you begin walking parallel to tracks, heading back towards the city."
+
+    u "I wish I could have stayed a little longer."
+
+    cori "Really? Even though you don't know where you'll end up?"
+
+    u "Yea."
+
+    u "That's the fun part."
+
+    u "I wouldn't have to think about where to go, or when to leave."
+
+    u "I could just let the train take me wherever."
+
+    "Cori scoffs."
+
+    cori "Whats the point of being a human? If you want to live as a train."
+
+    u "It's just a fun idea."
+
+    cori "Hmmm."
+
+    cori "Maybe we could try it out some day."
     
     scene black with fade
 
-    centered "You return home and collaspe on your bed."
+    centered "You return home and collapse on your bed."
 
     centered "You ended up sleeping through the rest of the day, only awakening when the sun goes down."
 
@@ -1322,9 +1344,9 @@ label start_phone_call:
 
     "You drag yourself out of the bed, stumbling through the hallways filled with black boxes and cases."
 
-    "Most of these were your father's, but you knew your work were buried somewhere in there too."
+    "Most of these were your father's, but you knew your work was buried somewhere in there too."
 
-    "You dig through the boxes of tapes, photos, looking for a place to store the photographs."
+    "You rummage through the boxes of tapes, photos, looking for a place to store the photographs."
 
     "Your hand lays on a black binder."
 
@@ -1338,21 +1360,23 @@ label start_phone_call:
 
     "Some had been cut up, glued into neatly arranged collages."
 
+    u "When did I take these?"
+
     "You flip through the pages until you reach the last one."
 
     "Three photographs fill three quadrants of the page."
 
     "The fourth one is missing."
 
-    "The three photographs are unmistakably of the blue hour, on that very mountain."
+    "The three photographs are unmistakably of the blue hour, on that very summit."
 
-    "One of spring, one of summer, one of fall."
+    "Spring, summer, and fall... "
 
     "Winter is missing."
 
-    "Your eyes flicker to that old camera your father gifted you."
+    #"Your eyes flicker to the camera."
 
-    "It's lens stares into you, taunting you."
+    #"It's lens stares into you, taunting you."
 
     centered "People confuse feeling something after a long time with feeling it for the first time."
 
@@ -1472,7 +1496,7 @@ label start_phone_call:
 
     centered "Another week has passed, that flower has wilted."
 
-    centered "You're walking home, the sun is setting, the snow hasn't melted yet."
+    "You're walking home, the sun is setting, the snow hasn't melted yet."
 
     "You've been looking for someone."
 
@@ -1556,14 +1580,18 @@ label start_phone_call:
     "There are only one pair of footprints leading to where you sit."
     u "And today, you're not even leaving footprints."
     "You turn to look at him."
-    u "Cori, what are you?"
+    u "Cori."
+    u "What are you?"
     "You already know the answer, but you want to hear it from him."
     pause 2.0
     cori "I... I'm not sure myself."
     cori "A ghost? A wandering spirit? A figment of your imagination?"
     cori "I don't know, but I do know that I'm not really here anymore."
     pause 2.0
-    cori "Last winter, you were at the summit, weren't you?"
+    "You swallow thickly."
+    u "What do you remember?"
+    cori "I remember you... "
+    cori "...Last winter, you were at the summit, weren't you?"
     cori "It was clear that you were there for the intention of taking photos."
     cori "You brought your camera and everything."
     cori "But instead, you just sat there, and stared."
@@ -1587,7 +1615,7 @@ label start_phone_call:
     cori "I wanted to know why you were so indifferent to something you loved so much..."
     pause 2.0
     cori "So, let me turn the question back to you..."
-    cori "[player_name], why do you take photos?"
+    cori "[player_name], why do you not take photos?"
     pause 2.0
     u "I think it was maybe 6 years ago?"
     u "My father developed a disease."
@@ -1621,34 +1649,18 @@ label start_phone_call:
     "The waves fill the space for you."
     cori "But you still kept them, didn't you?"
     cori "Even if they weren't really him."
+    cori "His photos, his films, his ashes."
     cori "So why come back here and throw everything else away?"    
-    u "These are just copies."
-
-    u "Moments that already passed."
-
-    u "They don't mean anything."
-
     "Cori watches you for a moment."
-
-    pause 1.5
-
-    cori "Then why not throw them away?"
-
-
-    pause 2.0
-
-    u "..."
-
-    "The wind shifts."
-
-    "You look down at the images again."
-    u "I was going to."
-    u "... "
-    "Cori shifts slightly beside you."
-    "The bench doesn't creak."
-
-
-
+    cori "You wish so desperately for these things to mean nothing."
+    cori "But that's not true at all."
+    cori "Even if they're just a fraction."
+    cori "That's enough to make you hesistate."
+    cori "You don't have to hesistate."
+    #uhh listen to ur heart and yea
+    #take back ur camera
+    #ill take the photos
+    
 
     scene black with fade
 
