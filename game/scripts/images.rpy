@@ -3,6 +3,7 @@
 image bg snowpath = "images/bg/snowpath.png"
 image bg windphone = "images/bg/windphone.png"
 image bg boothinterior = "images/bg/boothinterior.png"
+image bg boothinterior_night = "images/bg/boothinterior_night.png"
 image bg snowpath_night = "images/bg/snowpath_night.png"
 image bg windphone_night = "images/bg/windphone_night.png"
 image bg peak = "images/bg/peak.png"
@@ -12,6 +13,7 @@ image bg traintracks = "images/bg/traintracks.png"
 image bg trainout = "images/bg/trainout.png"
 image bg trainsea = "images/bg/trainsea.png"
 image bg traintree = "images/bg/traintree.png"
+
 #Cori
 layeredimage coripose1:
 
