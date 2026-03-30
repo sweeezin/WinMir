@@ -587,7 +587,7 @@ label start_phone_call:
 
     cori "They are all representations of resilience in bleak settings."
 
-    show coripose1 closesmile
+    show coripose1 closedsmile
 
     "You pause for a moment, taking in his words."
 
@@ -648,9 +648,12 @@ label start_phone_call:
     "You look down at the cyclamen in your hand, its petals a defiant pink against the grey morning scene."
     "It won't last forever, but you know the next winter its kin will bloom again, with the same resilient shade of pink."
 
+    jump day2
     ##########################################################
     #DAY 2
     ##########################################################
+
+label day2:
 
     stop music
     stop music2
@@ -677,6 +680,8 @@ label start_phone_call:
     play music2 "audio/snowamb.mp3" loop fadein 3.0
     play sound "audio/snow_footsteps.mp3" fadein 2.0 volume 0.8
     play music "audio/lofi2.mp3" loop fadein 3.0 volume 0.7
+
+    $ snow_on = True
 
     "The sun hasn't risen yet, its still dark outside, it almost looks like the middle of the night."
 
@@ -775,7 +780,6 @@ label start_phone_call:
     "He lets out a quiet breath, almost a laugh."
 
     
-    
     show coripose1 neutral 
 
     "You keep walking."
@@ -793,9 +797,9 @@ label start_phone_call:
 
     "You pause for a moment, thinking about the camera in your hands a week ago."
     
-    u "No, I haven't"
+    u "No, I haven't."
 
-    show coripose1 worried
+    show coripose1  neutral worried
     
     "Cori’s expression dips slightly."
 
@@ -825,13 +829,13 @@ label start_phone_call:
 
     u "It's just, I started photography because I wanted to capture memories."
 
-    u "Human memory is flawed at best."
+    u "I mean, human memory is flawed at best."
 
     u "You could never remember the details of a moment perfectly, no matter how important it was to you."
 
     u "I thought if I took a photo, I could preserve the memory of that moment, and look back on it whenever I wanted."
 
-    u "But even with a photo, moments are still so forgetable."
+    u "But even with a photo, these things are still so forgetable."
 
     u "Photos are far too one dimensional."
 
@@ -990,8 +994,20 @@ label start_phone_call:
     show coripose1 neutral
 
     "You raise your eyebrows."
-    
+
     u "Different how?"
+
+    "He stands in front of you."
+
+    "He learns towards you, grasping your fingers with his own."
+
+    "He pulls you up to your feet."
+
+    cori "You'll have to follow me to find out."
+
+    scene snowpath with fade
+
+    hide coripose1 with dissolve
 
     "He nods past you, toward the lower part of the trail."
 
@@ -1005,7 +1021,7 @@ label start_phone_call:
 
     stop music2
 
-    play music2 "audio/trainamb.mp3" loop fadein 3.0 volume 0.7
+    play music2 "audio/trainchug.mp3" loop fadein 3.0 volume 0.7
     
     "A boxcar train lugs idly on the tracks ahead."
 
@@ -1020,6 +1036,8 @@ label start_phone_call:
     show coripose1 open side
 
     cori "You ever done it before?"
+
+    show coripose1 teethsmile
 
     cori "Train-hopping."
 
@@ -1045,9 +1063,13 @@ label start_phone_call:
 
     u "It's going too fast for us to get on."
 
+    show coripose1 side open worried
+
     cori "I can make it work..."
 
     u "That’s not convincing."
+
+    show coripose1 direct teethsmile norm
 
     "He peers into your eyes."
 
@@ -1059,6 +1081,8 @@ label start_phone_call:
 
     u "What? Are you gonna perform a magic trick?"
 
+    show coripose1 side
+
     cori "Do you trust me?"
     
     "You hesitate."
@@ -1066,6 +1090,7 @@ label start_phone_call:
     "You close your eyes."
 
     scene black with fade
+    hide coripose1
 
     "First, you feel him loop his camera around your neck."
 
@@ -1141,13 +1166,13 @@ label start_phone_call:
 
     cori "Pick something further out."
 
-    show coripose1 neutral
+    show coripose1 side neutral
 
     play sound "audio/rustle.mp3"
 
     "He lets go, sits next to you, looking out past everything."
 
-    show coripose1 open side
+    show coripose1 open 
 
     cori "It's less dizzy that way."
 
@@ -1216,10 +1241,14 @@ label start_phone_call:
     "He turns to you, accepting the camera."
     
     cori "Oh yea, that reminds me."
+
+    show coripose1 neutral
     
     "He reaches into his pocket."
 
     "He pulls out a few photographs."
+
+    show coripose1 open 
 
     cori "These are yours."
 
@@ -1231,26 +1260,30 @@ label start_phone_call:
 
     pause 1.0
 
-    "A pine tree."
-
-    "The flower."
-
-    "The booth."
+    "A pine tree, a flower, and a photo of Cori in front of the phone booth."
 
     "The same ones from before."
 
     pause 1.5
 
     u "You printed them out?"
+
     "He shrugs."
 
     pause 1.5
 
-    cori "Figured you might want them eventually."
+    show coripose1 open side
+
+    cori "Figured you might want them."
+
+    show coripose1 neutral
+
     "You look down at the photos."
+
     "You didn't ask for them."
 
     "They feel heavier than they should."
+
     u "Thanks."
 
     "The train hums beneath you."
@@ -1259,13 +1292,19 @@ label start_phone_call:
 
     "You tuck the photos into your coat."
 
+    show coripose1 teethsmile 
+
     cori "My favorite part is coming up soon, I think you'll like it."
+
+    show coripose1 neutral
 
     "You look at him, curious about what he means."
 
     "Suddenly, the blur of trees thin out."
 
     "You find yourself looking upon a vast expanse of water."
+
+    hide coripose1 with dissolve
 
     cori "It's usually a long hike up here."
 
@@ -1275,13 +1314,21 @@ label start_phone_call:
 
     "Cori gives a smile."
 
+    show coripose1 open direct raised with dissolve
+
     cori "We should probably get off here,"
 
+    show coripose1 teethsmile
+
     cori "Unless you want to walk the length of an interstate highway."
+
+    show coripose1 neutral
 
     "You nod to agree."
 
     "Cori gives a teasing grin."
+
+    show coripose1 teethsmile worried direct
 
     cori "Do you need me to carry you back down?"
 
@@ -1291,9 +1338,15 @@ label start_phone_call:
 
     u "I can do it myself."
 
+    show coripose1 side
+
     cori "If you say so."
 
+    show coripose1 open direct raised 
+
     cori "When you land, don't lock your knees."
+
+    hide coripose1 with dissolve
 
     "You learn at the edge, staring at the rapidly moving floor."
 
@@ -1301,17 +1354,25 @@ label start_phone_call:
 
     "You take a breath."
 
+    scene black with fade
+
     "Then jump off."
+
+    play audio "audio/jumpland.mp3"
 
     "Your boots hit gravel."
 
     "You stumble forward, catching yourself after a few uneven steps."
+
+    scene traintracks with fade
 
     pause 1.0
 
     "The train keeps moving behind you."
 
     pause 1.0
+
+    show coripose1 neutral side raised
 
     "Cori lands beside you."
 
@@ -1325,7 +1386,11 @@ label start_phone_call:
 
     u "It feels slower now."
 
+    show coripose1 direct open 
+
     cori "You’re not on it anymore."
+
+    show coripose1 neutral
 
     "You nod."
 
@@ -1333,17 +1398,29 @@ label start_phone_call:
 
     "The sound fades with it."
 
+    "Cori lets out a sigh."
+
+    show coripose1 direct open worried
+
     cori "I guess we should head back. I bet you're tired."
+
+    show coripose1 neutral
 
     "The restless night has caught up with you, you feel yourself getting more fatigued."
 
     "You nod."
 
+    play audio "gravelsteps.mp3" 
+
     "The two of you begin walking parallel to tracks, heading back towards the city."
 
     u "I wish I could have stayed a little longer."
 
+    show coripose1 direct worried open
+
     cori "Really? Even though you don't know where you'll end up?"
+
+    show coripose1 neutral 
 
     u "Yea."
 
@@ -1355,15 +1432,26 @@ label start_phone_call:
 
     "Cori scoffs."
 
+    show coripose1 open
+
     cori "Whats the point of being a human? If you want to live as a train."
+
+    show coripose1 neutral 
 
     u "It's just a fun idea."
 
+    show coripose1 side 
+
     cori "Hmmm."
+
+    show coripose1 direct teethsmile
 
     cori "Maybe we could try it out some day."
     
     scene black with fade
+
+    stop music
+    stop music2
 
     centered "You return home and collapse on your bed."
 
@@ -1375,11 +1463,15 @@ label start_phone_call:
 
     u "I guess I should stash them away."
 
-    "Your house had plenty of space for them. Binders, folders, albums."
+    scene bg hallway with fade
 
     "You drag yourself out of the bed, stumbling through the hallways filled with black boxes and cases."
 
+    "Your house had plenty of space for them. Binders, folders, albums."
+
     "Most of these were your father's, but you knew your work was buried somewhere in there too."
+
+    play audio "audio/searching.mp3"
 
     "You rummage through the boxes of tapes, photos, looking for a place to store the photographs."
 
@@ -1397,13 +1489,15 @@ label start_phone_call:
 
     u "When did I take these?"
 
+    play audio "pageflip.mp3"
+
     "You flip through the pages until you reach the last one."
 
     "Three photographs fill three quadrants of the page."
 
     "The fourth one is missing."
 
-    "The three photographs are unmistakably of the blue hour, on that very summit."
+    "The three photographs are of the blue hour, on that very summit."
 
     "Spring, summer, and fall... "
 
@@ -1417,11 +1511,17 @@ label start_phone_call:
 
     centered "Your eyes droop with fatigue."
 
+    scene bg bath
+
+    play music "audio/ominous.mp3" loop fadein 3.0 volume 0.7
+
     "The water you've drawn in the basin has cooled."
 
     "You soak the cloth in the water."
 
     "His back is slouched forward, skin thinner than you remember."
+
+    show dad with dissolve
 
     d "It's cold."
 
@@ -1439,8 +1539,6 @@ label start_phone_call:
 
     "He nods faintly, like he’s checking something off."
 
-    pause 2.0
-
     d "You always leave it to the last minute."
 
     "That’s not true."
@@ -1448,8 +1546,6 @@ label start_phone_call:
     "It never was."
 
     "You don’t correct him."
-
-    pause 1.0
 
     "You reach for the towel and start drying his back."
 
@@ -1465,13 +1561,9 @@ label start_phone_call:
 
     "He hums, satisfied with the answer."
 
-    pause 1.0
-
     d "It suits you."
 
     "You’ve never had this haircut."
-
-    pause 1.0
 
     "You guide his arm through his sleeve."
 
@@ -1495,9 +1587,7 @@ label start_phone_call:
 
     pause 1.0
 
-    d "…Must’ve been working too much."
-
-    "He mutters quietly to himself."
+    "He mutters something quietly to himself."
 
     pause 2.0
 
@@ -1517,6 +1607,8 @@ label start_phone_call:
 
     u "Yeah."
 
+    hide dad with dissolve
+
     "You just carry the basin to the sink."
 
     "The water sloshes with each step."
@@ -1525,9 +1617,16 @@ label start_phone_call:
 
     "It disappears too quickly."
 
+    jump day3
+
     ################################################
     #DAY 3
     ################################################
+
+label day3:
+
+    stop music fadeout 3.0
+    scene black with fade
 
     centered "Another week has passed, the flowers have wilted."
 
@@ -1535,13 +1634,19 @@ label start_phone_call:
     
     "The light catches on windows and wet pavement, stretching everything thin."
     
-    "The snow still hasn’t melted."
+    "The snow still hasn’t melted yet."
 
     "It’s turned gray at the edges, packed down into uneven footprints and tire marks."
 
     "You've been looking for someone."
 
     "You've been looking for Cori."
+
+    scene bg beach
+
+    play music "audio/sadcalm.mp3" loop volume 0.8 fadein 3.0
+
+    play music2 "audio/waves.mp3" loop fadein 3.0 volume 0.7
 
     "Your intuition leads you to the beach."
 
@@ -1568,7 +1673,6 @@ label start_phone_call:
     "You rush to him."
 
     "Your voice carries over the sound of the water."
-
 
     "He turns around, a surprised expression on his face."
 
@@ -1613,11 +1717,11 @@ label start_phone_call:
     "You glance at him."
 
     "He's watching the water, not you."
+
     u "Cori, can I ask you a personal question?"
 
     "Cori looks at you."
     
-
     cori "Yea."
 
     u "You already gave me an answer for this, sort of."
@@ -1897,7 +2001,7 @@ label start_phone_call:
     centered "Your camera thumbs against your core."
     centered "You're wearing booths but they do little against the cold."
 
-    scene summit with fade
+    scene peak with fade
     "The sun hasn't risen yet."
     "The city can be seen in the distance, its dyed in a vivid blue, its lights twinkling as the sun rises behind it, its covered in a thin mist."
     u "This is perfect."

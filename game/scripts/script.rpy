@@ -35,8 +35,6 @@ screen snow_overlay():
 
 
 default preferences.text_cps = 35
-image bg snowpath = "images/bg/snowpath.png"
-image bg windphone = "images/bg/windphone.png"
-image bg boothinterior = "images/bg/boothinterior.png"
+
 
 

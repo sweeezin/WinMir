@@ -13,6 +13,12 @@ image bg traintracks = "images/bg/traintracks.png"
 image bg trainout = "images/bg/trainout.png"
 image bg trainsea = "images/bg/trainsea.png"
 image bg traintree = "images/bg/traintree.png"
+image bg hallway = "images/bg/hallway.png"
+image bg bath = "images/bg/bath.png"
+image bg beach = "images/bg/beach.png"
+
+#Sprites
+image dad = "images/dad.png"
 
 #Cori
 layeredimage coripose1:
