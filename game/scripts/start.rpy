@@ -1001,19 +1001,31 @@ label day2:
 
     "He learns towards you, grasping your fingers with his own."
 
-    "He pulls you up to your feet."
+    "He pulls you up to your feet, then tugs your sleeve."
 
     cori "You'll have to follow me to find out."
+    
+    "He grins."
 
     scene snowpath with fade
 
-    hide coripose1 with dissolve
-
     "He nods past you, toward the lower part of the trail."
 
-    "You hesitate, then follow."
+    "Your sleeve is still being pulled by him."
 
     "The path thins out the further you go."
+
+    cori "... "
+
+    "He looks back at you, then to your sleeve, then back at you again."
+
+    "Swiftly, he lets go of your sleeve and holds on to your hand instead."
+
+    "He gives a smile, then turns back around before you could say anything."
+
+    "His hand is neither cold or warm."
+
+    "But the feeling of it is strangely comforting."
 
     "Snow gives way to gravel, then to rusted rails half-buried in ice."
 
@@ -1225,6 +1237,8 @@ label day2:
     show coripose1 neutral
 
     "You blink."
+
+    show coripose1 teethsmile direct
     
     "The absurdity of his comment makes you laugh."
     
@@ -1507,9 +1521,11 @@ label day2:
 
     #"It's lens stares into you, taunting you."
 
-    centered "People confuse feeling something after a long time with feeling it for the first time."
+    scene black with fade
 
-    centered "Your eyes droop with fatigue."
+    centered "People often confuse feeling something after a long time with feeling it for the first time."
+
+    "Your eyes droop with fatigue."
 
     scene bg bath
 
@@ -1559,11 +1575,11 @@ label day2:
 
     u "Yeah."
 
-    "He hums, satisfied with the answer."
-
     d "It suits you."
 
     "You’ve never had this haircut."
+
+    "... "
 
     "You guide his arm through his sleeve."
 
@@ -1575,7 +1591,7 @@ label day2:
 
     d "It’s fine."
 
-    pause 1.0
+    "... "
 
     "He looks down at his own hands."
 
@@ -1585,11 +1601,7 @@ label day2:
 
     "You don’t answer."
 
-    pause 1.0
-
     "He mutters something quietly to himself."
-
-    pause 2.0
 
     "You pull his shirt back over his shoulders."
 
@@ -1603,7 +1615,7 @@ label day2:
 
     d "Thank you."
 
-    "You nod."
+    "... "
 
     u "Yeah."
 
@@ -1626,6 +1638,7 @@ label day2:
 label day3:
 
     stop music fadeout 3.0
+
     scene black with fade
 
     centered "Another week has passed, the flowers have wilted."
@@ -1676,17 +1689,27 @@ label day3:
 
     "He turns around, a surprised expression on his face."
 
+    show coripose1 light open direct worried with dissolve
+
     cori "Woah- hey."
+
+    show coripose1 closedsmile raised
 
     "His expression softens upon seeing you."
 
+    show coripose1 open 
+
     cori "Are you here to catch the sunset too?"
+
+    show coripose1 closedsmile
 
     "The light hits his face at an angle, softening the edges of his expression."
 
     u " I've been... looking for you."
 
     "You say between breaths."
+
+    show coripose1 neutral worried
 
     "He tilts his head slightly, studying you."
 
@@ -1698,11 +1721,19 @@ label day3:
 
     u "I'm sorry but, I can't keep them."
 
+    show coripose1 norm side
+
     "Cori's expression turns neutral, it almost seems like he was expecting this."
+
+    show coripose1 open worried
 
     cori "It looks like my convincing didn't work then, huh?"
 
+    show coripose1 neutral
+
     "A small, almost amused breath leaves him, but it doesn’t reach his eyes."
+
+    hide coripose1 with dissolve
 
     pause 2.0 
 
@@ -1714,188 +1745,368 @@ label day3:
 
     "For a while, neither of you speak."
 
+    show coripose1 side raised with dissolve
+
     "You glance at him."
 
     "He's watching the water, not you."
 
     u "Cori, can I ask you a personal question?"
 
+    show coripose1 direct
+
     "Cori looks at you."
     
+    show coripose1 open
+
     cori "Yea."
+
+    show coripose1 neutral
 
     u "You already gave me an answer for this, sort of."
 
     u "But, why do you take photographs?"
 
+    show coripose1 side norm
+
     "Cori pauses for a moment."
 
     "He looks away, his expression is hard to read."
 
+    "You hear him scoff slightly."
+
+    show coripose1 raised open
+
     cori "Did I get found out?"
+
+    show coripose1 neutral
 
     "You don't answer."
 
     pause 2.0
 
+    show coripose1 open
+
     cori "What gave it away?"
+
+    show coripose1 neutral
 
     pause 1.0
 
     u "Those photos we took."
+
     u "All of them are the same as I remeber."
+    
     u "Except for one."
+    
     u "The one with you in front of the booth."
+    
     u "Everything is the same, the booth, the lighting."
+    
     u "But you've dissappeared."
-    pause 2.0
+    
+    "... "
+    
     u "You're always never bothered by the cold-"
+    
     u "Your landings are too light-"
+    
     u "You never get tired."
+    
     "You gaze upon the sand in front of you."
+    
     "There are only one pair of footprints leading to where you sit."
+    
     u "And today, you're not even leaving footprints."
+    
     "You turn to look at him."
+    
     u "Cori."
+
+    "He avoids your gaze."
+    
     u "What are you?"
+    
     "You already know the answer, but you want to hear it from him."
-    pause 2.0
+    
+    cori ". . . "
+    
+    show coripose1 open worried 
+
     cori "I... I'm not sure myself."
+    
     cori "A ghost? A wandering spirit? A figment of your imagination?"
+    
     cori "I don't know, but I do know that I'm not really here anymore."
-    pause 2.0
+
+    show coripose1 neutral
+    
     "You swallow thickly."
+
     u "What do you remember?"
-    cori "I remember you... "
+
+    show coripose1 open 
+    
+    cori "I... "
+    
+    show coripose1 direct
+    
+    cori "I remeber you... "
+    
     cori "...Last winter, you were at the summit, weren't you?"
+    
     cori "It was clear that you were there for the intention of taking photos."
+    
     cori "You brought your camera and everything."
+    
     cori "But instead, you just sat there, and stared."
+
+    show coripose1 side worried
+    
     cori "You stared into the city, for hours."
+    
     cori "You left your camera at the end of it."
+    
     cori "And I picked it up."
+    
     cori "I started using it."
+    
     cori "Bit by bit."
+    
     cori "I realized, whenever I took a photo."
+
+    show coripose1 direct norm 
+    
     cori "I would remeber a little bit more about myself."
+    
     cori "I could exist in this world a little more."
+    
     cori "Eventually I grew curious about you."
+    
     cori "That curiosity drew me back."
+    
     cori "I wondered if I'd meet you again."
+    
     cori "So when it became winter again, I waited for you to come back."
-    u "That was when we met that day."
+
+    show coripose1 neutral
+    
+    u "That was the day we met."
+    
     "Cori nods."
+
+    show coripose1 side open raised
+    
     cori "Yea."
+    
     cori "I pushed you to take some photos."
+
+    show coripose1 worried teethsmile
+    
     cori "You didn't even recognize your own camera, did you?"
+    
     cori "I wanted to know why you were so indifferent to something you loved so much..."
+    
     pause 2.0
+    
     cori "So, let me turn the question back to you..."
+    
     cori "[player_name], why do you not take photos?"
+    
     pause 2.0
-    u "I think it was maybe 6 years ago?"
+
+    u ". . . "
+    
+    u "I think it was, maybe 6 years ago?"
+    
     u "My father developed a disease."
+    
     u "The kind that eats away at a person's mind and memories."
+    
     u "I wasn't as good at the camera as him, but I started a collection for him."
+    
     "Cori looks into your eyes, carefully listening."
+    
     u "I collected pictures of important places and moments."
+    
     u "I thought, maybe if his mind couldn't hold onto them, I could."
+    
     u "He'd criticize my work, say I wasn't cut out for this kind of thing."
+    
     u "But it didn't matter to me."
+    
     u "I saw him slowly lose touch with reality."
-    #u "And it tore him apart."
-    #u "He became unrecognizable from the father and mentor he once was."
-    #u "At times, he would beg me to help him end it all."
-    #"You feel a pang of guilt."
+    
     u "The last year before everything happened, I started a collection of photographs."
+    
     u "I started in spring, I photographed the view from the mountain during blue hour."
+    
     u "I thought it would be nice, he was the one who taught me all about it."
+    
     u "I continued through summer and fall."
+    
     u "But when the winter came, my father had a moment of clarity, only to do something so stupid."
+    
     u "He took his own life that winter, and I never saw reason to finish the collection."
+    
     "Theres a thick silence between the two of you."
+    
     u "That's why I hate photography so much."
+    
     u "It's pointless, it doesn't keep anything."
+    
     u "After my dad passed, we had him cremated."
+    
     u "It felt so strange carrying his ashes."
+    
     u "I was holding him, but it wasn't him at all."
+    
     u "Those ashes are nothing like him, they don't represent anything he was, or stood for, or..."
+    
     "Your voice trails off."
+    
     pause 2.0
+    
     "The waves fill the space for you."
+    
     cori "But you still kept them, didn't you?"
+    
     cori "Even if they weren't really him."
+    
     cori "His photos, his films, his ashes."
+    
     cori "So why come back here and throw everything else away?"    
+    
     "Cori watches you for a moment."
+    
     cori "You wish so desperately for these things to mean nothing."
+    
     cori "But that's not true at all."
+    
     cori "Even if they're just a fraction."
+    
     cori "That's enough to make you hesistate."
+    
     "There's a long pause."
+    
     "Cori leans over."
+    
     "The bench doesn't creak."
+    
     cori "You want me to take these back so bad."
+    
     "He grasps the photos in his hand."
+    
     cori "I'll keep them for you."
+    
     cori "But, I want you to have something in return."
+    
     "He takes off his camera, and hands it to you."
+    
     cori "You won't be able to finish that collection without this camera right?"
+    
     cori "Even if you don't want to."
+    
     cori "I want you to have the option to."
+    
     "You don't refuse."
+    
     cori "But if you do, I'll be there to see it."
+    
     cori "I promise."
+    
     scene black with fade
+    
     "It was a long walk home."
+    
     "Long but quiet."
+
+    scene bg hallway_day with fade
+    
     "Someone's at the dining table."
+    
     "It's Mom."
+    
     "She looks up at you."
+    
     m "Oh, you're back."
+    
     m "I saw you left this on the table."
+    
     "You left on the table?"
+    
     m "These are yours aren't they?"
+    
     m "How come you never showed me these?"
+    
     u "You can tell they're mine?"
+    
     "She wasn't a photographer herself, you were surprised she could tell just by looking at them."
+    
     "She smiles just a bit."
+    
     m "It was just a feeling."
+    
     "She traces the edge of one of the photos."
+    
     m "Yea, of course I can."
+    
     m "It's different from your dad's work."
+    
     m "I'm not sure how to describe it."
+    
     m "His work felt... over-engineered."
+    
     m "Yours feels more in the moment."
+    
     m "Like I'm looking through your eyes."
+    
     "She looks up at you again."
+    
     m "They're pretty."
+    
     m "You should keep them somewhere safe, [player_name]."
+    
     "She hands you the binder."
     
-
     scene black with fade
 
     centered "The camera sits on your nightstand."
+    
     centered "It's lens' stares into your own, taunting you."
+    
     "What time is it now?"
+    
     "You check your phone, it's 6:17am."
+    
     "Theres no reason to stay in bed anymore."
+    
     "You put on your coat and boots, swing the camera strap around your neck, and step outside into the cold morning air."
+    
     play sound "audio/door-open.mp3"
+    
     scene bg snowpath_night with fade
 
     play music2 "audio/snowamb.mp3" loop fadein 3.0
     play sound "audio/snow_footsteps.mp3" loop fadein 1.0 volume 0.8
     play music "audio/lofi2.mp3" loop fadein 3.0 volume 0.7
+    
     "The sun hasn't risen yet, its still dark outside, it looks just like the middle of the night."
+    
     "You walk towards a familiar path."
+    
     "The cold air fills your lungs, you leave fresh footsteps in the snow as you walk."
+    
     "There's no one ahead."
+    
     scene bg windphone_night with fade
+    
     "The cold nips at your skin."
+    
     "You approach the familiar weathered booth."
+    
     "It's a bit cold, so you seek shelter in the booth."
+    
     "Your gloved hand reaches for the metalhandle."
 
     play sound "audio/door-open.mp3"
@@ -1903,7 +2114,9 @@ label day3:
     scene bg boothinterior
 
     "The glass walls shelter you from the wind, its a bit warmer inside."
+    
     "You hold your coat a bit tighter, blowing air into your cupped hands."
+    
     "It seems like previous visitors have left some things behind."
 
     jump phone_booth_2

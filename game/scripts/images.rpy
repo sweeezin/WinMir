@@ -14,6 +14,7 @@ image bg trainout = "images/bg/trainout.png"
 image bg trainsea = "images/bg/trainsea.png"
 image bg traintree = "images/bg/traintree.png"
 image bg hallway = "images/bg/hallway.png"
+image bg hallway_day = "images/bg/hallway_day.png"
 image bg bath = "images/bg/bath.png"
 image bg beach = "images/bg/beach.png"
 
