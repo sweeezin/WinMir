@@ -1987,7 +1987,7 @@ label day3:
     
     cori "You wish so desperately for these things to mean nothing."
 
-    show coripose1 side
+    show coripose1 side open
     
     cori "But that's not true at all."
     
@@ -1995,31 +1995,45 @@ label day3:
     
     cori "That's enough to make you hesistate."
 
-    show coripose1 direct 
+    show coripose1 direct neutral
     
     "There's a long pause."
     
     "Cori leans over."
     
     "The bench doesn't creak."
+
+    show coripose1 open
     
     cori "You want me to take these back so bad."
+
+    show coripose1 neutral
     
     "He grasps the photos in his hand."
+
+    show coripose1 open 
     
     cori "I'll keep them for you."
     
     cori "But, I want you to have something in return."
+
+    show coripose1 neutral
     
     "He takes off his camera, and hands it to you."
+
+    show coripose1 side open 
     
     cori "You won't be able to finish that collection without this camera right?"
     
     cori "Even if you don't want to."
     
     cori "I want you to have the option to."
+
+    show coripose1 neutral
     
     "You don't refuse."
+
+    show coripose1 open direct
     
     cori "But if you do, I'll be there to see it."
     
@@ -2102,8 +2116,12 @@ label day3:
     scene bg snowpath_night with fade
 
     play music2 "audio/snowamb.mp3" loop fadein 3.0
+
     play sound "audio/snow_footsteps.mp3" loop fadein 1.0 volume 0.8
+
     play music "audio/lofi2.mp3" loop fadein 3.0 volume 0.7
+
+    $ snow_on = True
     
     "The sun hasn't risen yet, its still dark outside, it looks just like the middle of the night."
     
@@ -2125,7 +2143,7 @@ label day3:
 
     play sound "audio/door-open.mp3"
 
-    scene bg boothinterior
+    scene bg boothinterior_night
 
     "The glass walls shelter you from the wind, its a bit warmer inside."
     
@@ -2142,96 +2160,235 @@ label day3:
     label phone_booth_2:
         menu:
             "Photos" if not saw_photos2:
+
                 $ saw_photos2 = True
+
                 "Printed photos of a pine tree, a cyclamen flower, and a phone booth have been left here. "
+                
                 jump phone_booth_2
 
             "Flowers" if not saw_flowers2:
+
                 $ saw_flowers2 = True
+
                 "Some has left a bundle of cyclamens behind, they're fresh."
+
                 jump phone_booth_2
 
             "Leave" if saw_photos2 and saw_flowers2:
+
                 jump start_phone_call_2
 
 
-
     label start_phone_call_2:
-    #PLAY SOUND EFFECT RING
 
-    
-    "You hear a ring from the phone."
-    "It's noise is out of place against the peaceful silence."
+    play sound "audio/ringringring.mp3" fadein 2.0 volume 0.8 
+
+    "You hear a ring."
+
+    "... It's coming from the phone."
+
+    "Your heart beat quickens."
+
+    "It's not suppose to be ringing."
+
     pause 3.0
+
     "Tentatively, you pick up the phone and hold it up to your ear."
 
-    cori "Hey, [player_name]."
-    "It's Cori."
-    cori "I thought you said you weren't an early bird." #owl?
-    cori "The sun's not even up."
-    cori "And you have your camera."
-    cori "Are you planning to finish your collection?"
-    u "Maybe."
-    "You pause."
-    u "I thought you said you'd be here to see it."
-    "You hear him take a breath."
-    cori "I am here."
-    cori "Sort of... "
-    cori "I thought I had more time."
-    cori "But it seems like I've lingered here for too long."
-    cori "These sort of things have cycles."
-    cori "Even if it shouldn't have happened in the first place."
-    "He sounds far away."
-    cori "Last winter, you brought me back."
-    cori "This winter you'll send me off."
-    cori "It all comes full circle."
-    "You take in his words."
-    u "...Are you really just going to disappear?"
-    cori "Probably."
-    cori "It's nothing to be sad about."
-    cori "We weren't even suppose to meet in the first place."
-    cori "But I'm glad we did."
-    "... "
-    cori "I wish we had met earlier."
-    cori "I also wish I could stay here forever."
-    cori "But winter doesn't last forever."
-    cori "Neither does the blue hour, right?"
-    cori "You should hurry, go get that shot."
-    "The line goes dead."
+    ". . . "
 
-    scene black with fade
-    centered "You're running."
-    centered "Against the snow, against time."
-    centered "Your camera thumbs against your core."
-    centered "You're wearing booths but they do little against the cold."
+    cori "Hey, [player_name]."
+
+    "It's Cori."
+
+    cori "I thought you said you weren't an early bird." #owl?
+
+    cori "The sun's not even up."
+    
+    cori "And you have your camera."
+    
+    cori "Are you planning to finish your collection?"
+    
+    u "Maybe."
+    
+    "You pause."
+    
+    u "I thought you said you'd be here to see it."
+    
+    "You hear him take a breath."
+    
+    cori "I am here."
+    
+    cori "Sort of... "
+    
+    cori "Sorry, I thought I had more time."
+    
+    cori "But it seems like I've lingered here for too long."
+    
+    cori "These sort of things have cycles."
+    
+    cori "Even if it shouldn't have happened in the first place."
+    
+    "He sounds far away."
+    
+    cori "Last winter, you brought me back."
+    
+    cori "This winter you'll send me off."
+    
+    cori "It all comes full circle."
+    
+    "You take in his words."
+    
+    u "...Are you really just going to disappear?"
+    
+    cori "Probably."
+    
+    cori "It's nothing to be sad about."
+    
+    cori "We weren't even suppose to meet in the first place."
+    
+    cori "But I'm glad we did."
+    
+    "... "
+
+    u "I'm glad too."
+
+    u "I'm glad it was you who picked up my camera."
+
+    u "I'm glad you took me to the summit."
+
+    u "And... "
+
+    u "I'm glad you came back for me."
+
+    "There's a pause."
+    
+    cori "I wish we had met earlier."
+    
+    cori "I also wish I could stay here forever."
+
+    "A faint static hums between you."
+    
+    cori "But winter doesn't last forever."
+    
+    cori "Neither does the blue hour, right?"
+    
+    cori "You should hurry, Or you'll miss that shot."
+
+    "You hum in response."
+
+    cori "Remember, don't overthink it."
+
+    cori "Just take the photo."
+
+    u ". . . "
+
+    u "Will you see it?"
+    
+    cori "Of course I will."
+
+    cori "Or maybe..."
+
+    cori "I'll be part of it."
+
+    "Your chest tightens."
+
+    "There's more you want to say."
+
+    "But it doesn't come out."
+
+    u "... Okay."
+
+    "The line goes quiet."
+
+    "...Then dead."
+
+    scene snowpath_night with fade
+
+    "The climb feels longer than you remember."
+
+    "Your breath fogs in front of you."
+
+    "Your camera thumbs against your core with each step."
+
+    "You're wearing boots but they do little against the cold."
+
+    "You don’t stop."
+
+    "You're arriving at the end of the path."
 
     scene peak with fade
-    "The sun hasn't risen yet."
-    "The city can be seen in the distance, its dyed in a vivid blue, its lights twinkling as the sun rises behind it, its covered in a thin mist."
-    u "This is perfect."
-    "You say to yourself."
-    "You fidget with your camera."
+
+    "You step forward."
+
+    "The wind is sharper up here."
+
+    "You look around."
+
+    "It's empty."
+    
+    "You swallow."
+
+    "Your grip tightens slightly around the camera."
+
+    "The wind moves past you."
+    
+    "It almost feels like something brushes against your hand."
+
+    "You freeze."
+
+    "You look down at your hand."
+
+    "Don't overthink it."
+
+    "Don't try to make it perfect."
+    
+    "You exhale slowly."
+
+    "You raise the camera."
+
+    "The view settles into frame."
+
     "You wonder if Cori is watching you."
+    
     "Somewhere you can't see."
+    
     "You line the shot up."
+    
     "And click the shutter."
+    
     pause 3.0
 
     centered "insert pic of a very beautiful shot"
+
     centered "uhhh credits yuh uyh hi robert"
+
     centered "epilouge."
 
     scene bg windphone with fade 
+    
     "It's early spring now."
+    
     "The world is awakening from its winter slumber."
+    
     "The bushes are budding with new life."
+    
     "In this season you like to look for birds to photograph."
+    
     "You crouch down and peer through the viewfinder."
+
+    "You stay as still as you can, waiting for a bird to come into frame."
+    
     pause 2.0
 
-    cs "Eep!"
+    "Suddenly, you feel a tap by your foot."
+
+    cs "Ah!"
+    
     cs "Oh, is that a person?"
-    cs "I didn't mean to bump into"
+    
+    cs "I'm so sorry I didn't mean to bump into you."
 
 
 
