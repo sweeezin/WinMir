@@ -149,7 +149,9 @@ label start_phone_call:
 
     u "Too much bounce, or whatever it was..."
 
-    u "I moved back with Mom. She’s doing okay. She’s finally started moving your things into the spare room." 
+    u "I moved back with Mom. She’s doing okay. She’s finally started moving your things into the spare room."
+
+    "You shift your weight from side to side, fidgeting with the phone line." 
 
     u "Those heavy black boxes you used to lug through airports, they’re just sitting in a stack now."
 
@@ -163,7 +165,7 @@ label start_phone_call:
 
     u "You gaze at the photographs and swallow thickly."
 
-    u "It makes your skin itch." 
+    "It makes your skin itch." 
 
     u "Someone left some photographs here. I feel like the composition is a little amateur but you would probably have a better critique."
 
@@ -235,7 +237,7 @@ label start_phone_call:
 
     "Your eyes are drawn to a pink hue from his pocket."
 
-    "It's a flower. The same one from inside the phone booth."
+    "It's a bundle of flowers. The same ones from inside the phone booth."
 
     pause 2.0
 
@@ -248,6 +250,7 @@ label start_phone_call:
     show coripose1 open
 
     cori "Oh,"
+
     cori "they're called cyclamens."
 
     show coripose1 neutral
@@ -258,7 +261,9 @@ label start_phone_call:
 
     cori "The flowers."
 
-    cori "I grow them in my garden"
+    cori "I grow them in my garden."
+
+    "He gives a soft smile."
     
     cori "Unlike other flowers, they bloom in the winter."
 
@@ -280,7 +285,7 @@ label start_phone_call:
 
     show coripose1 teethsmile
 
-    "His eyes flicker to yours and he grins."
+    "His eyes flicker to yours and he laughs gently."
 
     show coripose1 worried open
 
@@ -292,11 +297,11 @@ label start_phone_call:
 
     u "They're not bad." 
 
-    show coripose1 raised teethsmile
+    show coripose1 raised teethsmile blush
 
     "He grins."
 
-    show coripose1 open
+    show coripose1 open -blush
 
     cori "That's generous."
 
@@ -308,11 +313,13 @@ label start_phone_call:
 
     pause 1.0
 
+    "He shifts his weight from side to side."
+
     cori "Yea... You're probably right."
 
     cori "They're for my sister."
 
-    cori "She couldn't see but she loved exploration." 
+    cori "She was blind, but she loved exploration." 
 
     cori "We use to walk this path all the time." 
 
@@ -362,6 +369,8 @@ label start_phone_call:
 
     u "He was alright."
 
+    "You give a half-smile."
+
     u "He did it for work."
 
     u "Sometimes it felt like it was all he ever did, like he was never in the same reality." 
@@ -390,7 +399,7 @@ label start_phone_call:
 
     show coripose1 open
 
-    cori "Something like that."
+    cori "I guess you could say that."
 
     show coripose1 closedsmile
 
@@ -410,7 +419,7 @@ label start_phone_call:
 
     show coripose1 open
 
-    "He looks at you with curiosity."
+    "He studies your eyes with curiosity."
 
     cori "Is that so? Whens the last time you took a photo?"
 
@@ -438,6 +447,8 @@ label start_phone_call:
 
     "You hesistate. You really didn't have any interest of touching a camera again."
 
+    "Cori notices your hesitation and gives you a reassuring smile."
+
     show coripose1 open
 
     cori "It can just be really simple, don't overthink it, just take a photo of something you find interesting."
@@ -461,7 +472,9 @@ label start_phone_call:
     jump take_photo
 
     default photo_trees = False
+
     default photo_cori = False
+
     default photo_flower = False
 
     label take_photo:
@@ -559,7 +572,7 @@ label start_phone_call:
     
     show coripose1 light direct raised open with dissolve 
 
-    cori "Very interesting..."
+    cori "Very interesting... "
 
     "He's looking through your photos on the camera's screen."
 
@@ -568,6 +581,8 @@ label start_phone_call:
     cori "Or maybe you just have a strong instinct for it?"
 
     show coripose1 closedsmile
+
+    "Your eyebrows knit together."
 
     u "What do you mean?"
 
@@ -595,7 +610,7 @@ label start_phone_call:
 
     show coripose1 direct
 
-    "His eyes peer into yours."
+    "His eyes peer into yours, he tilts his head."
 
     show coripose1 open worried
 
@@ -603,11 +618,15 @@ label start_phone_call:
     
     show coripose1 closedsmile
 
+    "You chew the inside of your cheek."
+
+    u "... "
+
     u "I think... your camera has a mind of its own and it has possesed me."
 
     show coripose1 open raised
 
-    "He laughs."
+    "He lets out a sudden, bright laugh."
 
     cori "So humble."
 
@@ -646,12 +665,15 @@ label start_phone_call:
     scene bg snowpath with fade
     
     "You look down at the cyclamen in your hand, its petals a defiant pink against the grey morning scene."
+
     "It won't last forever, but you know the next winter its kin will bloom again, with the same resilient shade of pink."
 
     jump day2
-    ##########################################################
-    #DAY 2
-    ##########################################################
+
+
+##########################################################
+#DAY 2
+##########################################################
 
 label day2:
 
@@ -751,6 +773,7 @@ label day2:
     cori "The sunrise is pretty, but I think the time just before it is my favorite part."
 
     show coripose1 neutral
+
     "He keeps his eyes on the horizon."
 
     "The sky is still dark, but it’s beginning to thin."
@@ -768,25 +791,24 @@ label day2:
 
     u "It only happens for a brief time."
 
-
     u "30 minutes give or take, but its truly a shame that the best part of the day is so short."
 
     u "The blue happens because the sun is below the horizon, so the light has to pass through more of the atmosphere, scattering the shorter blue wavelengths."
+    
     "You look ahead, where the sky fades into a muted blue-gray."
 
     show coripose1 teethsmile
 
     cori "Wow, you really know your stuff."
+    
     "He lets out a quiet breath, almost a laugh."
 
-    
     show coripose1 neutral 
 
     "You keep walking."
 
     "The sky shifts slowly, almost too gradual to notice."
 
-    
     show coripose1 open side raised
 
     cori "So..."
@@ -878,8 +900,6 @@ label day2:
     cori "You'll never be able to experience a moment twice, no matter how many angles, or frames you take of it."
 
     cori "But, the point of photography isn't to capture a moment perfectly, don't you think?"
-
-    #cori "To say, you were here, you experienced this, and this is how you want to remember it."
     
     cori "Even if a photo is flawed and only captures one percent of a moment, its better to have nothing at all, right?"
     
@@ -979,13 +999,23 @@ label day2:
 
     show coripose1 light 
 
-    "The sun continues to rise, the sky gradually brightening with a spectrum of colors."
+    "The sky shifts with it—deep blue thinning out, edges softening into pale gold and washed-out pink."
 
-    pause 2.0
+    "Light begins to catch on everything."
 
-    "Eventually, the sun is fully up, and the city is bathed in warm golden light."
+    "Rooftops, windows, the thin layer of frost still clinging to the ground."
+    
+    "The city doesn't wake all at once."
 
-    "Cori stands up and stretches."
+    "Pieces of it flicker on one by one."
+
+    "Eventually, the sun clears the horizon completely."
+
+    "Everything settles into a quiet, warm light."
+
+    "Cori pushes himself to his feet."
+
+    "He stretches, arms overhead, shoulders rolling back like he's shaking off the cold."
 
     show coripose1 open side
 
@@ -1036,6 +1066,16 @@ label day2:
     play music2 "audio/trainchug.mp3" loop fadein 3.0 volume 0.7
     
     "A boxcar train lugs idly on the tracks ahead."
+
+    "The engine rumbles low, a steady pulse that carries through the ground."
+
+    "A faint clank echoes down the line as one of the cars shifts against the next."
+
+    "Heat drifts up from the metal, warping the air just above it."
+
+    "You slow a little without meaning to."
+
+    "The train stretches out farther than you expected, car after car disappearing down the track."
 
     show coripose1 open side with dissolve
 
@@ -1110,7 +1150,7 @@ label day2:
 
     pause 1.0
 
-    "Then suddenly--"
+    "Then suddenly- "
 
     "Your feet leave the ground."
 
@@ -1166,13 +1206,13 @@ label day2:
 
     "The ground slides past in long streaks of white and green."
 
-    "Trees. Fences. The occasional pole."
+    "Trees, fences, the occasional pole."
 
     "Nothing stays long enough to look at properly."
 
     "A pair of hands press lightly against the sides of your head."
 
-    "He tilts your gaze upward."
+    "They tilt your gaze upward."
 
     show coritrain open direct with dissolve
 
@@ -1210,13 +1250,13 @@ label day2:
 
     pause 1.5
 
-    "You try to picture it--"
+    "You try to picture it- "
 
-    "where the tracks go."
+    "Where the tracks go."
 
-    "Past the trees. Past whatever comes after."
+    "Past the trees, past whatever comes after."
 
-    "Snow thinning out. Colors coming back."
+    "The snow thinning out, the colors coming back."
 
     "You don’t know if that’s true."
 
@@ -1230,7 +1270,7 @@ label day2:
 
     pause 2.0
 
-    show coritrain open direct worried
+    show coritrain open direct
 
     cori "If you ask someone from the 1800s they'll tell you women weren't meant to travel on trains."
 
@@ -1310,7 +1350,7 @@ label day2:
 
     "You tuck the photos into your coat."
 
-    show coritrain teethsmile 
+    show coritrain open
 
     cori "My favorite part is coming up soon, I think you'll like it."
 
@@ -1322,11 +1362,30 @@ label day2:
 
     "You find yourself looking upon a vast expanse of water."
 
+    "A wide, quiet expanse stretching farther than you can follow."
+
+    "The surface shifts in slow, uneven ripples."
+
+    "The light catches along the edges of the waves- "
+
+    "thin lines of silver that break and disappear just as quickly."
+
+    "It doesn’t reflect the sky, or the distant city cleanly."
+
+    "It distorts it, almost pulling it apart."
+
+    "For a moment, it feels like it goes on forever."
+
+    "Like if you kept looking, you’d lose track of where it ends."
+
     hide coripose1 with dissolve
 
     cori "It's usually a long hike up here."
 
     cori "But breaking a few rules gets you here a lot faster."
+
+    cori "You can view the sea from many places but this is my favorite."
+    
 
     pause 1.0
 
@@ -1334,7 +1393,7 @@ label day2:
 
     show coripose1 open direct raised with dissolve
 
-    cori "We should probably get off here,"
+    cori "We should probably get off here."
 
     show coripose1 teethsmile
 
