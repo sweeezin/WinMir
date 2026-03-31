@@ -1152,6 +1152,8 @@ label day2:
 
     "You sit by the edge and look out."
 
+    hide coripose1 with dissolve
+
     "The ground is already sliding past outside."
 
     "The train rocks beneath your feet."
@@ -1172,23 +1174,23 @@ label day2:
 
     "He tilts your gaze upward."
 
-    show coripose1 open direct raised
+    show coritrain open direct with dissolve
 
     cori "Don’t look right at it."
 
     cori "Pick something further out."
 
-    show coripose1 side neutral
+    show coritrain side smallsmile
 
     play sound "audio/rustle.mp3"
 
     "He lets go, sits next to you, looking out past everything."
 
-    show coripose1 open 
+    show coritrain open 
 
     cori "It's less dizzy that way."
 
-    show coripose1 neutral
+    show coritrain smallsmile
 
     pause 1.5
 
@@ -1198,11 +1200,11 @@ label day2:
 
     "Or at least it feels like it does."
 
-    show coripose1 open
+    show coritrain open
 
     cori "Looks like we’re heading south."
 
-    show coripose1 neutral
+    show coritrain smallsmile
     
     "You hum, not really checking."
 
@@ -1228,45 +1230,47 @@ label day2:
 
     pause 2.0
 
-    show coripose1 open worried
+    show coritrain open direct worried
 
     cori "If you ask someone from the 1800s they'll tell you women weren't meant to travel on trains."
 
     cori "Their uteruses would fly out or something."
     
-    show coripose1 neutral
+    show coritrain smallsmile
 
     "You blink."
 
-    show coripose1 teethsmile direct
+    show coritrain neutral blush direct
     
     "The absurdity of his comment makes you laugh."
     
     "The movement makes you notice the camera around you neck."
+
+    show coritrain -blush neutral
     
     "You didn't mean to be holding it on for so long."
     
     "You take it off then nudge Cori."
     
     u "I should give this back to you."
-
-    show coripose1 open direct camera
     
     "He turns to you, accepting the camera."
     
+    show coritrain side worried open
+    
     cori "Oh yea, that reminds me."
 
-    show coripose1 neutral
+    show coritrain smallsmile
     
     "He reaches into his pocket."
 
     "He pulls out a few photographs."
 
-    show coripose1 open 
+    show coritrain direct open 
 
     cori "These are yours."
 
-    show coripose1 smile
+    show coritrain smallsmile
 
     "He holds them out."
 
@@ -1286,11 +1290,11 @@ label day2:
 
     pause 1.5
 
-    show coripose1 open side
+    show coritrain open side
 
     cori "Figured you might want them."
 
-    show coripose1 neutral
+    show coritrain smallsmile
 
     "You look down at the photos."
 
@@ -1306,7 +1310,7 @@ label day2:
 
     "You tuck the photos into your coat."
 
-    show coripose1 teethsmile 
+    show coritrain teethsmile 
 
     cori "My favorite part is coming up soon, I think you'll like it."
 
@@ -1516,10 +1520,6 @@ label day2:
     "Spring, summer, and fall... "
 
     "Winter is missing."
-
-    #"Your eyes flicker to the camera."
-
-    #"It's lens stares into you, taunting you."
 
     scene black with fade
 
@@ -1968,6 +1968,8 @@ label day3:
     pause 2.0
     
     "The waves fill the space for you."
+
+    show coripose1 side worried open
     
     cori "But you still kept them, didn't you?"
     
@@ -1975,17 +1977,25 @@ label day3:
     
     cori "His photos, his films, his ashes."
     
-    cori "So why come back here and throw everything else away?"    
+    cori "So why come back here and throw everything else away?" 
+
+    show coripose1 direct neutral   
     
     "Cori watches you for a moment."
+
+    show coripose1 norm open
     
     cori "You wish so desperately for these things to mean nothing."
+
+    show coripose1 side
     
     cori "But that's not true at all."
     
     cori "Even if they're just a fraction."
     
     cori "That's enough to make you hesistate."
+
+    show coripose1 direct 
     
     "There's a long pause."
     
@@ -2024,6 +2034,8 @@ label day3:
     scene bg hallway_day with fade
     
     "Someone's at the dining table."
+
+    show mom with dissolve
     
     "It's Mom."
     
@@ -2068,6 +2080,8 @@ label day3:
     m "You should keep them somewhere safe, [player_name]."
     
     "She hands you the binder."
+
+    hide mom with dissolve
     
     scene black with fade
 
@@ -2153,7 +2167,7 @@ label day3:
 
     cori "Hey, [player_name]."
     "It's Cori."
-    cori "Quite the early bird, aren't you?"
+    cori "I thought you said you weren't an early bird." #owl?
     cori "The sun's not even up."
     cori "And you have your camera."
     cori "Are you planning to finish your collection?"
@@ -2177,36 +2191,13 @@ label day3:
     cori "It's nothing to be sad about."
     cori "We weren't even suppose to meet in the first place."
     cori "But I'm glad we did."
-    "..."
+    "... "
     cori "I wish we had met earlier."
     cori "I also wish I could stay here forever."
     cori "But winter doesn't last forever."
     cori "Neither does the blue hour, right?"
     cori "You should hurry, go get that shot."
     "The line goes dead."
-
-
-    # "You hear him take a breath"
-    # cori "remember when you asked me, why I take photographs?"
-    # cori "I told you it was to make reality more bearable."
-    # cori "This is my reality."
-    # cori "I'm sure you've already figured that much out."
-    # cori "I can't interact with your world anymore."
-    # cori "I stayed for as long as I could, I thought I had more time though."
-    # cori "I lingered, trying to desperately grab on to bits of my old life."
-    # "He scoffs."
-    # cori "I mean, how could I not? Have you seen how beautiful it is?"
-    # cori "At first, I couldn't understand your perspective at all, how could someone be so scared of looking back at the past?"
-    # cori "I realized we were both just viewing it as an excuse to not move forward."
-    # "Theres a long pause."
-    # cori "Thanks, [player_name]. I wish we would've met earlier."
-    # cori "Had more time to talk, to take photos, to explore."
-    # cori "I really enojoyed our little interactions, they're special to me."
-    # "There's another long pause."
-    # cori "But winter doesn't last forever, neither does the blue hour, right?"
-    # cori "You should hurry, go get that shot."
-    # cori "At the end will be a spring with new beginnings."
-    # "The line goes dead."
 
     scene black with fade
     centered "You're running."

@@ -18,8 +18,10 @@ image bg hallway_day = "images/bg/hallway_day.png"
 image bg bath = "images/bg/bath.png"
 image bg beach = "images/bg/beach.png"
 
+
 #Sprites
 image dad = "images/dad.png"
+image mom = "images/mom.png"
 
 #Cori
 layeredimage coripose1:
@@ -67,5 +69,33 @@ layeredimage coripose1:
             "images/cori/pose1/cori_mouth_teethsmile.png"
         attribute open:
             "images/cori/pose1/cori_mouth_open.png"
+
+
+layeredimage coritrain:
+
+    always "images/cori/train/base.png"
+
+    group blush:
+        attribute blush:
+            "images/cori/train/blush.png"   
+    
+    group eyebrows:
+        attribute worried:
+            "images/cori/train/worried.png"
+        attribute neutral default:
+            "images/cori/train/neutral.png"
+    
+    group mouth:
+        attribute smallsmile default:
+            "images/cori/train/smallsmile.png"
+        attribute open:
+            "images/cori/train/open.png"
+    
+    group eyes:
+        attribute direct default:
+            "images/cori/train/direct.png"
+        attribute side:
+            "images/cori/train/side.png"
+        
 
 
