@@ -22,6 +22,7 @@ image bg beach = "images/bg/beach.png"
 #Sprites
 image dad = "images/dad.png"
 image mom = "images/mom.png"
+image mom happy = "images/mom_happy.png"
 
 #Cori
 layeredimage coripose1:

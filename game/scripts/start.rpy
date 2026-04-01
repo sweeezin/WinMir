@@ -1,4 +1,7 @@
-
+#Well well well
+#Look who decided to open the code...
+#Are you here for secrets? Just curious?
+#You probably won't find much here, have fun though
 
 default saw_photos = False
 
@@ -1354,9 +1357,11 @@ label day2:
 
     cori "My favorite part is coming up soon, I think you'll like it."
 
-    show coripose1 neutral
+    show coritrain smallsmile
 
     "You look at him, curious about what he means."
+    
+    hide coritrain with dissolve
 
     "Suddenly, the blur of trees thin out."
 
@@ -2099,6 +2104,8 @@ label day3:
     cori "I promise."
     
     scene black with fade
+
+    stop music2 fadeout 3.0
     
     "It was a long walk home."
     
@@ -2130,9 +2137,9 @@ label day3:
     
     "She smiles just a bit."
     
-    m "It was just a feeling."
-    
     "She traces the edge of one of the photos."
+
+    show mom happy
     
     m "Yea, of course I can."
     
@@ -2364,6 +2371,8 @@ label day3:
     "...Then dead."
 
     scene snowpath_night with fade
+
+    play audio "snow_footsteps.mp3" fadein 1.0 volume 0.8
 
     "The climb feels longer than you remember."
 

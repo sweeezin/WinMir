@@ -292,45 +292,47 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            xpos 230
+            yalign 0.5
+
+            textbutton _("NEW") action Start() text_size 150
+
+            textbutton _("LOAD") action ShowMenu("load") text_size 150
+
+            textbutton _("GALLERY") text_size 150
+
+            textbutton _("QUIT") action Quit(confirm=not main_menu) text_size 150
 
         else:
-
+            xpos gui.navigation_xpos
+            yalign 0.5
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save") action ShowMenu("save") 
 
-        textbutton _("Load") action ShowMenu("load")
+            textbutton _("Load") action ShowMenu("load") 
 
-        textbutton _("Preferences") action ShowMenu("preferences")
-
-        if _in_replay:
-
-            textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
+            textbutton _("Options") action ShowMenu("preferences") 
+            
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-        if renpy.variant("pc"):
+            if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+                textbutton _("Quit") action Quit(confirm=not main_menu) 
+
+            if _in_replay:
+
+                textbutton _("End Replay") action EndReplay(confirm=True)
+
+        
 
 
 style navigation_button is gui_button
@@ -365,16 +367,7 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     use navigation
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+    
 
 
 style main_menu_frame is empty

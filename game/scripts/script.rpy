@@ -10,7 +10,7 @@ init python:
             return
 
         if event == "show":
-            renpy.sound.play("audio/blip.wav", channel="typing", loop=True)
+            renpy.sound.play("audio/bleep018.ogg", channel="typing", loop=True)
             
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="typing")
