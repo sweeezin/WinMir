@@ -222,7 +222,7 @@ label start_phone_call:
 
     cori "... Too much stray light..."
 
-    "He mutters to himself. His expression is focused."
+    "She mutters to herself. her expression is focused."
 
     pause 1.0
 
@@ -238,7 +238,7 @@ label start_phone_call:
 
     cori "Wow, I've never thought of that."
 
-    "Your eyes are drawn to a pink hue from his pocket."
+    "Your eyes are drawn to a pink hue from her pocket."
 
     "It's a bundle of flowers. The same ones from inside the phone booth."
 
@@ -246,7 +246,7 @@ label start_phone_call:
 
     show coripose1 direct raised
 
-    "Slowly, he traces your gaze."
+    "Slowly, she traces your gaze."
 
     pause 2.0
 
@@ -266,13 +266,13 @@ label start_phone_call:
 
     cori "I grow them in my garden."
 
-    "He gives a soft smile."
+    "she gives a soft smile."
     
     cori "Unlike other flowers, they bloom in the winter."
 
     show coripose1 neutral
 
-    "He steps towards you, closing the distance between you."
+    "she steps towards you, closing the distance between you."
 
     show coripose1 open
 
@@ -280,15 +280,15 @@ label start_phone_call:
 
     show coripose1 closedsmile
 
-    "His voice is soft against the morning ambience."
+    "her voice is soft against the morning ambience."
 
-    "You glance at his camera."
+    "You glance at her camera."
 
     u "I assume those photographs in the booth are also yours?"
 
     show coripose1 teethsmile
 
-    "His eyes flicker to yours and he laughs gently."
+    "her eyes flicker to yours and she laughs gently."
 
     show coripose1 worried open
 
@@ -302,7 +302,7 @@ label start_phone_call:
 
     show coripose1 raised teethsmile blush
 
-    "He grins."
+    "she grins."
 
     show coripose1 open -blush
 
@@ -316,7 +316,7 @@ label start_phone_call:
 
     pause 1.0
 
-    "He shifts his weight from side to side."
+    "She shifts her weight from side to side."
 
     cori "Yea... You're probably right."
 
@@ -330,7 +330,7 @@ label start_phone_call:
 
     show coripose1 neutral
 
-    "His tone is casual."
+    "her tone is casual."
 
     "Listening to the stranger reminisce, it feels familiar."
 
@@ -378,7 +378,7 @@ label start_phone_call:
 
     u "Sometimes it felt like it was all he ever did, like he was never in the same reality." 
 
-    "The man listens intently."
+    "The girl listens intently."
 
     show coripose1 open
 
@@ -396,7 +396,7 @@ label start_phone_call:
 
     show coripose1 side
 
-    "The man grins."
+    "The girl grins."
 
     cori "Hmmm."
 
@@ -422,7 +422,7 @@ label start_phone_call:
 
     show coripose1 open
 
-    "He studies your eyes with curiosity."
+    "she studies your eyes with curiosity."
 
     cori "Is that so? Whens the last time you took a photo?"
 
@@ -440,13 +440,13 @@ label start_phone_call:
     
     show coripose1 direct teethsmile
 
-    "He cracks a smile"
+    "she cracks a smile"
 
     cori "How bout giving it another go now?"
 
     show coripose1 side closedsmile
 
-    "He gestures to the camera hanging from his neck."
+    "She gestures to the camera hanging from her neck."
 
     "You hesistate. You really didn't have any interest of touching a camera again."
 
@@ -458,7 +458,7 @@ label start_phone_call:
 
     show coripose1 neutral
 
-    "He peers into your eyes."
+    "she peers into your eyes."
 
     "You look at the camera, then back at him."
 
@@ -506,13 +506,13 @@ label start_phone_call:
 
                 jump take_photo
 
-            "Look at the man" if not photo_cori:
+            "Look at the girl" if not photo_cori:
 
                 $ photo_cori = True
 
                 show coripose1 light closedsmile flowers with dissolve
 
-                "You look at the man. The morning light casts a soft flow on his face."
+                "You look at the girl. The morning light casts a soft flow on his face."
 
                 show coripose1 open
 
@@ -520,17 +520,17 @@ label start_phone_call:
 
                 show coripose1 teethsmile
 
-                "He stands in front of the phone booth and smiles."
+                "she stands in front of the phone booth and smiles."
 
-                "You line up the man's figure in the viewfinder, adjusting the settings to capture the soft morning light on his face."
+                "You line up the girl's figure in the viewfinder, adjusting the settings to capture the soft morning light on her face."
 
                 play sound "audio/shutter.mp3"
 
                 "You take a photo."
 
-                "It seems the lens flare has blocked out his face."
+                "It seems the lens flare has blocked out her face."
 
-                "He almost looks transparent."
+                "she almost looks transparent."
 
                 jump take_photo
 
@@ -540,21 +540,21 @@ label start_phone_call:
 
                 show coripose1 light side flowers with dissolve
 
-                "You look at the flower in his pocket, once again drawn to its vibrant pink color."
+                "You look at the flower in her pocket, once again drawn to its vibrant pink color."
                 
                 show coripose1 direct 
 
-                "The man notices."
+                "The girl notices."
 
                 show coripose1 -flowers
 
-                "He takes the flower out of his pocket and holds it towards you."
+                "she takes the flower out of her pocket and holds it towards you."
 
                 show coripose1 closedsmile 
 
                 cori "An execellent choice for a subject."
 
-                "You gently take the flower from him, his fingers are soft against yours, like a daft of air."
+                "You gently take the flower from him, her fingers are soft against yours, like a daft of air."
 
                 hide coripose1 with dissolve
 
@@ -577,7 +577,7 @@ label start_phone_call:
 
     cori "Very interesting... "
 
-    "He's looking through your photos on the camera's screen."
+    "she's looking through your photos on the camera's screen."
 
     cori "I thought I told you not to overthink it."
 
@@ -607,13 +607,13 @@ label start_phone_call:
 
     show coripose1 closedsmile
 
-    "You pause for a moment, taking in his words."
+    "You pause for a moment, taking in her words."
 
     "Was that really what you were trying to do?"
 
     show coripose1 direct
 
-    "His eyes peer into yours, he tilts his head."
+    "her eyes peer into yours, sshe tilts her head."
 
     show coripose1 open worried
 
@@ -629,7 +629,7 @@ label start_phone_call:
 
     show coripose1 open raised
 
-    "He lets out a sudden, bright laugh."
+    "she lets out a sudden, bright laugh."
 
     cori "So humble."
 
@@ -724,7 +724,7 @@ label day2:
     
     show coripose1 open direct raised
 
-    "He also notices you as your footsteps grow closer."
+    "She also notices you as your footsteps grow closer."
 
     cori "Oh hey."
 
@@ -734,7 +734,7 @@ label day2:
 
     show coripose1 neutral
 
-    "You notice hes carrying his camera again."
+    "You notice she's carrying her camera again."
 
     "You let out a slight sigh."
 
@@ -744,11 +744,11 @@ label day2:
 
     show coripose1 teethsmile
 
-    "You walk alongside him."
+    "You walk alongside her."
 
     cori "Were you planning to see the sunrise?"
 
-    "He glances at you as he asks."
+    "She glances at you as she asks."
 
     u "I don't know, I just wanted to get out of the house for a bit."
 
@@ -777,7 +777,7 @@ label day2:
 
     show coripose1 neutral
 
-    "He keeps his eyes on the horizon."
+    "she keeps her eyes on the horizon."
 
     "The sky is still dark, but it’s beginning to thin."
 
@@ -787,7 +787,7 @@ label day2:
 
     cori "Is that what it's called?"
 
-    "He glances at you, a small smile forming."
+    "she glances at you, a small smile forming."
 
 
     show coripose1 neutral 
@@ -804,7 +804,7 @@ label day2:
 
     cori "Wow, you really know your stuff."
     
-    "He lets out a quiet breath, almost a laugh."
+    "she lets out a quiet breath, almost a laugh."
 
     show coripose1 neutral 
 
@@ -892,7 +892,7 @@ label day2:
 
     cori "You pick up the reciever anyway. Is there no point? Or is the point the attempt to connect, even if you know it won't work?"
 
-    "He pauses to take a breath."
+    "she pauses to take a breath."
 
     pause 1.0
 
@@ -942,7 +942,7 @@ label day2:
 
     cori "You know, in japanese folklore, they say that the blue hour is when the boundary between the living and the dead is thinnest."
     
-    "He gives a mischievous smile."
+    "she gives a mischievous smile."
 
     show coripose1 direct
 
@@ -972,7 +972,7 @@ label day2:
 
     "You watch as Cori takes a few more photos."
 
-    "He's completely absorbed in his work, adjusting the settings and trying to capture the perfect shot."
+    "she's completely absorbed in her work, adjusting the settings and trying to capture the perfect shot."
 
     pause 3.0
 
@@ -1016,9 +1016,9 @@ label day2:
 
     "Everything settles into a quiet, warm light."
 
-    "Cori pushes himself to his feet."
+    "Cori pushes herself to her feet."
 
-    "He stretches, arms overhead, shoulders rolling back like he's shaking off the cold."
+    "She stretches, arms overhead, shoulders rolling back like she's shaking off the cold."
 
     show coripose1 open side
 
@@ -1030,19 +1030,19 @@ label day2:
 
     u "Different how?"
 
-    "He stands in front of you."
+    "she stands in front of you."
 
-    "He learns towards you, grasping your fingers with his own."
+    "she learns towards you, grasping your fingers with her own."
 
-    "He pulls you up to your feet, then tugs your sleeve."
+    "she pulls you up to your feet, then tugs your sleeve."
 
     cori "You'll have to follow me to find out."
     
-    "He grins."
+    "she grins."
 
     scene snowpath with fade
 
-    "He nods past you, toward the lower part of the trail."
+    "she nods past you, toward the lower part of the trail."
 
     "Your sleeve is still being pulled by him."
 
@@ -1050,13 +1050,13 @@ label day2:
 
     cori "... "
 
-    "He looks back at you, then to your sleeve, then back at you again."
+    "she looks back at you, then to your sleeve, then back at you again."
 
-    "Swiftly, he lets go of your sleeve and holds on to your hand instead."
+    "Swiftly, she lets go of your sleeve and holds on to your hand instead."
 
-    "He gives a smile, then turns back around before you could say anything."
+    "she gives a smile, then turns back around before you could say anything."
 
-    "His hand is neither cold or warm."
+    "her hand is neither cold or warm."
 
     "But the feeling of it is strangely comforting."
 
@@ -1086,7 +1086,7 @@ label day2:
 
     show coripose1 neutral
 
-    "He steps closer to it anyway, running a hand along the cold metal."
+    "she steps closer to it anyway, running a hand along the cold metal."
 
     show coripose1 open side
 
@@ -1126,7 +1126,7 @@ label day2:
 
     show coripose1 direct teethsmile norm
 
-    "He peers into your eyes."
+    "she peers into your eyes."
 
     cori "I can make it work."
 
@@ -1147,7 +1147,7 @@ label day2:
     scene black with fade
     hide coripose1
 
-    "First, you feel him loop his camera around your neck."
+    "First, you feel him loop her camera around your neck."
 
     cori "Hold on to this for me."
 
@@ -1227,7 +1227,7 @@ label day2:
 
     play sound "audio/rustle.mp3"
 
-    "He lets go, sits next to you, looking out past everything."
+    "she lets go, sits next to you, looking out past everything."
 
     show coritrain open 
 
@@ -1237,7 +1237,7 @@ label day2:
 
     pause 1.5
 
-    "You follow his line of sight."
+    "You follow her line of sight."
 
     "The horizon holds still longer than everything else."
 
@@ -1285,7 +1285,7 @@ label day2:
 
     show coritrain neutral blush direct
     
-    "The absurdity of his comment makes you laugh."
+    "The absurdity of her comment makes you laugh."
     
     "The movement makes you notice the camera around you neck."
 
@@ -1297,7 +1297,7 @@ label day2:
     
     u "I should give this back to you."
     
-    "He turns to you, accepting the camera."
+    "she turns to you, accepting the camera."
     
     show coritrain side worried open
     
@@ -1305,9 +1305,9 @@ label day2:
 
     show coritrain smallsmile
     
-    "He reaches into his pocket."
+    "she reaches into her pocket."
 
-    "He pulls out a few photographs."
+    "she pulls out a few photographs."
 
     show coritrain direct open 
 
@@ -1315,7 +1315,7 @@ label day2:
 
     show coritrain smallsmile
 
-    "He holds them out."
+    "she holds them out."
 
     "You take them."
 
@@ -1329,7 +1329,7 @@ label day2:
 
     u "You printed them out?"
 
-    "He shrugs."
+    "she shrugs."
 
     pause 1.5
 
@@ -1359,7 +1359,7 @@ label day2:
 
     show coritrain smallsmile
 
-    "You look at him, curious about what he means."
+    "You look at him, curious about what she means."
     
     hide coritrain with dissolve
 
@@ -1735,13 +1735,13 @@ label day3:
 
     "In the water."
 
-    "His shoes sit off to the side, half-sunken into the damp sand."
+    "her shoes sit off to the side, half-sunken into the damp sand."
 
-    "His pants are rolled up to his calves, fabric darkened where it’s been splashed."
+    "her pants are rolled up to her calves, fabric darkened where it’s been splashed."
 
-    "The tide pushes in and out around his legs."
+    "The tide pushes in and out around her legs."
 
-    "He walks along the edge where the waves break, slow and steady."
+    "she walks along the edge where the waves break, slow and steady."
 
     "Each step disappears as the water folds back over it."
     
@@ -1751,7 +1751,7 @@ label day3:
 
     "Your voice carries over the sound of the water."
 
-    "He turns around, a surprised expression on his face."
+    "she turns around, a surprised expression on her face."
 
     show coripose1 light open direct worried with dissolve
 
@@ -1759,7 +1759,7 @@ label day3:
 
     show coripose1 closedsmile raised
 
-    "His expression softens upon seeing you."
+    "her expression softens upon seeing you."
 
     show coripose1 open 
 
@@ -1767,7 +1767,7 @@ label day3:
 
     show coripose1 closedsmile
 
-    "The light hits his face at an angle, softening the edges of his expression."
+    "The light hits her face at an angle, softening the edges of her expression."
 
     u " I've been... looking for you."
 
@@ -1775,7 +1775,7 @@ label day3:
 
     show coripose1 neutral worried
 
-    "He tilts his head slightly, studying you."
+    "she tilts her head slightly, studying you."
 
     u "I... I wanted to give those photographs back to you."
     
@@ -1787,7 +1787,7 @@ label day3:
 
     show coripose1 norm side
 
-    "Cori's expression turns neutral, it almost seems like he was expecting this."
+    "Cori's expression turns neutral, it almost seems like she was expecting this."
 
     show coripose1 open worried
 
@@ -1795,7 +1795,7 @@ label day3:
 
     show coripose1 neutral
 
-    "A small, almost amused breath leaves him, but it doesn’t reach his eyes."
+    "A small, almost amused breath leaves him, but it doesn’t reach her eyes."
 
     hide coripose1 with dissolve
 
@@ -1813,7 +1813,7 @@ label day3:
 
     "You glance at him."
 
-    "He's watching the water, not you."
+    "she's watching the water, not you."
 
     u "Cori, can I ask you a personal question?"
 
@@ -1835,7 +1835,7 @@ label day3:
 
     "Cori pauses for a moment."
 
-    "He looks away, his expression is hard to read."
+    "she looks away, her expression is hard to read."
 
     "You hear him scoff slightly."
 
@@ -1887,7 +1887,7 @@ label day3:
     
     u "Cori."
 
-    "He avoids your gaze."
+    "she avoids your gaze."
     
     u "What are you?"
     
@@ -2011,7 +2011,7 @@ label day3:
     
     u "But when the winter came, my father had a moment of clarity, only to do something so stupid."
     
-    u "He took his own life that winter, and I never saw reason to finish the collection."
+    u "He passed that winter, and I never saw reason to finish the collection."
     
     "Theres a thick silence between the two of you."
     
@@ -2073,7 +2073,7 @@ label day3:
 
     show coripose1 neutral
     
-    "He grasps the photos in his hand."
+    "she grasps the photos in her hand."
 
     show coripose1 open 
     
@@ -2083,7 +2083,7 @@ label day3:
 
     show coripose1 neutral
     
-    "He takes off his camera, and hands it to you."
+    "she takes off her camera, and hands it to you."
 
     show coripose1 side open 
     
@@ -2147,7 +2147,7 @@ label day3:
     
     m "I'm not sure how to describe it."
     
-    m "His work felt... over-engineered."
+    m "her work felt... over-engineered."
     
     m "Yours feels more in the moment."
     
@@ -2296,7 +2296,7 @@ label day3:
     
     cori "Even if it shouldn't have happened in the first place."
     
-    "He sounds far away."
+    "she sounds far away."
     
     cori "Last winter, you brought me back."
     
@@ -2304,7 +2304,7 @@ label day3:
     
     cori "It all comes full circle."
     
-    "You take in his words."
+    "You take in her words."
     
     u "...Are you really just going to disappear?"
     

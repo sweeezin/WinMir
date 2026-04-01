@@ -27,49 +27,49 @@ image mom happy = "images/mom_happy.png"
 #Cori
 layeredimage coripose1:
 
-    always "images/cori/pose1/cori_pose1_base.png"
+    always "images/corifem.png"
     
     group light:
         attribute light:
-            "images/cori/pose1/cori_light.png" 
+            "images/corifem.png" 
     
     group blush:
         attribute blush:
-            "images/cori/pose1/cori_blush.png"
+            "images/corifem.png"
     
     group flowers:
         attribute flowers:
-            "images/cori/pose1/cori_flowers.png"
+            "images/corifem.png"
 
     group camera:
         attribute camera default:
-            "images/cori/pose1/cori_camera.png"
+            "images/corifem.png"
 
     group eyes:
         attribute direct default:
-            "images/cori/pose1/cori_eyes_direct.png"
+            "images/corifem.png"
         attribute side:
-            "images/cori/pose1/cori_eyes_side.png"
+            "images/corifem.png"
 
     group eyebrows: 
         attribute worried:
-            "images/cori/pose1/cori_eyebrows_worried.png"
+            "images/corifem.png"
         attribute raised default:
-            "images/cori/pose1/cori_eyebrows_neutral.png"
+            "images/corifem.png"
         attribute norm:
-            "images/cori/pose1/cori_eyebrows_concerned.png"
+            "images/corifem.png"
 
     group mouth:
         attribute neutral default:
-            "images/cori/pose1/cori_mouth_neutral.png"
+            "images/corifem.png"
         attribute closedsmile:
-            "images/cori/pose1/cori_mouth_closedsmile.png"
+            "images/corifem.png"
         attribute smile:
-            "images/cori/pose1/cori_mouth_frown.png"
+            "images/corifem.png"
         attribute teethsmile:
-            "images/cori/pose1/cori_mouth_teethsmile.png"
+            "images/corifem.png"
         attribute open:
-            "images/cori/pose1/cori_mouth_open.png"
+            "images/corifem.png"
 
 
 layeredimage coritrain:
