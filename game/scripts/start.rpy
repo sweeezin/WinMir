@@ -23,11 +23,11 @@ label start:
     
     centered "The first snowfall of every year is different."
 
-    centered "Some years, its light and fluffly, other years its heavy and wet."
+    centered "Some years, its light and fluffy, other years, its heavy and wet."
 
     centered "You'd think they blur together."
 
-    centered "But I remeber them all."
+    centered "But I remember them all."
     
     centered "Except for one."
 
@@ -1659,13 +1659,9 @@ label day2:
 
     "He looks down at his own hands."
 
-    d "When did these get so old?"
-
-    "His voice sounds so fragile."
-
-    "You don’t answer."
-
     "He mutters something quietly to himself."
+
+    "You don't bother to ask him about it."
 
     "You pull his shirt back over his shoulders."
 
@@ -1675,7 +1671,7 @@ label day2:
 
     "He used to."
 
-    "Smooth out the fabric like it matters."
+    "You smooth out the fabric like it matters."
 
     d "Thank you."
 
@@ -1703,7 +1699,7 @@ label day3:
 
     stop music fadeout 3.0
 
-    scene black with fade
+    scene sunset with fade
 
     centered "Another week has passed, the flowers have wilted."
 
@@ -1857,19 +1853,27 @@ label day3:
 
     pause 1.0
 
+    "You shift your weight, eyes flicking past him before settling back."
+
     u "Those photos we took."
 
-    u "All of them are the same as I remeber."
-    
-    u "Except for one."
+    u "All of them are the same as I remember."
+
+    "A small pause."
+
+    u "Except for one." 
     
     u "The one with you in front of the booth."
+
+    "You rub your thumb along the edge of the print without looking at it."
     
     u "Everything is the same, the booth, the lighting."
     
     u "But you've dissappeared."
     
     "... "
+
+    "You exhale through your nose."
     
     u "You're always never bothered by the cold-"
     
@@ -1880,10 +1884,12 @@ label day3:
     "You gaze upon the sand in front of you."
     
     "There are only one pair of footprints leading to where you sit."
+
+    "A faint breeze pulls at the edges, but not enough to erase them."
     
     u "And today, you're not even leaving footprints."
     
-    "You turn to look at him."
+    "You finally look at him."
     
     u "Cori."
 
@@ -1893,29 +1899,39 @@ label day3:
     
     "You already know the answer, but you want to hear it from him."
     
-    cori ". . . "
+    "Cori’s shoulders lift a fraction, then fall again."
     
     show coripose1 open worried 
 
     cori "I... I'm not sure myself."
     
-    cori "A ghost? A wandering spirit? A figment of your imagination?"
+    cori "A ghost? A wandering spirit?"
     
-    cori "I don't know, but I do know that I'm not really here anymore."
+    "He lets out a quiet breath."
+    
+    cori "A figment of your imagination?"
+
+    "He gives a small, uncertain smile that doesn’t hold."
+    
+    cori "I don't know."
+    
+    cori "But I do know that I'm not really here anymore."
 
     show coripose1 neutral
     
-    "You swallow thickly."
+    "You swallow."
 
     u "What do you remember?"
 
     show coripose1 open 
     
     cori "I... "
+
+    "His fingers twitch slightly at his side."
     
     show coripose1 direct
     
-    cori "I remeber you... "
+    cori "I remember you... "
     
     cori "...Last winter, you were at the summit, weren't you?"
     
@@ -1930,28 +1946,39 @@ label day3:
     cori "You stared into the city, for hours."
     
     cori "You left your camera at the end of it."
+
+    cori "You never came back for it."
     
-    cori "And I picked it up."
+    cori "So, I picked it up."
     
     cori "I started using it."
+
+    cori "At first, just... out of curiosity."
     
-    cori "Bit by bit."
     
-    cori "I realized, whenever I took a photo."
+    cori "Then I realized, whenever I took a photo."
 
     show coripose1 direct norm 
     
-    cori "I would remeber a little bit more about myself."
+    cori "I would remember a little bit more about myself."
+    
     
     cori "I could exist in this world a little more."
+
+    "He lets out a self-pitying laugh."
     
-    cori "Eventually I grew curious about you."
+    cori "Eventually, I grew curious about you."
     
     cori "That curiosity drew me back."
+
     
     cori "I wondered if I'd meet you again."
     
-    cori "So when it became winter again, I waited for you to come back."
+    cori "So when it became winter again."
+    
+    cori "I waited for you to come back."
+
+    "You catch the reflection of the sun in his eyes—too steady, almost fixed."
 
     show coripose1 neutral
     
@@ -1962,15 +1989,29 @@ label day3:
     show coripose1 side open raised
     
     cori "Yea."
+
+    cori "I recognized you immediately."
     
-    cori "I pushed you to take some photos."
+    cori "So I pushed you a bit."
 
     show coripose1 worried teethsmile
     
-    cori "You didn't even recognize your own camera, did you?"
-    
-    cori "I wanted to know why you were so indifferent to something you loved so much..."
-    
+    "He lets out a soft scoff, glancing away."
+
+    cori "You didn't even recognize your own camera."
+
+    cori "I just..."
+
+    "A small shrug."
+
+    cori "Wanted to know why."
+
+    "His voice softens."
+
+    cori "Why you could walk away from something you cared about that easily."
+
+    "He looks back at you, more directly now."
+
     pause 2.0
     
     cori "So, let me turn the question back to you..."
@@ -1979,14 +2020,18 @@ label day3:
     
     pause 2.0
 
-    u ". . . "
+    "Cori looks at you, waiting for an answer."
+
+    "Your fingernails dig into the palm of your hand."
     
-    u "I think it was, maybe 6 years ago?"
+    u "I think it was, maybe, 6 years ago?"
     
-    u "My father developed a disease."
+    u "My dad developed a disease."
     
-    u "The kind that eats away at a person's mind and memories."
-    
+    u "It was the kind that eats away at a person's mind and memories."
+
+    "You give a small, humorless exhale."
+
     u "I wasn't as good at the camera as him, but I started a collection for him."
     
     "Cori looks into your eyes, carefully listening."
@@ -1996,6 +2041,8 @@ label day3:
     u "I thought, maybe if his mind couldn't hold onto them, I could."
     
     u "He'd criticize my work, say I wasn't cut out for this kind of thing."
+
+    "You feel a dull pang in your chest."
     
     u "But it didn't matter to me."
     
@@ -2036,6 +2083,8 @@ label day3:
     show coripose1 side worried open
     
     cori "But you still kept them, didn't you?"
+
+    "His voice is quiet, it almost blends into the waves."
     
     cori "Even if they weren't really him."
     
@@ -2045,7 +2094,7 @@ label day3:
 
     show coripose1 direct neutral   
     
-    "Cori watches you for a moment."
+    "Cori watches you for a moment, studying your expression."
 
     show coripose1 norm open
     
@@ -2083,15 +2132,19 @@ label day3:
 
     show coripose1 neutral
     
-    "He takes off his camera, and hands it to you."
+    "He lifts the camera from around his neck."
+
+    "For a moment, he just holds it."
+
+    "Then he offers it to you."
 
     show coripose1 side open 
     
     cori "You won't be able to finish that collection without this camera right?"
     
-    cori "Even if you don't want to."
+    cori "Even if you don't plan to."
     
-    cori "I want you to have the option to."
+    cori "You should still have the option to."
 
     show coripose1 neutral
     

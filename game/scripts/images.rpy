@@ -17,6 +17,7 @@ image bg hallway = "images/bg/hallway.png"
 image bg hallway_day = "images/bg/hallway_day.png"
 image bg bath = "images/bg/bath.png"
 image bg beach = "images/bg/beach.png"
+image bg sunset = "images/bg/sunset.png"
 
 
 #Sprites

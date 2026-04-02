@@ -289,27 +289,28 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
-        style_prefix "navigation"
+    
 
+    if main_menu:
 
+        hbox: 
+            spacing 65
 
-        spacing gui.navigation_spacing
+            xalign 0.5
+            yalign 0.9
 
-        if main_menu:
+            textbutton _("NEW") action Start() text_size 150 text_color "#ffffff"
 
-            xpos 230
-            yalign 0.5
+            textbutton _("LOAD") action ShowMenu("load") text_size 150 text_color "#ffffff"
 
-            textbutton _("NEW") action Start() text_size 150
+            textbutton _("GALLERY") text_size 150 text_color "#ffffff"
 
-            textbutton _("LOAD") action ShowMenu("load") text_size 150
+            textbutton _("QUIT") action Quit(confirm=not main_menu) text_size 150 text_color "#ffffff"
 
-            textbutton _("GALLERY") text_size 150
+    else:
 
-            textbutton _("QUIT") action Quit(confirm=not main_menu) text_size 150
-
-        else:
+        vbox:
+            spacing gui.navigation_spacing
             xpos gui.navigation_xpos
             yalign 0.5
             textbutton _("History") action ShowMenu("history")
