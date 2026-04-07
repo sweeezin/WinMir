@@ -230,9 +230,9 @@ label start_phone_call:
 
     "The words leave your mouth before you could stop yourself."
 
-    "The stranger turns to you, surprised by your presence."
+    "The stranger turns to you, his eyes widen, surprised by your presence."
 
-    cori "Oh uhh, thanks, that's good advice actually."
+    cori "Oh, thanks, that's good advice actually."
 
     u "Yea... the snow tends to reflect a lot of light, so it can be hard to get the right exposure without a lens hood."
 
@@ -252,9 +252,11 @@ label start_phone_call:
 
     show coripose1 open
 
-    cori "Oh,"
+    cori "Oh."
 
-    cori "they're called cyclamens."
+    "He grins."
+
+    cori "These are cyclamens."
 
     show coripose1 neutral
 
@@ -284,11 +286,13 @@ label start_phone_call:
 
     "You glance at his camera."
 
+    "You can't name the particular model, but it's familiar."
+
     u "I assume those photographs in the booth are also yours?"
 
     show coripose1 teethsmile
 
-    "His eyes flicker to yours and he laughs gently."
+    "His eyes flicker to yours and he lets out a laugh."
 
     show coripose1 worried open
 
@@ -300,7 +304,7 @@ label start_phone_call:
 
     u "They're not bad." 
 
-    show coripose1 raised teethsmile blush
+    show coripose1 raised teethsmile blush with fade
 
     "He grins."
 
@@ -364,7 +368,7 @@ label start_phone_call:
 
     "You remember watching his films and looking at his photos."
 
-    "He wasn't just good, he was exceptional- with storytelling, composition, and technical skill."
+    "He wasn't just good, he was exceptional-- with storytelling, composition, and technical skill."
 
     "You loved his work, of course. But you also found it incredibly frustrating."
 
@@ -376,7 +380,8 @@ label start_phone_call:
 
     u "He did it for work."
 
-    u "Sometimes it felt like it was all he ever did, like he was never in the same reality." 
+    u "Sometimes it felt like it was all he ever did though."
+    u "Like he was never in the same reality." 
 
     "The man listens intently."
 
@@ -384,7 +389,7 @@ label start_phone_call:
 
     cori "They do say that no artist tolerates reality."
 
-    cori "I actually think its the contrary, I think art is a way to cope with reality, by capturing parts of it you learn to accept reality as it is." #is this contrary??? might need to change
+    cori "But, I actually think its the contrary, I think art is a way to cope with reality, by capturing parts of it you learn to accept reality as it is." #is this contrary??? might need to change
     
     show coripose1 neutral
 
@@ -414,6 +419,8 @@ label start_phone_call:
 
     cori "What about you? Do you take photos?"
 
+    "He tilts his head slightly."
+
     show coripose1 neutral
 
     u "Me?"
@@ -442,7 +449,17 @@ label start_phone_call:
 
     "He cracks a smile"
 
-    cori "How bout giving it another go now?"
+    cori "Have you thought about returning to it?"
+
+    "You look at him with an apprehensive expression."
+
+    u "I haven't had a reason to."
+
+    cori "Hmm... "
+
+    cori "I can be your reason." #this is so scuffed
+
+    cori "How 'bout giving it another go now?"
 
     show coripose1 side closedsmile
 
@@ -520,17 +537,23 @@ label start_phone_call:
 
                 show coripose1 teethsmile
 
+
                 "He stands in front of the phone booth and smiles."
 
                 "You line up the man's figure in the viewfinder, adjusting the settings to capture the soft morning light on his face."
 
                 play sound "audio/shutter.mp3"
 
+                show coripic with fade
+
+
                 "You take a photo."
 
                 "It seems the lens flare has blocked out his face."
 
                 "He almost looks transparent."
+
+                hide coripic 
 
                 jump take_photo
 
@@ -564,7 +587,7 @@ label start_phone_call:
 
                 "The sun illuminates the petals, they look as if they've just bloomed."
 
-                show coripose1 open direct worried
+                show coripose1 open direct worried light with dissolve
                 cori "You can have the flower, I have plenty more at home."
 
                 jump take_photo
@@ -1173,6 +1196,8 @@ label day2:
 
     scene bg traintree with fade
 
+    $ snow_on = False
+
     "When you open your eyes, you're already in the train cart."
 
     show coripose1 teethsmile direct -camera with dissolve
@@ -1275,6 +1300,8 @@ label day2:
 
     show coritrain open direct
 
+    cori ".... "
+
     cori "If you ask someone from the 1800s they'll tell you women weren't meant to travel on trains."
 
     cori "Their uteruses would fly out or something."
@@ -1283,7 +1310,7 @@ label day2:
 
     "You blink."
 
-    show coritrain neutral blush direct
+    show coritrain neutral direct
     
     "The absurdity of his comment makes you laugh."
     
@@ -1363,6 +1390,8 @@ label day2:
     
     hide coritrain with dissolve
 
+    scene trainsea with fade
+
     "Suddenly, the blur of trees thin out."
 
     "You find yourself looking upon a vast expanse of water."
@@ -1391,10 +1420,9 @@ label day2:
 
     cori "You can view the sea from many places but this is my favorite."
     
+    pause 2.0
 
-    pause 1.0
-
-    "Cori gives a smile."
+    scene traintree with fade
 
     show coripose1 open direct raised with dissolve
 
@@ -1407,6 +1435,8 @@ label day2:
     show coripose1 neutral
 
     "You nod to agree."
+
+    play sound "audio/rustle.mp3"
 
     "Cori gives a teasing grin."
 
@@ -1424,6 +1454,8 @@ label day2:
 
     cori "If you say so."
 
+    "His shoulders shrug."
+
     show coripose1 open direct raised 
 
     cori "When you land, don't lock your knees."
@@ -1440,7 +1472,7 @@ label day2:
 
     "Then jump off."
 
-    play audio "audio/jumpland.mp3"
+    play sound "audio/jumpland.mp3" #this is not playing
 
     "Your boots hit gravel."
 
@@ -1492,9 +1524,11 @@ label day2:
 
     "You nod."
 
-    play audio "gravelsteps.mp3" 
+    play sound "audio/gravelsteps.mp3" 
+    
+    "With the distant sea serving as a backdrop,"
 
-    "The two of you begin walking parallel to tracks, heading back towards the city."
+    "the two of you begin walking parallel to tracks, heading back towards the city."
 
     u "I wish I could have stayed a little longer."
 
@@ -1587,7 +1621,7 @@ label day2:
 
     scene black with fade
 
-    centered "People often confuse feeling something after a long time with feeling it for the first time."
+    centered "After enough time passes, even things you’ve felt before can feel unfamiliar."
 
     "Your eyes droop with fatigue."
 
@@ -1689,6 +1723,20 @@ label day2:
 
     "It disappears too quickly."
 
+    scene bg hallway with fade
+
+    "You stare at the binder on the floor."
+
+    "Then the photos in your hand."
+
+    show phonepic with fade
+
+    "... "
+
+    "One of them have changed."
+
+    "You put the photos back in your coat pocket, and close the binder."
+
     jump day3
 
     ################################################
@@ -1699,10 +1747,12 @@ label day3:
 
     stop music fadeout 3.0
 
-    scene sunset with fade
+    scene black with fade
 
     centered "Another week has passed, the flowers have wilted."
 
+    scene sunset with fade
+   
     "You're walking home as the sun dips low, staining the city in orange."
     
     "The light catches on windows and wet pavement, stretching everything thin."
@@ -1773,7 +1823,7 @@ label day3:
 
     "He tilts his head slightly, studying you."
 
-    u "I... I wanted to give those photographs back to you."
+    u "I wanted... to give those photographs back to you."
     
     "You hesitate, fingers tightening slightly at your sides."
 
@@ -2165,6 +2215,8 @@ label day3:
     "Long but quiet."
 
     scene bg hallway_day with fade
+
+    stop music fadeout 3.0
     
     "Someone's at the dining table."
 
@@ -2238,7 +2290,7 @@ label day3:
 
     play sound "audio/snow_footsteps.mp3" loop fadein 1.0 volume 0.8
 
-    play music "audio/lofi2.mp3" loop fadein 3.0 volume 0.7
+    play music "audio/piano.mp3" loop fadein 3.0 volume 0.7
 
     $ snow_on = True
     
@@ -2258,13 +2310,16 @@ label day3:
     
     "It's a bit cold, so you seek shelter in the booth."
     
+    
     "Your gloved hand reaches for the metalhandle."
 
     play sound "audio/door-open.mp3"
 
     scene bg boothinterior_night
 
-    "The glass walls shelter you from the wind, its a bit warmer inside."
+    $ snow_on = False
+
+    "The frosted glass walls shelter you from the wind, it feels a bit warmer inside."
     
     "You hold your coat a bit tighter, blowing air into your cupped hands."
     
@@ -2296,6 +2351,12 @@ label day3:
 
             "Leave" if saw_photos2 and saw_flowers2:
 
+                "You take a moment to look around the booth one last time."
+
+                "You've warmed up enough."
+
+                "You reach to open the door."
+
                 jump start_phone_call_2
 
 
@@ -2313,15 +2374,19 @@ label day3:
 
     pause 3.0
 
-    "Tentatively, you pick up the phone and hold it up to your ear."
+    "You pick up the phone and hold it up to your ear."
 
-    ". . . "
+    "... "
+
+    u "Hello... ?"
 
     cori "Hey, [player_name]."
 
     "It's Cori."
 
-    cori "I thought you said you weren't an early bird." #owl?
+    "You can hear him clearly, it feels like he's right next to you."
+
+    cori "I thought you said you weren't an early bird." 
 
     cori "The sun's not even up."
     
@@ -2331,7 +2396,7 @@ label day3:
     
     u "Maybe."
     
-    "You pause."
+    "You look around."
     
     u "I thought you said you'd be here to see it."
     
@@ -2340,6 +2405,10 @@ label day3:
     cori "I am here."
     
     cori "Sort of... "
+
+    "There's a pause."
+
+    "You twist the phone cord around your fingers."
     
     cori "Sorry, I thought I had more time."
     
@@ -2361,19 +2430,23 @@ label day3:
     
     u "...Are you really just going to disappear?"
     
-    cori "Probably."
+    cori "I think so."
+
+    cori "... "
     
     cori "It's nothing to be sad about."
     
     cori "We weren't even suppose to meet in the first place."
     
-    cori "But I'm glad we did."
+    cori "But, I'm glad we did."
     
     "... "
 
     u "I'm glad too."
 
-    u "I'm glad it was you who picked up my camera."
+    "You grip the phone tightly."
+
+    u "I'm glad it was you, who picked up my camera."
 
     u "I'm glad you took me to the summit."
 
@@ -2381,11 +2454,11 @@ label day3:
 
     u "I'm glad you came back for me."
 
-    "There's a pause."
+    "There's another pause."
     
     cori "I wish we had met earlier."
     
-    cori "I also wish I could stay here forever."
+    cori "I could stay here forever."
 
     "A faint static hums between you."
     
@@ -2393,7 +2466,7 @@ label day3:
     
     cori "Neither does the blue hour, right?"
     
-    cori "You should hurry, Or you'll miss that shot."
+    cori "You should hurry, or you'll miss that shot."
 
     "You hum in response."
 
@@ -2401,15 +2474,15 @@ label day3:
 
     cori "Just take the photo."
 
-    u ". . . "
+    u "... "
 
     u "Will you see it?"
     
     cori "Of course I will."
 
-    cori "Or maybe..."
+    cori "Or maybe... "
 
-    cori "I'll be part of it."
+    cori "I'll get to be a part of it."
 
     "Your chest tightens."
 
@@ -2424,6 +2497,8 @@ label day3:
     "...Then dead."
 
     scene snowpath_night with fade
+
+    
 
     play audio "snow_footsteps.mp3" fadein 1.0 volume 0.8
 
@@ -2473,7 +2548,7 @@ label day3:
 
     "You wonder if Cori is watching you."
     
-    "Somewhere you can't see."
+    "Somewhere you can't see, somwhere like a ghost town."
     
     "You line the shot up."
     
@@ -2487,19 +2562,44 @@ label day3:
 
     centered "epilouge."
 
+    scene black with fade
+
+    #music
+
+
+
     scene bg windphone with fade 
     
     "It's early spring now."
     
-    "The world is awakening from its winter slumber."
-    
-    "The bushes are budding with new life."
+    "The air still carries a trace of winter, cool against your skin, but it no longer bites."
+
+    "Patches of frost have given way to damp earth and soft grass."
+
+    "Branches that were bare weeks ago are tipped with small, stubborn buds."
+
+    "The world isn’t fully awake yet."
+
+    "But it’s trying."
+
+    "A quiet rustle moves through the bushes as they fill in again."
     
     "In this season you like to look for birds to photograph."
     
-    "You crouch down and peer through the viewfinder."
+    "You crouch low, adjusting your footing so the gravel doesn’t crunch beneath you."
 
     "You stay as still as you can, waiting for a bird to come into frame."
+
+    "You lift your camera, peering through the viewfinder."
+
+    "The frame narrows."
+
+    "Everything outside it falls away."
+
+    "You hold still."
+
+    "Breath slow... "
+
     
     pause 2.0
 

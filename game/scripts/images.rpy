@@ -19,11 +19,16 @@ image bg bath = "images/bg/bath.png"
 image bg beach = "images/bg/beach.png"
 image bg sunset = "images/bg/sunset.png"
 
-
 #Sprites
 image dad = "images/dad.png"
 image mom = "images/mom.png"
 image mom happy = "images/mom_happy.png"
+
+#photos
+
+image coripic = "images/coripic.png"
+image phonepic = "images/coripicnocori.png"
+
 
 #Cori
 layeredimage coripose1:
