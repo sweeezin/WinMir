@@ -291,7 +291,7 @@ screen navigation():
 
     
 
-    if main_menu:
+    if renpy.get_screen("main_menu"):
 
         hbox: 
             spacing 65
@@ -299,13 +299,13 @@ screen navigation():
             xalign 0.5
             yalign 0.9
 
-            textbutton _("NEW") action Start() text_size 150 text_color "#ffffff"
+            textbutton _("New") action Start() text_size 150 text_outlines [(4, "#0008", 2, 2)]
 
-            textbutton _("LOAD") action ShowMenu("load") text_size 150 text_color "#ffffff"
+            textbutton _("Load") action ShowMenu("load") text_size 150 text_outlines [(4, "#0008", 2, 2)]
 
-            textbutton _("GALLERY") text_size 150 text_color "#ffffff"
+            textbutton _("Options") action ShowMenu("preferences") text_size 150 text_outlines [(4, "#0008", 2, 2)]
 
-            textbutton _("QUIT") action Quit(confirm=not main_menu) text_size 150 text_color "#ffffff"
+            textbutton _("Quit") action Quit(confirm=not main_menu) text_size 150 text_outlines [(4, "#0008", 2, 2)]
 
     else:
 
@@ -358,7 +358,10 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    if persistent.game_completed:
+        add "gui/main_menu_end.png"
+    else:
+        add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
     frame:
@@ -413,10 +416,8 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
 
-    if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
+    
+    add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"

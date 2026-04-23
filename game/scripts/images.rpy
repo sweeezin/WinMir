@@ -18,11 +18,16 @@ image bg hallway_day = "images/bg/hallway_day.png"
 image bg bath = "images/bg/bath.png"
 image bg beach = "images/bg/beach.png"
 image bg sunset = "images/bg/sunset.png"
+image bg bluehour = "images/bg/bluehour.png"
+image bg thanks = "images/bg/thanks.png"
+image bg spring = "images/bg/windphone_spring.png"
+image bg theend = "images/bg/thend.png"
 
 #Sprites
 image dad = "images/dad.png"
 image mom = "images/mom.png"
 image mom happy = "images/mom_happy.png"
+image corisis = "images/corisis.png"
 
 #photos
 

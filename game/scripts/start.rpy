@@ -1,7 +1,4 @@
-#Well well well
-#Look who decided to open the code...
-#Are you here for secrets? Just curious?
-#You probably won't find much here, have fun though
+default persistent.game_completed = False
 
 default saw_photos = False
 
@@ -10,6 +7,8 @@ default saw_flowers = False
 default saw_phone = False
 
 label start:
+
+    stop music
 
     $ player_name = renpy.input("Your name?", length=32)
 
@@ -192,7 +191,7 @@ label start_phone_call:
     
     scene bg windphone   
 
-    $ snow = True
+    $ snow_on = True
 
     play music "audio/lofi1.mp3" fadein 3.0
 
@@ -304,7 +303,7 @@ label start_phone_call:
 
     u "They're not bad." 
 
-    show coripose1 raised teethsmile blush with fade
+    show coripose1 raised teethsmile blush 
 
     "He grins."
 
@@ -324,7 +323,13 @@ label start_phone_call:
 
     cori "Yea... You're probably right."
 
-    cori "They're for my sister."
+    "There's a pause."
+
+    "He looks at your eyes, then to the floor."
+
+    "Like he's looking for more words to keep the conversation going."
+
+    cori "They're, uh, for my sister."
 
     cori "She was blind, but she loved exploration." 
 
@@ -381,6 +386,7 @@ label start_phone_call:
     u "He did it for work."
 
     u "Sometimes it felt like it was all he ever did though."
+
     u "Like he was never in the same reality." 
 
     "The man listens intently."
@@ -455,9 +461,7 @@ label start_phone_call:
 
     u "I haven't had a reason to."
 
-    cori "Hmm... "
-
-    cori "I can be your reason." #this is so scuffed
+    cori "You don't need a reason to." #this is so scuffed
 
     cori "How 'bout giving it another go now?"
 
@@ -467,7 +471,7 @@ label start_phone_call:
 
     "You hesistate. You really didn't have any interest of touching a camera again."
 
-    "Cori notices your hesitation and gives you a reassuring smile."
+    "The man notices your hesitation and gives you a reassuring smile."
 
     show coripose1 open
 
@@ -686,9 +690,15 @@ label start_phone_call:
 
     show coripose1 open worried
 
+    cori "Right.. "
+
+    "Cori glances at the phone booth, then back at you."
+
     cori "Alright then, I'll see you again, soon."
 
     scene bg snowpath with fade
+
+    "The path ahead stretches pale and quiet."
     
     "You look down at the cyclamen in your hand, its petals a defiant pink against the grey morning scene."
 
@@ -743,7 +753,9 @@ label day2:
 
     show coripose1 side norm neutral with dissolve
 
-    "Only an eccentric photographer would be out here at this hour, you recognize him immediately."
+    "Only an eccentric photographer would be out here at this hour."
+
+    "You recognize him immediately."
     
     show coripose1 open direct raised
 
@@ -1025,7 +1037,7 @@ label day2:
 
     show coripose1 light 
 
-    "The sky shifts with it—deep blue thinning out, edges softening into pale gold and washed-out pink."
+    "The sky shifts with it-- deep blue thinning out, edges softening into pale gold and washed-out pink."
 
     "Light begins to catch on everything."
 
@@ -1176,7 +1188,7 @@ label day2:
 
     pause 1.0
 
-    "Then suddenly- "
+    "Then suddenly-- "
 
     "Your feet leave the ground."
 
@@ -1316,7 +1328,7 @@ label day2:
     
     "The movement makes you notice the camera around you neck."
 
-    show coritrain -blush neutral
+    show coritrain neutral
     
     "You didn't mean to be holding it on for so long."
     
@@ -1362,7 +1374,7 @@ label day2:
 
     show coritrain open side
 
-    cori "Figured you might want them."
+    cori "I figured it would be good for you to have them."
 
     show coritrain smallsmile
 
@@ -1855,7 +1867,7 @@ label day3:
 
     "For a while, neither of you speak."
 
-    show coripose1 side raised with dissolve
+    show coripose1 side light raised with dissolve
 
     "You glance at him."
 
@@ -1927,7 +1939,7 @@ label day3:
     
     u "You're always never bothered by the cold-"
     
-    u "Your landings are too light-"
+    u "Your landings are too light-- "
     
     u "You never get tired."
     
@@ -2121,6 +2133,8 @@ label day3:
     u "It felt so strange carrying his ashes."
     
     u "I was holding him, but it wasn't him at all."
+
+    "Words leave your mouth before you can stop them."
     
     u "Those ashes are nothing like him, they don't represent anything he was, or stood for, or..."
     
@@ -2218,7 +2232,7 @@ label day3:
 
     stop music fadeout 3.0
     
-    "Someone's at the dining table."
+    "When you return home, you nnotice someone's at the dining table."
 
     show mom with dissolve
     
@@ -2303,6 +2317,8 @@ label day3:
     "There's no one ahead."
     
     scene bg windphone_night with fade
+
+    
     
     "The cold nips at your skin."
     
@@ -2319,6 +2335,8 @@ label day3:
 
     $ snow_on = False
 
+    stop music fadeout 3.0
+    stop music2 fadeout 2.0 
     "The frosted glass walls shelter you from the wind, it feels a bit warmer inside."
     
     "You hold your coat a bit tighter, blowing air into your cupped hands."
@@ -2364,6 +2382,10 @@ label day3:
 
     play sound "audio/ringringring.mp3" fadein 2.0 volume 0.8 
 
+
+
+    "But before your hand could reach for the handle, "
+
     "You hear a ring."
 
     "... It's coming from the phone."
@@ -2394,9 +2416,11 @@ label day3:
     
     cori "Are you planning to finish your collection?"
     
-    u "Maybe."
+    u "I want to."
     
-    "You look around."
+    "You turn slightly, like you might catch him just out of view."
+
+    "Nothing."
     
     u "I thought you said you'd be here to see it."
     
@@ -2420,17 +2444,49 @@ label day3:
     
     "He sounds far away."
     
-    cori "Last winter, you brought me back."
+    cori "Last winter, I picked up your camera."
     
-    cori "This winter you'll send me off."
+    cori "It brought me lots of joy."
     
-    cori "It all comes full circle."
-    
+    cori "It helped me connect with the world, helped me stay in it a little longer."
+
+    cori "I desperately wanted to cling to it."
+
+    cori "But, "
+
+    cori "I'm not suppose to be here. I don't belong here, even if I once did. "
+
+    "Cori lets out a quiet breath."
+
+    cori "You're different from me though."
+
+    cori "You can still move forward."
+
+    cori "Make new memories, go new places."
+
+    cori "See where that train goes."
+
+    cori "I'm terribly jealous of you... "
+
+    cori "That's why I kept bothering you about it."
+
+    "A faint hint of a smile in his voice."
+
+    cori "Wanted to see what you'd do."
+
+    cori "What do you think? Did I get through?"
+
+    cori "Even if I don't stick around."
+
+    cori "At least you will."
+
     "You take in his words."
+
+    u "What? What are you talking about?"
     
     u "...Are you really just going to disappear?"
     
-    cori "I think so."
+    cori "I'm afraid so."
 
     cori "... "
     
@@ -2438,7 +2494,7 @@ label day3:
     
     cori "We weren't even suppose to meet in the first place."
     
-    cori "But, I'm glad we did."
+    cori "But, I'm really glad we did."
     
     "... "
 
@@ -2498,9 +2554,13 @@ label day3:
 
     scene snowpath_night with fade
 
-    
+    $ snow_on = True
 
     play audio "snow_footsteps.mp3" fadein 1.0 volume 0.8
+
+    play music2 "audio/snowamb.mp3" loop fadein 2.0 volume 0.8
+
+    play music "audio/end.mp3" loop fadein 2.0 volume 0.8
 
     "The climb feels longer than you remember."
 
@@ -2518,33 +2578,53 @@ label day3:
 
     "You step forward."
 
+    "The ground crunches faintly beneath your shoes."
+
     "The wind is sharper up here."
 
     "You look around."
 
     "It's empty."
+
+    "The distant city is below, softened by the morning haze."
+
+    "The overlook stretches wide and empty."
     
     "You swallow."
 
     "Your grip tightens slightly around the camera."
 
-    "The wind moves past you."
+    "A gust of wind moves past you."
+
+    "It tugs at your clothes, your hair- "
     
-    "It almost feels like something brushes against your hand."
+    "And for a brief second, it brushes against your hand."
 
     "You freeze."
 
     "You look down at your hand."
 
+    "The feeling lingers just long enough to notice."
+
+    "You look down."
+
+    "There's nothing there."
+
+    "A quiet breath leaves you."
+
     "Don't overthink it."
 
     "Don't try to make it perfect."
     
-    "You exhale slowly."
+    "You exhale slowly, your shoulders loosen."
 
     "You raise the camera."
 
     "The view settles into frame."
+
+    "The world pulls into frame- the sky, the horizon, the edge of the city."
+
+    "The light sits somewhere between night and day."
 
     "You wonder if Cori is watching you."
     
@@ -2553,23 +2633,37 @@ label day3:
     "You line the shot up."
     
     "And click the shutter."
+
+    $ snow_on = False
     
-    pause 3.0
+    play audio "shutter.mp3" 
 
-    centered "insert pic of a very beautiful shot"
+    #ending music
 
-    centered "uhhh credits yuh uyh hi robert"
+    $ quick_menu = False
 
-    centered "epilouge."
+    window hide
+
+    scene bg bluehour with Dissolve(2.0)
+
+    pause 2.0
+
+    scene bg theend with Dissolve(2.0)
 
     scene black with fade
 
     #music
 
+    scene bg spring with fade 
 
-
-    scene bg windphone with fade 
+    stop music  
     
+    $ quick_menu = True
+
+    window show
+    
+    play music "audio/snowpath.mp3" loop fadein 2.0 volume 0.8
+
     "It's early spring now."
     
     "The air still carries a trace of winter, cool against your skin, but it no longer bites."
@@ -2599,11 +2693,14 @@ label day3:
     "You hold still."
 
     "Breath slow... "
-
     
     pause 2.0
 
-    "Suddenly, you feel a tap by your foot."
+    "Before you could tap the shutter-- "
+
+    "You feel a tap by your foot."
+
+    show corisis at jump_in, truecenter
 
     cs "Ah!"
     
@@ -2611,5 +2708,6 @@ label day3:
     
     cs "I'm so sorry I didn't mean to bump into you."
 
+    $ persistent.game_completed = True
 
 

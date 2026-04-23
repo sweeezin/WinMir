@@ -19,7 +19,7 @@ define config.name = _("WinMir")
 ## this to False to hide the title.
 
 define gui.show_name = True
-
+define config.main_menu_music = "audio/snowpath.mp3"
 
 ## The version of the game.
 
