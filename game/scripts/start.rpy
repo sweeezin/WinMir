@@ -219,7 +219,10 @@ label start_phone_call:
 
     play sound "audio/shutter.mp3"
 
+    show coripose1 open worried 
     cori "... Too much stray light..."
+
+    show coripose1 neutral 
 
     "He mutters to himself. His expression is focused."
 
@@ -229,13 +232,21 @@ label start_phone_call:
 
     "The words leave your mouth before you could stop yourself."
 
+    show coripose1 direct raised 
     "The stranger turns to you, his eyes widen, surprised by your presence."
+
+    show coripose1 open 
 
     cori "Oh, thanks, that's good advice actually."
 
+    show coripose1 neutral
+
     u "Yea... the snow tends to reflect a lot of light, so it can be hard to get the right exposure without a lens hood."
 
+    show coripose1 open 
     cori "Wow, I've never thought of that."
+
+    show coripose1 neutral
 
     "Your eyes are drawn to a pink hue from his pocket."
 
@@ -252,12 +263,12 @@ label start_phone_call:
     show coripose1 open
 
     cori "Oh."
-
+    show coripose1 teethsmile worried
     "He grins."
 
-    cori "These are cyclamens."
+    cori "These're cyclamens."
 
-    show coripose1 neutral
+    show coripose1 neutral raised
 
     "You blink."
 
@@ -266,6 +277,8 @@ label start_phone_call:
     cori "The flowers."
 
     cori "I grow them in my garden."
+
+    show coripose1 teethsmile
 
     "He gives a soft smile."
     
@@ -303,11 +316,11 @@ label start_phone_call:
 
     u "They're not bad." 
 
-    show coripose1 raised teethsmile blush 
+    show coripose1 raised teethsmile 
 
     "He grins."
 
-    show coripose1 open -blush
+    show coripose1 open 
 
     cori "That's generous."
 
@@ -315,23 +328,30 @@ label start_phone_call:
 
     u "Photos don't need to be good to be appreciated."
 
-    show coripose1 side open
 
     pause 1.0
 
     "He shifts his weight from side to side."
 
+    show coripose1 side open
+
     cori "Yea... You're probably right."
 
     "There's a pause."
 
-    "He looks at your eyes, then to the floor."
+    show coripose1 direct worried
+
+    "He looks at your eyes, then to the ground."
 
     "Like he's looking for more words to keep the conversation going."
+
+    show coripose1 side open 
 
     cori "They're, uh, for my sister."
 
     cori "She was blind, but she loved exploration." 
+
+    show coripose1 direct
 
     cori "We use to walk this path all the time." 
 
