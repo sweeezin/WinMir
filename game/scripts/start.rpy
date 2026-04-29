@@ -40,7 +40,7 @@ label start:
 
     scene bg snowpath with fade 
 
-    "The sunlight filters through snowy branches, casting soft shadows onto the path ahead."
+    "Sunlight filters through snowy branches, casting soft shadows onto the path ahead."
 
     "During this time of year, most the animals hide, it seems as if you are the only one awake."
 
@@ -1534,11 +1534,11 @@ label day2:
 
     show coripose1 direct open 
 
-    cori "You’re not on it anymore."
+    cori "It's just cause you’re not on it anymore."
 
     show coripose1 neutral
 
-    "You nod."
+    u "Maybe... "
 
     "The last car disappears down the line."
 
@@ -2106,21 +2106,35 @@ label day3:
 
     "Your fingernails dig into the palm of your hand."
     
-    u "I think it was, maybe, 6 years ago?"
+    u "It was 6 years ago."
     
-    u "My dad developed a disease."
+    u "My dad.. "
+
+    u "He developed a disease."
     
     u "It was the kind that eats away at a person's mind and memories."
 
     "You give a small, humorless exhale."
 
-    u "I wasn't as good at the camera as him, but I started a collection for him."
+    u "Isn't it ironic?"
+
+    u "He was obbessed with recording things, taking photos, making films."
+
+    u "Cementing memories into something tangible."
+
+    u "Only to never be able to hold onto them himself."
+
+    "Your voice lowers."
+
+    u "I wasn't as good as him." 
     
+    u "With the camera."
+
+    u "But I thought, maybe if he couldn't hold onto those memories, I could."
+    
+    u "Places, moments, anything that mattered."
+
     "Cori looks into your eyes, carefully listening."
-    
-    u "I collected pictures of important places and moments."
-    
-    u "I thought, maybe if his mind couldn't hold onto them, I could."
     
     u "He'd criticize my work, say I wasn't cut out for this kind of thing."
 
@@ -2140,7 +2154,13 @@ label day3:
     
     u "But when the winter came, my father had a moment of clarity, only to do something so stupid."
     
+    u "He.."
+    
+    "You pause."
+    
     u "He took his own life that winter, and I never saw reason to finish the collection."
+
+    "The words fall flat."
     
     "Theres a thick silence between the two of you."
     
