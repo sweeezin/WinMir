@@ -280,7 +280,7 @@ label start_phone_call:
 
     show coripose1 teethsmile
 
-    "He gives a soft smile."
+    "He smiles softly."
     
     cori "Unlike other flowers, they bloom in the winter."
 
@@ -473,7 +473,7 @@ label start_phone_call:
     
     show coripose1 direct teethsmile
 
-    "He cracks a smile"
+    "He cracks a smile."
 
     cori "Have you thought about returning to it?"
 
@@ -997,7 +997,7 @@ label day2:
 
     cori "You know, in japanese folklore, they say that the blue hour is when the boundary between the living and the dead is thinnest."
     
-    "He gives a mischievous smile."
+    "He smiles mischievously."
 
     show coripose1 direct
 
@@ -1077,7 +1077,7 @@ label day2:
 
     show coripose1 open side
 
-    cori "Hey, why don't we take a different path down this time?"
+    cori "Hey, why don't we take a different path down?"
 
     show coripose1 neutral
 
@@ -1087,7 +1087,7 @@ label day2:
 
     "He stands in front of you."
 
-    "He learns towards you, grasping your fingers with his own."
+    "He leans towards you, grasping your fingers with his own."
 
     "He pulls you up to your feet, then tugs your sleeve."
 
@@ -1334,17 +1334,14 @@ label day2:
 
     cori ".... "
 
-    cori "If you ask someone from the 1800s they'll tell you women weren't meant to travel on trains."
-
-    cori "Their uteruses would fly out or something."
+    cori "A hundred years ago, someone probably thought trains would shake all your thoughts loose."
     
     show coritrain smallsmile
 
-    "You blink."
+    "You chuckle in response."
 
     show coritrain neutral direct
     
-    "The absurdity of his comment makes you laugh."
     
     "The movement makes you notice the camera around you neck."
 
@@ -1450,7 +1447,7 @@ label day2:
 
     cori "But breaking a few rules gets you here a lot faster."
 
-    cori "You can view the sea from many places but this is my favorite."
+    cori "You can view the sea from many places, but this is my favorite."
     
     pause 2.0
 
@@ -1494,7 +1491,7 @@ label day2:
 
     hide coripose1 with dissolve
 
-    "You learn at the edge, staring at the rapidly moving floor."
+    "You lean at the edge, staring at the rapidly moving floor."
 
     "You wait for it to... feel manageable."
 
@@ -1765,7 +1762,7 @@ label day2:
 
     "... "
 
-    "One of them have changed."
+    "One of them has changed."
 
     "You put the photos back in your coat pocket, and close the binder."
 
@@ -1957,7 +1954,7 @@ label day3:
 
     "You exhale through your nose."
     
-    u "You're always never bothered by the cold-"
+    u "You're never bothered by the cold-"
     
     u "Your landings are too light-- "
     
@@ -2060,7 +2057,7 @@ label day3:
     
     cori "I waited for you to come back."
 
-    "You catch the reflection of the sun in his eyes—too steady, almost fixed."
+    "You catch the reflection of the sun in his eyes, too steady, almost fixed."
 
     show coripose1 neutral
     
@@ -2114,11 +2111,11 @@ label day3:
     
     u "It was the kind that eats away at a person's mind and memories."
 
-    "You give a small, humorless exhale."
+    "You let out a small, humorless exhale."
 
     u "Isn't it ironic?"
 
-    u "He was obbessed with recording things, taking photos, making films."
+    u "He was obsessed with recording things, taking photos, making films."
 
     u "Cementing memories into something tangible."
 
@@ -2272,7 +2269,7 @@ label day3:
 
     stop music fadeout 3.0
     
-    "When you return home, you nnotice someone's at the dining table."
+    "When you return home, you notice someone's at the dining table."
 
     show mom with dissolve
     
@@ -2284,7 +2281,7 @@ label day3:
     
     m "I saw you left this on the table."
     
-    "You left on the table?"
+    "You left it on the table?"
     
     m "These are yours aren't they?"
     
@@ -2367,7 +2364,7 @@ label day3:
     "It's a bit cold, so you seek shelter in the booth."
     
     
-    "Your gloved hand reaches for the metalhandle."
+    "Your gloved hand reaches for the metal handle."
 
     play sound "audio/door-open.mp3"
 
@@ -2606,7 +2603,7 @@ label day3:
 
     "Your breath fogs in front of you."
 
-    "Your camera thumbs against your core with each step."
+    "Your camera thumps against your chest with each step."
 
     "You're wearing boots but they do little against the cold."
 
