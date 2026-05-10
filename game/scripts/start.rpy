@@ -2745,6 +2745,68 @@ label day3:
     
     cs "I'm so sorry I didn't mean to bump into you."
 
+    "You look up."
+
+    "A girl stands over you, her hair is a familiar shade of brown."
+
+    "Her eyes are closed, but her expression is warm and apologetic."
+
+    "You lower your camera."
+
+    u "It's okay."
+
+    cs "I wasn't expecting anyone to be out here."
+
+    cs "Its usually so quiet and empty."
+
+    "You notice a white cane in her hand."
+
+    "The wind moves past you."
+
+    u "Yea, it is."
+
+    u "It makes it the perfect place to photographing the wildlife."
+
+    "Her expression lights up."
+
+    cs "Oh, were you taking photos?"
+
+    cs "I'm so sorry I didn't mean to interrupt you."
+
+    u "No, it's fine."
+
+    cs "Thanks for being so nice about it."
+
+    "Her shoulders relax a bit."
+
+    cs "Well, I'll leave you to it then."
+
+    "She turns to walk."
+
+    u "Wait, uhh."
+
+    "She turns back to you."
+
+    u "Do you need help with where you're going?"
+
+    "She smiles."
+
+    cs "Oh, thanks for the offer."
+
+    cs "But I don't need any help, I've walked this path a million times."
+
+    "She turns again."
+
+    "And continues on her way."
+
+    scene black with fade
+
+    pause 2.0 
+
+
+    scene thanks with fade
+
+    pause 3.0 
     $ persistent.game_completed = True
 
 
