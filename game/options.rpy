@@ -188,7 +188,20 @@ init python:
 
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
+    build.archive("scripts", "all")
+    build.archive("images", "all")
+    build.archive("audio", "all")
 
+    build.classify("game/**.rpy", "scripts")
+    build.classify("game/**.rpyc", "scripts")
+
+    build.classify("game/**.png", "images")
+    build.classify("game/**.jpg", "images")
+    build.classify("game/**.webp", "images")
+
+    build.classify("game/**.mp3", "audio")
+    build.classify("game/**.ogg", "audio")
+    build.classify("game/**.opus", "audio")
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
 

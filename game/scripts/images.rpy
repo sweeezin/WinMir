@@ -28,6 +28,7 @@ image dad = "images/dad.png"
 image mom = "images/mom.png"
 image mom happy = "images/mom_happy.png"
 image corisis = "images/corisis.png"
+image corisis happy = "images/corisis_happy.png"
 
 #photos
 

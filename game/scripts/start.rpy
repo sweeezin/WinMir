@@ -2769,6 +2769,8 @@ label day3:
 
     "Her expression lights up."
 
+    show corisis happy
+
     cs "Oh, were you taking photos?"
 
     cs "I'm so sorry I didn't mean to interrupt you."
@@ -2803,8 +2805,10 @@ label day3:
 
     pause 2.0 
 
+    window hide
 
     scene thanks with fade
+
 
     pause 3.0 
     $ persistent.game_completed = True
